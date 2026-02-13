@@ -42,7 +42,9 @@ export default function ZaKogaPage() {
           }}
         />
         <div className="container-main relative z-10">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">Prepoznaješ li sebe?</p>
+          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+            Prepoznaješ li sebe?
+          </p>
           <h1 className="heading-xl mb-4">Za koga je ovaj pristup</h1>
           <div className="gold-divider mx-0" />
         </div>
@@ -51,17 +53,20 @@ export default function ZaKogaPage() {
       {/* ── UVOD ─────────────────────────────────────────── */}
       <section className="relative z-10">
         <div className="container-main section-padding">
-          <div className="max-w-3xl">
+          <div className="max-w-5xl">
             <p className="text-body mb-10">
-              Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja ne završavaju na
-              površinskom nivou, a da im klasični dugotrajni, isključivo klinički pristupi, često ne
-              daju potpune odgovore. Namenjen je onima koji žele razumevanje, ali i unutrašnju
-              promenu, kroz dublji uvid u sopstvene obrasce, odluke i životne teme.
+              Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja ne
+              završavaju na površinskom nivou, a da im klasični dugotrajni,
+              isključivo klinički pristupi, često ne daju potpune odgovore.
+              Namenjen je onima koji žele razumevanje, ali i unutrašnju promenu,
+              kroz dublji uvid u sopstvene obrasce, odluke i životne teme.
             </p>
 
             {/* Za koga JESTE */}
             <div className="mb-12">
-              <h2 className="heading-md mb-6">Rad je posebno prikladan za vas ako:</h2>
+              <h2 className="heading-md mb-6">
+                Rad je posebno prikladan za vas ako:
+              </h2>
 
               <div className="space-y-3">
                 {jestePrikladan.map((item, i) => (
@@ -73,7 +78,9 @@ export default function ZaKogaPage() {
                     <span
                       className="text-gold shrink-0 mt-0.5 text-base"
                       aria-hidden
-                      style={{ filter: "drop-shadow(0 0 4px rgba(201,168,76,0.4))" }}
+                      style={{
+                        filter: "drop-shadow(0 0 4px rgba(201,168,76,0.4))",
+                      }}
                     >
                       ✦
                     </span>
@@ -85,11 +92,13 @@ export default function ZaKogaPage() {
 
             {/* Zaključak */}
             <p className="text-body mb-4">
-              Ovaj pristup je za ljude koji shvataju da su oni sami nosioci sopstvene promene, koji
-              žele svesniji odnos prema sebi, svojim obrascima i potencijalima, a koji su otvoreni
-              za integraciju uvida na psihološkom, simboličkom i iskustvenom nivou. Ovaj rad ne
-              ostaje na pukoj analizi — već pruža jasnoću, fokus i svesno delovanje, uz konkretan
-              rad na ciljevima, odnosima i ličnom razvoju.
+              Ovaj pristup je za ljude koji shvataju da su oni sami nosioci
+              sopstvene promene, koji žele svesniji odnos prema sebi, svojim
+              obrascima i potencijalima, a koji su otvoreni za integraciju uvida
+              na psihološkom, simboličkom i iskustvenom nivou. Ovaj rad ne
+              ostaje na pukoj analizi — već pruža jasnoću, fokus i svesno
+              delovanje, uz konkretan rad na ciljevima, odnosima i ličnom
+              razvoju.
             </p>
 
             {/* Pull quote */}
@@ -105,7 +114,7 @@ export default function ZaKogaPage() {
       {/* ── NIJE ZA ──────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-y border-border">
         <div className="container-main section-padding">
-          <div className="max-w-3xl">
+          <div className="max-w-5xl">
             <h2 className="heading-lg mb-4">Za koga ovaj pristup nije</h2>
             <div className="gold-divider mx-0 mb-8" />
 
@@ -117,7 +126,10 @@ export default function ZaKogaPage() {
                   key={i}
                   className="flex items-start gap-4 p-4 rounded border border-border/60 bg-bg-primary/50"
                 >
-                  <span className="text-cream-faint shrink-0 mt-0.5 text-base" aria-hidden>
+                  <span
+                    className="text-cream-faint shrink-0 mt-0.5 text-base"
+                    aria-hidden
+                  >
                     ✕
                   </span>
                   <p className="text-cream-faint leading-relaxed">{item}</p>
@@ -126,8 +138,9 @@ export default function ZaKogaPage() {
             </div>
 
             <p className="text-cream-muted leading-relaxed">
-              Ovaj rad podrazumeva svesno učešće, kontinuitet i ličnu odgovornost. Ako tražite
-              pasivni pristup ili brzu utehu – ovo verovatno nije vaš pravi izbor.
+              Ovaj rad podrazumeva svesno učešće, kontinuitet i ličnu
+              odgovornost. Ako tražite pasivni pristup ili brzu utehu – ovo
+              verovatno nije vaš pravi izbor.
             </p>
           </div>
         </div>
@@ -136,13 +149,15 @@ export default function ZaKogaPage() {
       {/* ── VAŽNO JE ZNATI ───────────────────────────────── */}
       <section className="relative z-10">
         <div className="container-main section-padding">
-          <div className="max-w-3xl">
+          <div className="max-w-5xl">
             <div className="card border-purple-soft/40">
               <div className="flex items-start gap-4 mb-4">
                 <span
                   className="text-gold text-xl shrink-0 mt-0.5"
                   aria-hidden
-                  style={{ filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))" }}
+                  style={{
+                    filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
+                  }}
                 >
                   ✦
                 </span>
@@ -150,16 +165,18 @@ export default function ZaKogaPage() {
               </div>
               <div className="space-y-3 text-cream-muted leading-relaxed pl-8">
                 <p>
-                  Rad koji nudim ima za cilj lični razvoj, osvešćivanje obrazaca i dublje
-                  razumevanje unutrašnjih procesa.
+                  Rad koji nudim ima za cilj lični razvoj, osvešćivanje obrazaca
+                  i dublje razumevanje unutrašnjih procesa.
                 </p>
                 <p>
-                  Ne predstavlja medicinski, psihijatrijski ili kliničko-terapijski tretman i ne
-                  zamenjuje zdravstvenu ili psihoterapijsku pomoć.
+                  Ne predstavlja medicinski, psihijatrijski ili
+                  kliničko-terapijski tretman i ne zamenjuje zdravstvenu ili
+                  psihoterapijsku pomoć.
                 </p>
                 <p>
-                  U radu se ne postavljaju dijagnoze niti se daje medicinski savet. Klijent
-                  zadržava punu odgovornost za sopstvene odluke i postupke.
+                  U radu se ne postavljaju dijagnoze niti se daje medicinski
+                  savet. Klijent zadržava punu odgovornost za sopstvene odluke i
+                  postupke.
                 </p>
               </div>
             </div>
@@ -170,12 +187,14 @@ export default function ZaKogaPage() {
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <div className="container-main section-padding text-center">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">Sledeći korak</p>
+          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
+            Sledeći korak
+          </p>
           <h2 className="heading-lg mb-4">Prepoznajete se?</h2>
           <div className="gold-divider" />
           <p className="text-cream-muted mt-4 mb-8 max-w-md mx-auto">
-            Zakazivanjem inicijalnog razgovora počinjemo sa uvidom — bez obaveze i bez unapred
-            zadatog pravca.
+            Zakazivanjem inicijalnog razgovora počinjemo sa uvidom — bez obaveze
+            i bez unapred zadatog pravca.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/kontakt" className="btn-primary">

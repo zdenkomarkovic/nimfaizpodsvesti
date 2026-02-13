@@ -12,7 +12,7 @@
   --glass-bg-alt: rgba(255, 255, 255, 0.16);
   --glass-bg-deep: rgba(255, 255, 255, 0.38);
   --glass-border: rgba(255, 255, 255, 0.52);
-  --glass-border-subtle: rgba(255, 255, 255, 0.30);
+  --glass-border-subtle: rgba(255, 255, 255, 0.3);
 }
 
 /* ── RESET ───────────────────────────────────────────────── */
@@ -41,11 +41,10 @@ body {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background:
-    radial-gradient(ellipse at 0% 0%,   #F49CC0 0%, transparent 65%),
-    radial-gradient(ellipse at 100% 0%,  #F8E4BB 0%, transparent 65%),
-    radial-gradient(ellipse at 0% 100%,  #86B5E6 0%, transparent 65%),
-    radial-gradient(ellipse at 100% 100%, #73F1F6 0%, transparent 65%);
+  background: radial-gradient(ellipse at 0% 0%, #f49cc0 0%, transparent 65%),
+    radial-gradient(ellipse at 100% 0%, #f8e4bb 0%, transparent 65%),
+    radial-gradient(ellipse at 0% 100%, #86b5e6 0%, transparent 65%),
+    radial-gradient(ellipse at 100% 100%, #73f1f6 0%, transparent 65%);
   background-color: #c8d8e5; /* centre blend fallback */
 }
 
@@ -65,7 +64,7 @@ body {
 /* ── COMPONENT CLASSES ───────────────────────────────────── */
 @layer components {
   .container-main {
-    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   .section-padding {

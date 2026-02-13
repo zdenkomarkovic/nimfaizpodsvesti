@@ -9,7 +9,7 @@ const navLinks = [
   { href: "/", label: "Početna" },
   { href: "/o-meni", label: "O Meni" },
   { href: "/usluge", label: "Usluge" },
-  { href: "/za-koga", label: "Za Koga" },
+  { href: "/za-koga", label: "Za Koga je ovaj pristup" },
   { href: "/kako-izgleda-rad", label: "Kako Izgleda Rad" },
   { href: "/cenovnik", label: "Cenovnik" },
   { href: "/kontakt", label: "Kontakt" },
@@ -47,7 +47,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className={`font-sans text-xs tracking-wide transition-colors duration-200 ${
+              className={`font-sans text-base tracking-wide transition-colors duration-200 ${
                 pathname === link.href
                   ? "text-gold"
                   : "text-cream-muted hover:text-cream"

@@ -25,19 +25,22 @@ export default function HomePage() {
         <div className="container-main section-padding relative z-10">
           <div className="max-w-3xl">
             <p className="text-gold text-xs uppercase tracking-[0.25em] mb-6">
-              Astropsihološko savetovanje &middot; Coaching &middot; Lični razvoj
+              Astropsihološko savetovanje &middot; Coaching &middot; Lični
+              razvoj
             </p>
 
             <h1 className="heading-xl mb-6">
-              Astropsihološko savetovanje, coaching mentorstvo i lični razvoj online
+              Astropsihološko savetovanje, coaching mentorstvo i lični razvoj
+              online <span className="font-bold">Nimfa iz podsvesti</span>
             </h1>
 
             <div className="gold-divider mx-0" />
 
             <p className="text-body text-cream-muted max-w-2xl mb-8">
-              Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT
-              tehnike, hipnotički fokusirani rad i regresivne procese sa temama prošlih života,
-              usmereno na lični razvoj i svesnu promenu.
+              Astropsihološko savetovanje koje povezuje psihologiju i
+              astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i
+              regresivne procese sa temama prošlih života, usmereno na lični
+              razvoj i svesnu promenu.
             </p>
 
             <Link href="/kontakt" className="btn-primary">
@@ -50,13 +53,15 @@ export default function HomePage() {
       {/* ── OPIS USLUGE ──────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-y border-border">
         <div className="container-main section-padding">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center">
             <p className="text-body">
-              Diplomirani sam psiholog. Radim individualno, online, kroz video ili telefonske
-              konsultacije, koristeći integrativni pristup koji povezuje psihologiju, astrologiju i
-              coaching i regresivne tehnike. U radu primenjujem NLP, hipnotičke metode i regresivni
-              rad usmeren na istraživanje prošlih životnih ili ranijih životnih iskustava, sa ciljem
-              dubljeg razumevanja unutrašnjih obrazaca i ličnog razvoja.
+              Diplomirani sam psiholog. Radim individualno, online, kroz video
+              ili telefonske konsultacije, koristeći integrativni pristup koji
+              povezuje psihologiju, astrologiju i coaching i regresivne tehnike.
+              U radu primenjujem NLP, hipnotičke metode i regresivni rad usmeren
+              na istraživanje prošlih životnih ili ranijih životnih iskustava,
+              sa ciljem dubljeg razumevanja unutrašnjih obrazaca i ličnog
+              razvoja.
             </p>
           </div>
         </div>
@@ -67,7 +72,9 @@ export default function HomePage() {
         <div className="container-main section-padding">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             <div>
-              <p className="text-gold text-xs uppercase tracking-[0.2em] mb-3">Za koga</p>
+              <p className="text-gold text-xs uppercase tracking-[0.2em] mb-3">
+                Za koga
+              </p>
               <h2 className="heading-lg mb-6">Za koga je ovaj rad</h2>
               <div className="gold-divider mx-0 mb-6" />
               <ul className="space-y-4">
@@ -101,7 +108,8 @@ export default function HomePage() {
                 ☽
               </div>
               <p className="text-cream-muted text-sm italic max-w-xs leading-relaxed">
-                &ldquo;Razumevanje unutrašnjih obrazaca je prvi korak ka svesnoj promeni.&rdquo;
+                &ldquo;Razumevanje unutrašnjih obrazaca je prvi korak ka svesnoj
+                promeni.&rdquo;
               </p>
             </div>
           </div>
@@ -112,12 +120,14 @@ export default function HomePage() {
       <section className="relative z-10 bg-bg-secondary border-y border-border">
         <div className="container-main section-padding">
           <div className="text-center mb-12">
-            <p className="text-gold text-xs uppercase tracking-[0.2em] mb-3">Proces</p>
+            <p className="text-gold text-xs uppercase tracking-[0.2em] mb-3">
+              Proces
+            </p>
             <h2 className="heading-lg mb-4">Kako izgleda rad</h2>
             <div className="gold-divider" />
             <p className="text-cream-muted mt-4 max-w-xl mx-auto">
-              Online (telefon/video) individualan rad, strukturisan ali fleksibilan, prilagođen
-              tvojoj spremnosti.
+              Online (telefon/video) individualan rad, strukturisan ali
+              fleksibilan, prilagođen tvojoj spremnosti.
             </p>
           </div>
 
@@ -139,12 +149,17 @@ export default function HomePage() {
                 text: "Kroz coaching, fokusirane metode, mentorstvo, konsultacije dolazimo do ZAŠTO, ali i kako dalje.",
               },
             ].map((step) => (
-              <div key={step.num} className="card group hover:border-gold/40 transition-colors duration-300">
+              <div
+                key={step.num}
+                className="card group hover:border-gold/40 transition-colors duration-300"
+              >
                 <p className="font-serif text-3xl text-gold/30 mb-3 group-hover:text-gold/50 transition-colors">
                   {step.num}
                 </p>
                 <h3 className="heading-md mb-3">{step.title}</h3>
-                <p className="text-cream-faint text-sm leading-relaxed">{step.text}</p>
+                <p className="text-cream-faint text-sm leading-relaxed">
+                  {step.text}
+                </p>
               </div>
             ))}
           </div>
@@ -160,8 +175,12 @@ export default function HomePage() {
       {/* ── BOTTOM CTA ───────────────────────────────────── */}
       <section className="relative z-10">
         <div className="container-main section-padding text-center">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">Sledeći korak</p>
-          <h2 className="heading-lg mb-4">Spremni ste za jasnoću i svesnu promenu?</h2>
+          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
+            Sledeći korak
+          </p>
+          <h2 className="heading-lg mb-4">
+            Spremni ste za jasnoću i svesnu promenu?
+          </h2>
           <div className="gold-divider" />
           <div className="mt-8">
             <Link href="/kontakt" className="btn-primary">
@@ -169,8 +188,8 @@ export default function HomePage() {
             </Link>
           </div>
           <p className="mini-disclaimer mt-6">
-            Rad je savetodavnog i coaching karaktera i ne predstavlja zamenu za medicinski ili
-            klinički tretman.
+            Rad je savetodavnog i coaching karaktera i ne predstavlja zamenu za
+            medicinski ili klinički tretman.
           </p>
         </div>
       </section>
@@ -179,7 +198,9 @@ export default function HomePage() {
       <section className="relative z-10 bg-bg-secondary border-t border-white/30">
         <div className="container-main section-padding">
           <div className="text-center mb-10">
-            <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">Imate pitanja?</p>
+            <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+              Imate pitanja?
+            </p>
             <h2 className="heading-lg mb-2">Često postavljana pitanja</h2>
             <div className="gold-divider" />
           </div>
@@ -214,23 +235,49 @@ export default function HomePage() {
               <details
                 key={i}
                 className="group border border-white/40 rounded-lg"
-                style={{ background: "rgba(255,255,255,0.28)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}
+                style={{
+                  background: "rgba(255,255,255,0.28)",
+                  backdropFilter: "blur(12px)",
+                  WebkitBackdropFilter: "blur(12px)",
+                }}
               >
                 <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer list-none select-none">
                   <span className="flex items-start gap-3">
-                    <span className="text-gold text-xs shrink-0 mt-1" aria-hidden>✦</span>
-                    <span className="font-sans font-semibold text-sm md:text-base leading-snug" style={{ color: "#1e1a50" }}>
+                    <span
+                      className="text-gold text-xs shrink-0 mt-1"
+                      aria-hidden
+                    >
+                      ✦
+                    </span>
+                    <span
+                      className="font-sans font-semibold text-sm md:text-base leading-snug"
+                      style={{ color: "#1e1a50" }}
+                    >
                       {item.q}
                     </span>
                   </span>
-                  <span className="shrink-0 text-gold transition-transform duration-300 group-open:rotate-180" aria-hidden>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+                  <span
+                    className="shrink-0 text-gold transition-transform duration-300 group-open:rotate-180"
+                    aria-hidden
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                    >
                       <polyline points="6 9 12 15 18 9" />
                     </svg>
                   </span>
                 </summary>
                 <div className="px-5 pb-5 pt-1 border-t border-white/30">
-                  <p className="leading-relaxed text-sm md:text-base pl-6" style={{ color: "#4e4a7a" }}>
+                  <p
+                    className="leading-relaxed text-sm md:text-base pl-6"
+                    style={{ color: "#4e4a7a" }}
+                  >
                     {item.a}
                   </p>
                 </div>

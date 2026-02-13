@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Usluge",
+  title:
+    "Astrologija, astropsihološko savetovanje i psihološki rad online: NLP coaching, hipnotički fokusirani rad i regresija",
   description:
     "Online astrologija i astropsihološko savetovanje, uz psihološki, coaching i mentorski rad kroz NLP tehnike, hipnotički fokusirane metode i regresivne procese, prilagođene individualnim potrebama i ciljevima.",
 };
@@ -72,13 +73,19 @@ export default function UslugePage() {
           }}
         />
         <div className="container-main relative z-10">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">Ponuda</p>
-          <h1 className="heading-xl mb-4">Usluge</h1>
+          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+            Ponuda
+          </p>
+          <h1 className="heading-xl mb-4">
+            Astrologija, astropsihološko savetovanje i psihološki rad online:
+            NLP coaching, hipnotički fokusirani rad i regresija
+          </h1>
           <div className="gold-divider mx-0 mb-4" />
           <p className="text-body max-w-2xl">
-            Online astrologija i astropsihološko savetovanje, uz psihološki, coaching i mentorski
-            rad kroz NLP tehnike, hipnotički fokusirane metode i regresivne procese, prilagođene
-            individualnim potrebama i ciljevima.
+            Online astrologija i astropsihološko savetovanje, uz psihološki,
+            coaching i mentorski rad kroz NLP tehnike, hipnotički fokusirane
+            metode i regresivne procese, prilagođene individualnim potrebama i
+            ciljevima.
           </p>
         </div>
       </section>
@@ -101,7 +108,9 @@ export default function UslugePage() {
                     <span
                       className="text-gold/40 text-lg"
                       aria-hidden
-                      style={{ filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))" }}
+                      style={{
+                        filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
+                      }}
                     >
                       {service.emoji}
                     </span>
@@ -112,7 +121,10 @@ export default function UslugePage() {
                     <h2 className="heading-md mb-4">{service.title}</h2>
                     <div className="space-y-3">
                       {service.text.split("\n\n").map((paragraph, i) => (
-                        <p key={i} className="text-cream-muted leading-relaxed text-sm md:text-base">
+                        <p
+                          key={i}
+                          className="text-cream-muted leading-relaxed text-sm md:text-base"
+                        >
                           {paragraph}
                         </p>
                       ))}
@@ -128,12 +140,15 @@ export default function UslugePage() {
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <div className="container-main section-padding text-center">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">Sledeći korak</p>
+          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
+            Sledeći korak
+          </p>
           <h2 className="heading-lg mb-4">Koja usluga odgovara tebi?</h2>
           <div className="gold-divider" />
           <p className="text-cream-muted mt-4 mb-8 max-w-xl mx-auto">
-            Ako nisi siguran/a koji oblik rada je pravi za tebe, zakaži uvodni razgovor — zajedno
-            ćemo definisati fokus i odabrati odgovarajući pristup.
+            Ako nisi siguran/a koji oblik rada je pravi za tebe, zakaži uvodni
+            razgovor — zajedno ćemo definisati fokus i odabrati odgovarajući
+            pristup.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/kontakt" className="btn-primary">
