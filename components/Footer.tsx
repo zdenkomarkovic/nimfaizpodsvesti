@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-3">
               <Image
-                src="/images/logoo.png"
+                src="/images/logo.png"
                 alt="Nimfa Iz Podsvesti"
                 height={200}
                 width={320}
@@ -64,20 +64,39 @@ export default function Footer() {
             </p>
             <div className="flex flex-col gap-2 text-sm text-cream-faint">
               <a
-                href="mailto:kontakt@nimfaizpodsvesti.com"
+                href="mailto:nimfaizpodsvesti@gmail.com"
                 className="hover:text-gold transition-colors duration-200"
               >
-                kontakt@nimfaizpodsvesti.com
+                nimfaizpodsvesti@gmail.com
               </a>
               <a
-                href="https://www.instagram.com/nimfaizpodsvesti"
+                href="https://www.instagram.com/nimfa_iz_podsvesti/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-gold transition-colors duration-200"
               >
-                Instagram
+                @nimfa_iz_podsvesti
               </a>
-              <span>WhatsApp / Viber</span>
+              <a
+                href="tel:+381628068616"
+                className="hover:text-gold transition-colors duration-200"
+              >
+                +381 62 806 8616
+              </a>
+              <a
+                href="https://wa.me/381628068616"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold transition-colors duration-200"
+              >
+                WhatsApp
+              </a>
+              <a
+                href="viber://chat?number=%2B381628068616"
+                className="hover:text-gold transition-colors duration-200"
+              >
+                Viber
+              </a>
             </div>
           </div>
         </div>
@@ -107,9 +126,22 @@ export default function Footer() {
             </p>
           </div>
 
-          <p className="text-cream-faint text-xs text-center">
-            © {new Date().getFullYear()} Nimfa Iz Podsvesti. Sva prava zadržana.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
+            <p className="text-cream-faint text-xs">
+              © {new Date().getFullYear()} Nimfa Iz Podsvesti. Sva prava zadržana.
+            </p>
+            <p className="text-cream-faint text-xs">
+              Izrada sajta:{" "}
+              <a
+                href="https://manikamwebsolutions.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold transition-colors duration-200"
+              >
+                Manikam Web Solutions
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

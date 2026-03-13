@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import PunaBio from "./PunaBio";
 
 export const metadata: Metadata = {
   title: "O Meni",
@@ -35,19 +37,14 @@ export default function OMeniPage() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
             {/* Photo placeholder */}
             <div className="md:col-span-2">
-              <div className="aspect-[3/4] rounded-lg bg-bg-card border border-border flex flex-col items-center justify-center text-cream-faint">
-                <div
-                  aria-hidden
-                  className="text-6xl mb-4 opacity-40"
-                  style={{
-                    filter: "drop-shadow(0 0 16px rgba(201,168,76,0.3))",
-                  }}
-                >
-                  ☽✦☽
-                </div>
-                <p className="text-xs tracking-wider uppercase opacity-60">
-                  Foto
-                </p>
+              <div className="aspect-[3/4] rounded-lg overflow-hidden relative">
+                <Image
+                  src="/images/About me.jpg"
+                  alt="Jelena Stevanović – Nimfa iz Podsvesti"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
 
@@ -79,133 +76,90 @@ export default function OMeniPage() {
                 razvojne teme, a na osnovu kog se dalje bira odgovarajući
                 fokusirani metod rada.
               </p>
-              <p className="text-body mb-8">
+              <p className="text-body">
                 Radim individualno, online, sa ljudima koji osećaju da njihova
                 pitanja prevazilaze jedan životni ili racionalni nivo i traže
                 podršku, usmeravanje i dublje razumevanje sebe, svojih obrazaca
                 i potencijala.
               </p>
-
-              <a href="#puna-bio" className="link-arrow">
-                Pročitaj više <span aria-hidden>↓</span>
-              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── PUNA BIO ─────────────────────────────────────── */}
-      <section
-        id="puna-bio"
-        className="relative z-10 bg-bg-secondary border-t border-border"
-      >
+      <PunaBio />
+
+      {/* ── EDUKACIJE ────────────────────────────────────── */}
+      <section className="relative z-10 border-t border-border">
         <div className="container-main section-padding">
           <div className="max-w-4xl mx-auto">
             <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
-              Cela priča
+              Studies &amp; Certificates
             </p>
-            <h2 className="heading-lg mb-4">Jelena Stevanović</h2>
-            <p className="text-cream-faint text-sm mb-6 italic">
-              alijas Nimfa iz Podsvesti (poznata i kao Nimfa bez Manije)
-            </p>
+            <h2 className="heading-lg mb-4">Edukacije i sertifikati</h2>
             <div className="gold-divider mx-0 mb-10" />
 
-            <div className="space-y-6 text-body">
-              <p>
-                Moje formalno obrazovanje iz psihologije završava se 2000.
-                godine, ali moje istinsko putovanje u razumevanje čoveka počinje
-                mnogo ranije — u trenutku kada sa petnaest godina prvi put
-                proračunavam i, uz pomoć šestara i lenjira, crtam astrološku
-                kartu. Već tada osećam da simbolički jezik neba govori o onome
-                što psihologija tek kasnije počinje da imenuje.
-              </p>
-
-              <p>
-                Tokom naredne 24 godine radim u marketingu inostranih kompanija
-                i agencija, u svetu strategije, istraživanja tržišta,
-                komunikacije i brendova. To iskustvo mi je omogućilo duboko
-                razumevanje načina na koji ljudi razmišljaju, donose odluke i
-                projektuju svoje unutrašnje procese u spoljašnji svet. Paralelno
-                s tim, astrologija ostaje moja lična disciplina, prostor
-                istraživanja i unutrašnjeg dijaloga. Sa razvojem tehnologije i
-                dostupnošću savremenih alata, čini mi se da poslednjih 25 godina
-                nije prošao nijedan dan bez otvaranja barem jedne astrološke
-                karte — makar kao pogled na aktuelne tranzite u odnosu na
-                sopstveni natal.
-              </p>
-
-              <p>
-                Astrologiju doživljavam kao drevnu umetnost precizne analize —
-                spoj matematičkog proračuna kretanja nebeskih tela, energetskih
-                ciklusa i mitoloških obrazaca koji imaju snažan uticaj na
-                formiranje ličnosti u trenutku rođenja. Ona istovremeno pokazuje
-                kako se struktura i dinamika psihe ogledaju u spoljašnjim
-                okolnostima koje podstiču psihološki i duhovni razvoj. U svom
-                radu astrologiju koristim kao analitički i interpretativni alat
-                koji pruža dubok uvid u osnovne psihološke obrasce i razvojne
-                izazove ličnosti. Natalni horoskop posmatram kao ličnu priču
-                koja se vremenom razvija, progresira — priču u kojoj se iskustva
-                menjaju uporedo sa razvojem svesti i karaktera.
-              </p>
-
-              <p>
-                U jednom trenutku (tranzit Saturna preko natalnog Urana)
-                odlučujem da veliku ljubav prema astrologiji i hobi
-                formalizujem, pa godine 2014. završavam školu Prediktivne
-                astrologije i sinastrije, čime se dugogodišnji hobi oblikuje u
-                strukturisan i profesionalan rad, ali u tom periodu ostaje u
-                domenu lične prakse i neprofitnog angažmana.{" "}
-                <span className="font-bold">
-                  {" "}
-                  Ipak, moj Uran (astrolog) je vladar mog 5. polja (hobi/ljubav
-                  prema nečemu), koji je egzaltiran (maksimalna snaga) u
-                  Škorpiji (psihologija) u 2. kući mog natala
-                  (novac/zarada/sposobnost sticanja), što vodi ka tome da od
-                  2024. godine započinjem intenzivnu integraciju astrologije sa
-                  psihološkim savetovanjem
-                </span>
-                . Kroz NLP edukaciju (Master nivo 2026), hipnotičke metode, CRT
-                pristup i regresivni rad, dodatno produbljujem integrativni
-                pristup koji povezuje psihologiju, astrologiju i savremene
-                coaching tehnike.
-              </p>
-
-              <p>
-                U radu koristim NLP tehnike koje omogućavaju prepoznavanje i
-                promenu nesvesnih obrazaca mišljenja i ponašanja, kao i
-                hipnotičke metode koje klijentima pomažu da uđu u stanje
-                pojačane fokusirane pažnje. U tom prostoru postaju dostupni
-                slojevi svesti koji u svakodnevnom funkcionisanju ostaju
-                skriveni. Regresivni rad omogućava uvid u sadržaje koji se
-                doživljavaju kao prošli životni ili duboko ukorenjeni memorijski
-                obrasci — uvek sa fokusom na integraciju, razumevanje i svesnu
-                promenu u sadašnjem životu.
-              </p>
-
-              <p>
-                U astrološkom sistemu takođe postoji jasan postulat kontinuiteta
-                svesti i iskustava, gde se teme prošlih života ili ranijih
-                inkarnacija posmatraju kao prirodan deo psihološke strukture
-                pojedinca. Upravo zato regresivni rad doživljavam kao logičan
-                nastavak astrološkog uvida — ne kao verovanje, već kao metod
-                istraživanja dubokih unutrašnjih sadržaja.
-              </p>
-
-              <p>
-                Danas radim individualno astropsihološko savetovanje, online
-                putem direktnih konsultacija, namenjeno onima koji osećaju da se
-                njihova pitanja ne završavaju na jednom životnom sloju. Moj rad
-                je usmeren na razumevanje unutrašnjih obrazaca, lični razvoj i
-                osvešćivanje potencijala kroz spoj simboličkog, psihološkog i
-                iskustvenog uvida.
-              </p>
+            <div className="space-y-6">
+              {[
+                {
+                  title: "Diplomirani psiholog",
+                  period: "1993 – 2000",
+                  institution: "Faculty of Philosophy – Department of Psychology, University of Belgrade",
+                },
+                {
+                  title: "Astrolog",
+                  period: "2012 – 2014",
+                  institution: "Spicum škola astrologije",
+                },
+                {
+                  title: "NLP Basic",
+                  period: "2023",
+                  institution: "MYND akademija – IANLP sertifikat",
+                },
+                {
+                  title: "NLP Practitioner",
+                  period: "2024 – 2025",
+                  institution: "MYND akademija – IANLP sertifikat",
+                },
+                {
+                  title: "NLP Master (on going)",
+                  period: "2024 – 2026",
+                  institution: "MYND akademija – IANLP sertifikat",
+                },
+                {
+                  title: "Certified Hypnotherapist",
+                  period: "2024",
+                  institution: "NEW ERA akademija – IHA sertifikat",
+                },
+                {
+                  title: "Certified PLR Therapist",
+                  period: "2024",
+                  institution: "NEW ERA akademija",
+                },
+                {
+                  title: "Certified Complete Restoration Therapist",
+                  period: "2024",
+                  institution: "NEW ERA akademija",
+                },
+              ].map((edu, i) => (
+                <div
+                  key={i}
+                  className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 pb-6 border-b border-border last:border-0 last:pb-0"
+                >
+                  <div>
+                    <p className="text-cream font-semibold">{edu.title}</p>
+                    <p className="text-cream-muted text-sm mt-0.5">{edu.institution}</p>
+                  </div>
+                  <span className="text-gold text-sm shrink-0">{edu.period}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* ── CTA ──────────────────────────────────────────── */}
-      <section className="relative z-10">
+      <section className="relative z-10 border-t border-border">
         <div className="container-main section-padding text-center">
           <h2 className="heading-md mb-6">Zainteresovani za rad?</h2>
           <Link href="/kontakt" className="btn-primary">

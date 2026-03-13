@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -68,25 +69,37 @@ export default function ZaKogaPage() {
                 Rad je posebno prikladan za vas ako:
               </h2>
 
-              <div className="space-y-3">
-                {jestePrikladan.map((item, i) => (
-                  <div
-                    key={i}
-                    className="flex items-start gap-4 p-4 rounded border border-border bg-bg-card
-                               hover:border-gold/40 transition-colors duration-200"
-                  >
-                    <span
-                      className="text-gold shrink-0 mt-0.5 text-base"
-                      aria-hidden
-                      style={{
-                        filter: "drop-shadow(0 0 4px rgba(201,168,76,0.4))",
-                      }}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                <div className="space-y-3 md:col-span-2">
+                  {jestePrikladan.map((item, i) => (
+                    <div
+                      key={i}
+                      className="flex items-start gap-4 p-4 rounded border border-border bg-bg-card
+                                 hover:border-gold/40 transition-colors duration-200"
                     >
-                      ✦
-                    </span>
-                    <p className="text-cream-muted leading-relaxed">{item}</p>
-                  </div>
-                ))}
+                      <span
+                        className="text-gold shrink-0 mt-0.5 text-base"
+                        aria-hidden
+                        style={{
+                          filter: "drop-shadow(0 0 4px rgba(201,168,76,0.4))",
+                        }}
+                      >
+                        ✦
+                      </span>
+                      <p className="text-cream-muted leading-relaxed">{item}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+                  <Image
+                    src="/images/Za koga jeste.jpg"
+                    alt="Za koga jeste"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    quality={90}
+                  />
+                </div>
               </div>
             </div>
 
@@ -120,21 +133,33 @@ export default function ZaKogaPage() {
 
             <p className="text-body mb-8">Ovaj rad nije za osobe koje:</p>
 
-            <div className="space-y-3 mb-8">
-              {nijeZa.map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-start gap-4 p-4 rounded border border-border/60 bg-bg-primary/50"
-                >
-                  <span
-                    className="text-cream-faint shrink-0 mt-0.5 text-base"
-                    aria-hidden
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-8">
+              <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+                <Image
+                  src="/images/Za koga nije.jpg"
+                  alt="Za koga nije"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  quality={90}
+                />
+              </div>
+              <div className="space-y-3 md:col-span-2">
+                {nijeZa.map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-start gap-4 p-4 rounded border border-border/60 bg-bg-primary/50"
                   >
-                    ✕
-                  </span>
-                  <p className="text-cream-faint leading-relaxed">{item}</p>
-                </div>
-              ))}
+                    <span
+                      className="text-bg-card shrink-0 mt-0.5 text-base"
+                      aria-hidden
+                    >
+                      ✕
+                    </span>
+                    <p className="text-bg-card leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <p className="text-cream-muted leading-relaxed">

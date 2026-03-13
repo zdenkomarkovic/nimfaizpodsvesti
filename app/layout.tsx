@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Raleway } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,12 +7,6 @@ import Footer from "@/components/Footer";
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
-  display: "swap",
-});
-
-const raleway = Raleway({
-  subsets: ["latin"],
-  variable: "--font-raleway",
   display: "swap",
 });
 
@@ -47,7 +41,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="sr" className={`${playfair.variable} ${raleway.variable}`}>
+    <html lang="sr" className={playfair.variable}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet" />
+      </head>
       <body className="relative">
         {/* ── Fixed background: 4-corner gradient ─────────── */}
         <div aria-hidden className="bg-gradient-layer" />

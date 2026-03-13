@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -12,6 +13,7 @@ const services = [
   {
     num: "01",
     emoji: "✦",
+    image: "/images/Astrologija 3.jpg",
     title: "Astrologija – individualni astrološki uvid",
     text: `Astrološko savetovanje pruža dubinski uvid u strukturu ličnosti, životne cikluse i razvojne teme kroz analizu natalne karte, aktuelnih tranzita uz primenu prognostičkih tehnika (npr. progresije, direkcije, solari...). Astrologiju koristim kao analitički i simbolički alat koji pomaže u razumevanju psiholoških obrazaca, odnosa, profesionalnih izazova i unutrašnjih potencijala.
 
@@ -20,6 +22,7 @@ Ova usluga može biti potpuno samostalna, namenjena onima koji žele isključivo
   {
     num: "02",
     emoji: "☽",
+    image: "/images/Astrologija 4.jpg",
     title: "Astropsihološko savetovanje (Astrohiling)",
     text: `Astropsihološko savetovanje kombinuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata, razvojnih izazova i životnih tema koje se ponavljaju kroz vreme. Natalna karta se koristi kao mapa psihološke strukture, dok se savetodavni rad fokusira na osvešćivanje obrazaca i donošenje svesnijih odluka. Ovaj pristup omogućava brži i precizniji uvid u unutrašnje konflikte i potencijale za rast i razvoj klijenta, koji bi bez astrologije zahtevali znatno duži istraživački proces i veći broj susreta u kontinuitetu.
 
@@ -28,6 +31,7 @@ Astrologija u ovom principu rada ne predstavlja krajnji cilj, već temeljni okvi
   {
     num: "03",
     emoji: "◎",
+    image: "/images/NLP.jpg",
     title: "Psihološko i NLP coaching savetovanje – paket (3–4 sesije)",
     text: `Psihološko i NLP coaching savetovanje namenjeno je ličnom razvoju, postavljanju ciljeva, pronalaženju motivacije, promeni ograničavajućih obrazaca i uverenja, kao i unapređenju emocionalnog i mentalnog funkcionisanja. Rad se odvija isključivo u paketu od 3 do 4 sesije u kontinuitetu, jer NLP tehnike zahtevaju proces i doslednost.
 
@@ -37,13 +41,31 @@ Fokus je na ciljevima, unutrašnjim strategijama, uverenjima i obrascima ponaša
     num: "04",
     emoji: "◈",
     title: "Hipnotičke tehnike – individualni rad",
-    text: `Hipnotičke tehnike koriste se za ulazak u stanje pojačane fokusirane pažnje, gde postaju dostupni dublji slojevi nesvesnog. Ovaj oblik rada pomaže u razrešavanju unutrašnjih blokada, emocionalnih zapisa i ponavljajućih obrazaca.
+    image: "/images/Hipnoza.jpg",
+    text: `Hipnotičke tehnike koriste se za ulazak u stanje pojačane fokusirane pažnje, gde postaju dostupni dublji slojevi nesvesnog. Ovaj oblik rada pomaže u razrešavanju unutrašnjih blokada, emocionalnih zapisa i ponavljajućih obrazaca. Hipnotički fokusirani rad može biti primenjen kod različitih tema i unutrašnjih blokada, naročito kada osoba ima osećaj da racionalno razume problem, ali promena izostaje.
 
-Hipnotički rad se sprovodi od 1 do maksimalno 6 online video seansi, u zavisnosti od teme i cilja koji klijent definiše, ali i od unutrašnje dinamike samog procesa. Hipnoza se ne kombinuje automatski sa drugim uslugama, već se bira kao poseban modalitet rada.`,
+Ova metoda se često koristi kod:
+
+▪ anksioznosti, unutrašnje napetosti i hroničnog stresa
+▪ fobija i intenzivnih strahova
+▪ depresivnih stanja i gubitka motivacije
+▪ loših navika (prejedanje, prokrastinacija, odlaganje, samosabotaža…)
+▪ zavisničkih obrazaca (kocka, cigarete, alkohol, kanabis, kokain…)
+▪ niskog samopouzdanja i narušenog samopoštovanja
+▪ posttraumatskih iskustava i snažnih emocionalnih sećanja
+▪ emotivnih poteškoća nakon raskida, razvoda ili narušenih partnerskih odnosa
+▪ pripreme za sportske, javne ili profesionalne performanse i postizanje rezultata
+
+Hipnotički rad ne briše iskustvo niti potiskuje emocije, već omogućava dublji kontakt sa podsvesnim sadržajem, razumevanje unutrašnjih mehanizama i postepenu integraciju promene.
+
+Hipnotički rad se sprovodi od 1 do maksimalno 6 online video seansi, u zavisnosti od teme i cilja koji klijent definiše, ali i od unutrašnje dinamike samog procesa.
+
+Hipnoza se ne kombinuje automatski sa drugim uslugama, već se bira kao poseban modalitet rada.`,
   },
   {
     num: "05",
     emoji: "♾",
+    image: "/images/Regresija.jpg",
     title: "Regresivni rad – regresija u prošle događaje ili živote",
     text: `Regresivni rad omogućava istraživanje duboko ukorenjenih iskustava koja se doživljavaju kao prošli životni sadržaji ili rani memorijski zapisi. U okviru astrološkog sistema, kontinuitet svesti i iskustava predstavlja prirodan deo psihološke strukture, zbog čega je regresija često logičan nastavak astrološkog i psihološkog rada.
 
@@ -52,6 +74,7 @@ Regresija se sprovodi od 1 do 6 seansi, sa jasno definisanom temom i ciljem, uz 
   {
     num: "06",
     emoji: "✺",
+    image: "/images/CRT.jpg",
     title: "Complete Restoration Therapy™",
     text: `Complete Restoration Therapy (CRT) je strukturisan proces koji kombinuje više oblasti iz različitih metoda, a u osnovi se nalazi hipnotička sugestija i NLP tehnike, koje se koriste u cilju donošenja kompozitne odluke i dubinske unutrašnje reorganizacije. CRT je intenzivna i fokusirana metoda koja može da se primeni za veliki broj problema.
 
@@ -119,15 +142,46 @@ export default function UslugePage() {
                   {/* Content */}
                   <div className="flex-1 min-w-0">
                     <h2 className="heading-md mb-4">{service.title}</h2>
+                    {"image" in service && service.image && (
+                      <div className="relative w-full aspect-video rounded-lg overflow-hidden mb-5">
+                        <Image
+                          src={service.image}
+                          alt={service.title}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, 80vw"
+                          quality={90}
+                        />
+                      </div>
+                    )}
                     <div className="space-y-3">
-                      {service.text.split("\n\n").map((paragraph, i) => (
-                        <p
-                          key={i}
-                          className="text-cream-muted leading-relaxed text-sm md:text-base"
-                        >
-                          {paragraph}
-                        </p>
-                      ))}
+                      {service.text.split("\n\n").map((paragraph, i) => {
+                        const lines = paragraph.split("\n");
+                        const isList = lines.every((l) => l.startsWith("▪"));
+                        if (isList) {
+                          return (
+                            <ul key={i} className="space-y-1 pl-1">
+                              {lines.map((line, j) => (
+                                <li
+                                  key={j}
+                                  className="text-cream-muted leading-relaxed text-sm md:text-base flex gap-2"
+                                >
+                                  <span className="text-gold/60 shrink-0">▪</span>
+                                  <span>{line.replace(/^▪\s*/, "")}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          );
+                        }
+                        return (
+                          <p
+                            key={i}
+                            className="text-cream-muted leading-relaxed text-sm md:text-base"
+                          >
+                            {paragraph}
+                          </p>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -21,18 +22,31 @@ export default function KakoIzgledaRadPage() {
           }}
         />
         <div className="container-main relative z-10">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
-            Proces
-          </p>
-          <h1 className="heading-xl mb-4">
-            Kako sa mnom izgleda vaš rad na sebi
-          </h1>
-          <div className="gold-divider mx-0 mb-4" />
-          <p className="text-body max-w-4xl">
-            Rad je strukturisan, ali fleksibilan, i uvek se prilagođava
-            potrebama i spremnosti klijenta. Proces se odvija kroz jasne faze,
-            koje omogućavaju sigurnost, kontinuitet i dubinu uvida.
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+                Proces
+              </p>
+              <h1 className="heading-xl mb-4">
+                Kako sa mnom izgleda vaš rad na sebi
+              </h1>
+              <div className="gold-divider mx-0 mb-4" />
+              <p className="text-body">
+                Rad je strukturisan, ali fleksibilan, i uvek se prilagođava
+                potrebama i spremnosti klijenta. Proces se odvija kroz jasne
+                faze, koje omogućavaju sigurnost, kontinuitet i dubinu uvida.
+              </p>
+            </div>
+            <div className="relative aspect-square rounded-lg overflow-hidden">
+              <Image
+                src="/images/Kako izgleda rad samnom.jpeg"
+                alt="Kako izgleda rad sa mnom"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -162,6 +176,221 @@ export default function KakoIzgledaRadPage() {
         </div>
       </section>
 
+      {/* ── PRIMER RADA ──────────────────────────────────── */}
+      <section className="relative z-10 bg-bg-secondary border-t border-border">
+        <div className="container-main section-padding">
+          <div className="text-center mb-10">
+            <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+              Primer rada
+            </p>
+            <h2 className="heading-lg mb-2">
+              Partnerski odnosi – karmički obrazac i regresivni rad
+            </h2>
+            <div className="gold-divider" />
+            <p className="text-cream-faint text-sm italic mt-4">
+              Ovo je realan primer osobe (identitet i neki detalji su izmenjeni
+              u cilju poštovanja privatnosti).
+            </p>
+          </div>
+
+          {/* Kontekst */}
+          <div className="max-w-6xl mx-auto mb-10">
+            <p className="text-cream-muted leading-relaxed">
+              Klijentkinja, 39 godina, sa ponavljajućim obrascem intenzivnih,
+              sudbinskih odnosa koji započinju snažnom povezanošću i osećajem
+              „kao da se znamo od ranije", a završavaju emocionalnim prekidom i
+              osećajem gubitka koji prevazilazi realno trajanje veze.
+            </p>
+          </div>
+
+          <div className="max-w-6xl mx-auto space-y-6">
+            {/* Korak 1 */}
+            <div className="card group hover:border-gold/40 transition-colors duration-300">
+              <div className="flex items-start gap-5">
+                <div className="shrink-0 text-center">
+                  <p className="font-serif text-3xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
+                    1
+                  </p>
+                  <span
+                    aria-hidden
+                    className="text-gold/40 text-lg block mt-2"
+                    style={{
+                      filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
+                    }}
+                  >
+                    ☽
+                  </span>
+                </div>
+                <div>
+                  <h3 className="heading-sm mb-1">Astrološki uvid</h3>
+                  <p className="text-gold text-sm italic mb-4">
+                    Pokazatelji karmičkih veza
+                  </p>
+                  <div className="space-y-3 text-cream-muted leading-relaxed">
+                    <p>U natalnoj karti bili su izraženi:</p>
+                    <ul className="space-y-1 pl-1">
+                      {[
+                        "Južni čvor u polju partnerstva",
+                        "snažni aspekti Plutona prema Veneri",
+                        "kontakt Saturna sa ličnim planetama",
+                      ].map((item, i) => (
+                        <li key={i} className="flex gap-2">
+                          <span className="text-gold/60 shrink-0">▪</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p>
+                      Takođe, naknadno je utvrđena i aktivacija 12. polja u
+                      sinastrijama sa partnerima.
+                    </p>
+                    <p>
+                      Ove kombinacije (ali ne i samo ove!) često ukazuju na
+                      karmičke veze, nerešene emotivne obrasce i ponavljanje
+                      dinamika koje imaju osećaj „nedovršenosti". Astrologija
+                      ovde nije korišćena kao dokaz prošlih života, već kao
+                      simbolički pokazatelj da se radi o obrascu koji nadilazi
+                      racionalno objašnjenje i ima duboko ukorenjen emotivni
+                      naboj.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Korak 2 */}
+            <div className="card group hover:border-gold/40 transition-colors duration-300">
+              <div className="flex items-start gap-5">
+                <div className="shrink-0 text-center">
+                  <p className="font-serif text-3xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
+                    2
+                  </p>
+                  <span
+                    aria-hidden
+                    className="text-gold/40 text-lg block mt-2"
+                    style={{
+                      filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
+                    }}
+                  >
+                    ◎
+                  </span>
+                </div>
+                <div>
+                  <h3 className="heading-sm mb-1">Astrohiling / savetodavni rad</h3>
+                  <p className="text-gold text-sm italic mb-4">
+                    Psihološki uvid i razumevanje obrasca
+                  </p>
+                  <div className="space-y-3 text-cream-muted leading-relaxed">
+                    <p>U ovoj fazi rad je bio usmeren na:</p>
+                    <ul className="space-y-1 pl-1">
+                      {[
+                        "razumevanje privlačnosti prema emocionalno nedostupnim partnerima",
+                        "razlikovanje strasti od stabilnosti",
+                        "prepoznavanje sopstvene uloge u dinamici odnosa",
+                      ].map((item, i) => (
+                        <li key={i} className="flex gap-2">
+                          <span className="text-gold/60 shrink-0">▪</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p>
+                      Klijentkinja je jasno uvidela obrazac, ali je i dalje
+                      osećala snažnu emocionalnu vezanost čak i kada je
+                      postojala svesnost da odnos objektivno nije bio zdrav.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Korak 3 */}
+            <div className="card group hover:border-gold/40 transition-colors duration-300">
+              <div className="flex items-start gap-5">
+                <div className="shrink-0 text-center">
+                  <p className="font-serif text-3xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
+                    3
+                  </p>
+                  <span
+                    aria-hidden
+                    className="text-gold/40 text-lg block mt-2"
+                    style={{
+                      filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
+                    }}
+                  >
+                    ✦
+                  </span>
+                </div>
+                <div>
+                  <h3 className="heading-sm mb-1">Regresivni rad</h3>
+                  <p className="text-gold text-sm italic mb-4">
+                    Lična prošlost i prošli životi
+                  </p>
+                  <div className="space-y-3 text-cream-muted leading-relaxed">
+                    <p>
+                      Tokom regresivnog procesa u dve seanse, radili smo prvo
+                      na „otvaranju" ranih iskustava iz detinjstva – situacija
+                      u kojima je ljubav bila povezana sa napetošću i
+                      neizvesnošću. Prema dogovoru, narednom seansom smo kroz
+                      produbljeni rad „otišli" u scene iz „drugog vremena" – i
+                      stekli uvid u iskustvo odnosa u kojem je postojala snažna
+                      emotivna povezanost (ali ne partnerska!) i njegov nagli
+                      prekid bez razrešenja.
+                    </p>
+                    <p>
+                      U radu fokus nije bio na dokazivanju da li je to
+                      objektivno prošli život, već na emocionalnom naboju koji
+                      je scena nosila. Kroz proces integracije, smanjena je
+                      intenzivna potreba za „dovršavanjem" odnosa koji su
+                      realno već završeni.
+                    </p>
+                    <p>
+                      S obzirom da je rad sa klijentkinjom nastavljen još 6
+                      meseci, efekti promene su se ogledali u sledećem:
+                    </p>
+                    <ul className="space-y-1 pl-1">
+                      {[
+                        "naredna veza započeta je sporije i stabilnije, a partner nije bio emotivno nedostupan",
+                        "nestao je impuls da se po svaku cenu ostane u dinamici koja boli",
+                        "osećaj 'sudbinske vezanosti' (iz 5. kuće) zamenjen je svesnijim izborom (iz 7. kuće)",
+                      ].map((item, i) => (
+                        <li key={i} className="flex gap-2">
+                          <span className="text-gold/60 shrink-0">▪</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Zaključak */}
+            <div className="card border-gold/20 bg-bg-secondary">
+              <p className="text-cream-muted leading-relaxed mb-3">
+                Ovaj primer pokazuje kako se:
+              </p>
+              <ul className="space-y-1 pl-1 text-cream-muted leading-relaxed">
+                {[
+                  "astrološki pokazatelji karmičkih veza,",
+                  "psihološki uvid",
+                  "i metoda regresivnog rada (uključujući i simboliku prošlih života)",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="text-gold/60 shrink-0">▪</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-cream-muted leading-relaxed mt-3">
+                mogu koristiti kao alati za razumevanje i prekid ponavljajućih
+                obrazaca.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── METODE ───────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <div className="container-main section-padding">
@@ -176,42 +405,45 @@ export default function KakoIzgledaRadPage() {
                 icon: "☽",
                 name: "Astropsihologija",
                 desc: "Analitički uvid u psihološku strukturu i razvojne teme kroz natalnu kartu",
+                image: "/images/Astrologija (2).jpg",
               },
               {
                 icon: "◎",
                 name: "NLP coaching",
                 desc: "Prepoznavanje i promena nesvesnih obrazaca mišljenja i ponašanja",
+                image: "/images/NLP.jpg",
               },
               {
                 icon: "◈",
                 name: "Hipnotičke metode",
                 desc: "Stanje pojačane fokusirane pažnje za pristup dubljim slojevima svesti",
+                image: "/images/Hipnoza 2.jpg",
               },
               {
                 icon: "♾",
                 name: "Regresivni rad & CRT",
                 desc: "Istraživanje dubokih unutrašnjih sadržaja sa fokusom na svesnu promenu",
+                image: "/images/Regresija.jpg",
               },
             ].map((m, i) => (
               <div
                 key={i}
-                className="card text-center hover:border-purple-soft/50 transition-colors duration-300"
+                className="card text-center hover:border-purple-soft/50 transition-colors duration-300 overflow-hidden !p-0"
               >
-                <div
-                  aria-hidden
-                  className="text-2xl text-gold/50 mb-3"
-                  style={{
-                    filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
-                  }}
-                >
-                  {m.icon}
+                <div className="relative aspect-video w-full">
+                  <Image src={m.image} alt={m.name} fill className="object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" quality={90} />
                 </div>
-                <h3 className="text-cream font-semibold text-sm mb-2">
-                  {m.name}
-                </h3>
-                <p className="text-cream-faint text-xs leading-relaxed">
-                  {m.desc}
-                </p>
+                <div className="p-4">
+                  <div
+                    aria-hidden
+                    className="text-2xl text-gold/50 mb-2"
+                    style={{ filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))" }}
+                  >
+                    {m.icon}
+                  </div>
+                  <h3 className="text-cream font-semibold text-sm mb-2">{m.name}</h3>
+                  <p className="text-cream-faint text-xs leading-relaxed">{m.desc}</p>
+                </div>
               </div>
             ))}
           </div>

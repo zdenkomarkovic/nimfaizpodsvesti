@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FaWhatsapp, FaViber } from "react-icons/fa";
+import KontaktForm from "./KontaktForm";
 
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Zakaži online konsultaciju — astropsihološko savetovanje, coaching i lični razvoj sa Jelenom Steović, Nimfa Iz Podsvesti.",
+    "Zakaži online konsultaciju — astropsihološko savetovanje, coaching i lični razvoj sa Jelenom Stevanović, Nimfa iz Podsvesti.",
 };
+
+const PHONE = "+381628068616";
+const PHONE_DISPLAY = "+381 62 806 8616";
 
 export default function KontaktPage() {
   return (
@@ -21,59 +26,98 @@ export default function KontaktPage() {
           }}
         />
         <div className="container-main relative z-10">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">Sledeći korak</p>
+          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+            Sledeći korak
+          </p>
           <h1 className="heading-xl mb-4">Kontakt</h1>
           <div className="gold-divider mx-0 mb-4" />
           <p className="text-body max-w-lg">
-            Napiši mi poruku ili se javi direktno. Odgovorim u roku od 24 sata i dogovorimo termin
-            koji odgovara tvom rasporedu.
+            Napiši mi poruku ili se javi direktno. Odgovorim u roku od 24 sata
+            i dogovorimo termin koji odgovara tvom rasporedu.
           </p>
         </div>
       </section>
 
-      {/* ── KONTAKT INFO ─────────────────────────────────── */}
+      {/* ── KONTAKT INFO + FORMA ─────────────────────────── */}
       <section className="relative z-10">
         <div className="container-main section-padding">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* Kontakt kanali */}
+            {/* Leva kolona – kanali */}
             <div>
               <h2 className="heading-md mb-6">Kako me pronaći</h2>
               <div className="space-y-4">
+                {/* Email */}
                 <a
-                  href="mailto:kontakt@nimfaizpodsvesti.com"
+                  href="mailto:nimfaizpodsvesti@gmail.com"
                   className="card flex items-center gap-4 hover:border-gold/40 transition-colors duration-300 group"
                 >
                   <span className="text-gold text-xl" aria-hidden>✉</span>
                   <div>
-                    <p className="text-cream-muted text-xs uppercase tracking-widest mb-0.5">Email</p>
+                    <p className="text-cream-muted text-xs uppercase tracking-widest mb-0.5">
+                      Email
+                    </p>
                     <p className="text-cream group-hover:text-gold transition-colors text-sm">
-                      kontakt@nimfaizpodsvesti.com
+                      nimfaizpodsvesti@gmail.com
                     </p>
                   </div>
                 </a>
 
+                {/* Instagram */}
                 <a
-                  href="https://www.instagram.com/nimfaizpodsvesti"
+                  href="https://www.instagram.com/nimfa_iz_podsvesti/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="card flex items-center gap-4 hover:border-gold/40 transition-colors duration-300 group"
                 >
                   <span className="text-gold text-xl" aria-hidden>◈</span>
                   <div>
-                    <p className="text-cream-muted text-xs uppercase tracking-widest mb-0.5">Instagram</p>
+                    <p className="text-cream-muted text-xs uppercase tracking-widest mb-0.5">
+                      Instagram
+                    </p>
                     <p className="text-cream group-hover:text-gold transition-colors text-sm">
-                      @nimfaizpodsvesti
+                      @nimfa_iz_podsvesti
                     </p>
                   </div>
                 </a>
 
-                <div className="card flex items-center gap-4">
-                  <span className="text-gold text-xl" aria-hidden>☎</span>
-                  <div>
-                    <p className="text-cream-muted text-xs uppercase tracking-widest mb-0.5">
-                      WhatsApp / Viber
-                    </p>
-                    <p className="text-cream text-sm">Dostupno po dogovoru</p>
+                {/* Telefon – 3 dugmeta */}
+                <div className="card">
+                  <div className="flex items-center gap-4 mb-4">
+                    <span className="text-gold text-xl" aria-hidden>☎</span>
+                    <div>
+                      <p className="text-cream-muted text-xs uppercase tracking-widest mb-0.5">
+                        Telefon
+                      </p>
+                      <p className="text-cream text-sm">{PHONE_DISPLAY}</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {/* Pozovi */}
+                    <a
+                      href={`tel:${PHONE}`}
+                      className="flex items-center gap-2 px-4 py-2 rounded border border-border text-cream-muted text-xs hover:border-gold/40 hover:text-cream transition-colors duration-200"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.27 6.27l1.06-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                      Pozovi
+                    </a>
+                    {/* WhatsApp */}
+                    <a
+                      href={`https://wa.me/${PHONE.replace("+", "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded border border-border text-cream-muted text-xs hover:border-gold/40 hover:text-cream transition-colors duration-200"
+                    >
+                      <FaWhatsapp size={15} aria-hidden />
+                      WhatsApp
+                    </a>
+                    {/* Viber */}
+                    <a
+                      href={`viber://chat?number=${encodeURIComponent(PHONE)}`}
+                      className="flex items-center gap-2 px-4 py-2 rounded border border-border text-cream-muted text-xs hover:border-gold/40 hover:text-cream transition-colors duration-200"
+                    >
+                      <FaViber size={15} aria-hidden />
+                      Viber
+                    </a>
                   </div>
                 </div>
               </div>
@@ -81,57 +125,23 @@ export default function KontaktPage() {
               {/* Disclaimer */}
               <div className="mt-8 p-4 border border-border/50 rounded bg-bg-card">
                 <p className="text-cream-faint text-xs leading-relaxed">
-                  Rad je savetodavnog i coaching karaktera i ne predstavlja zamenu za medicinski ili
-                  klinički tretman. Usluge i sadržaji imaju savetodavni i edukativni karakter u
-                  oblasti ličnog razvoja i samorazumevanja.
+                  Rad je savetodavnog i coaching karaktera i ne predstavlja
+                  zamenu za medicinski ili klinički tretman. Usluge i sadržaji
+                  imaju savetodavni i edukativni karakter u oblasti ličnog
+                  razvoja i samorazumevanja.
                 </p>
               </div>
             </div>
 
-            {/* Info / šta da očekuješ */}
+            {/* Desna kolona – forma */}
             <div>
-              <h2 className="heading-md mb-6">Šta da očekuješ</h2>
-              <div className="space-y-5">
-                {[
-                  {
-                    step: "1",
-                    text: "Pošalji poruku putem emaila ili Instagrama i ukratko opiši šta te dovodi.",
-                  },
-                  {
-                    step: "2",
-                    text: "Dogovorimo termin koji ti odgovara — sve je online, bez putovanja.",
-                  },
-                  {
-                    step: "3",
-                    text: "Prva konsultacija je posvećena uvidu — šta se dešava i koji je tvoj cilj.",
-                  },
-                ].map((item) => (
-                  <div key={item.step} className="flex items-start gap-4">
-                    <span className="shrink-0 w-7 h-7 rounded-full border border-gold text-gold text-xs flex items-center justify-center font-serif">
-                      {item.step}
-                    </span>
-                    <p className="text-cream-muted leading-relaxed">{item.text}</p>
-                  </div>
-                ))}
-              </div>
+              <h2 className="heading-md mb-6">Pošalji poruku</h2>
+              <KontaktForm />
 
               <div className="mt-6 text-center">
                 <Link href="/faq" className="link-arrow text-xs">
                   Imam pitanje → Pogledaj FAQ <span aria-hidden></span>
                 </Link>
-              </div>
-
-              <div className="mt-6 card text-center border-purple-soft/40">
-                <div
-                  aria-hidden
-                  className="text-4xl text-gold/40 mb-4"
-                  style={{ filter: "drop-shadow(0 0 10px rgba(201,168,76,0.3))" }}
-                >
-                  ✦ ☽ ✦
-                </div>
-                <p className="text-cream-muted text-sm italic">
-                  &ldquo;Svaka promena počinje jednim korakom prema sebi.&rdquo;
-                </p>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@
 /* ── CSS VARIABLES ───────────────────────────────────────── */
 :root {
   --font-playfair: "Playfair Display", Georgia, serif;
-  --font-raleway: "Raleway", system-ui, sans-serif;
+  --font-raleway: "Alan Sans", system-ui, sans-serif;
 
   /* Glass surfaces */
   --glass-bg: rgba(255, 255, 255, 0.28);
@@ -30,7 +30,9 @@ html {
 body {
   background: transparent;
   color: #1e1a50;
-  font-family: var(--font-raleway);
+  font-family: "Alan Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   line-height: 1.7;
 }
 
@@ -72,17 +74,17 @@ body {
   }
 
   .heading-xl {
-    @apply font-serif text-3xl md:text-4xl lg:text-5xl leading-tight;
+    @apply font-sans text-3xl md:text-4xl lg:text-5xl leading-tight;
     color: #1e1a50;
   }
 
   .heading-lg {
-    @apply font-serif text-2xl md:text-3xl leading-tight;
+    @apply font-sans text-2xl md:text-3xl leading-tight;
     color: #1e1a50;
   }
 
   .heading-md {
-    @apply font-serif text-xl md:text-2xl;
+    @apply font-sans text-xl md:text-2xl;
     color: #1e1a50;
   }
 

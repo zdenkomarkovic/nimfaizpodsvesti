@@ -34,7 +34,7 @@ const config: Config = {
       },
       fontFamily: {
         serif: ["var(--font-playfair)", "Georgia", "serif"],
-        sans: ["var(--font-raleway)", "system-ui", "sans-serif"],
+        sans: ["Alan Sans", "var(--font-raleway)", "system-ui", "sans-serif"],
       },
     },
   },

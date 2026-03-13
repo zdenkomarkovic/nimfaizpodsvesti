@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -23,29 +24,43 @@ export default function HomePage() {
           }}
         />
         <div className="container-main section-padding relative z-10">
-          <div className="max-w-3xl">
-            <p className="text-gold text-xs uppercase tracking-[0.25em] mb-6">
-              Astropsihološko savetovanje &middot; Coaching &middot; Lični
-              razvoj
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Tekst */}
+            <div>
+              <p className="text-gold text-xs uppercase tracking-[0.25em] mb-6">
+                Astropsihološko savetovanje &middot; Coaching &middot; Lični
+                razvoj
+              </p>
 
-            <h1 className="heading-xl mb-6">
-              Astropsihološko savetovanje, coaching mentorstvo i lični razvoj
-              online <span className="font-bold">Nimfa iz podsvesti</span>
-            </h1>
+              <h1 className="heading-xl mb-6">
+                Astropsihološko savetovanje, coaching mentorstvo i lični razvoj
+                online <span className="font-bold">Nimfa iz podsvesti</span>
+              </h1>
 
-            <div className="gold-divider mx-0" />
+              <div className="gold-divider mx-0" />
 
-            <p className="text-body text-cream-muted max-w-2xl mb-8">
-              Astropsihološko savetovanje koje povezuje psihologiju i
-              astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i
-              regresivne procese sa temama prošlih života, usmereno na lični
-              razvoj i svesnu promenu.
-            </p>
+              <p className="text-body text-cream-muted mb-8">
+                Astropsihološko savetovanje koje povezuje psihologiju i
+                astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i
+                regresivne procese sa temama prošlih života, usmereno na lični
+                razvoj i svesnu promenu.
+              </p>
 
-            <Link href="/kontakt" className="btn-primary">
-              Zakaži konsultaciju
-            </Link>
+              <Link href="/kontakt" className="btn-primary">
+                Zakaži konsultaciju
+              </Link>
+            </div>
+
+            {/* Slika */}
+            <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+              <Image
+                src="/images/Home.jpeg"
+                alt="Nimfa iz Podsvesti"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -70,8 +85,8 @@ export default function HomePage() {
       {/* ── ZA KOGA JE OVAJ RAD ──────────────────────────── */}
       <section className="relative z-10">
         <div className="container-main section-padding">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-stretch">
+            <div className="md:col-span-2">
               <p className="text-gold text-xs uppercase tracking-[0.2em] mb-3">
                 Za koga
               </p>
@@ -98,19 +113,15 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Decorative card */}
-            <div className="card border-purple-soft/50 text-center hidden md:flex flex-col items-center justify-center min-h-[280px]">
-              <div
-                aria-hidden
-                className="text-5xl mb-4 opacity-60"
-                style={{ filter: "drop-shadow(0 0 12px rgba(201,168,76,0.4))" }}
-              >
-                ☽
-              </div>
-              <p className="text-cream-muted text-sm italic max-w-xs leading-relaxed">
-                &ldquo;Razumevanje unutrašnjih obrazaca je prvi korak ka svesnoj
-                promeni.&rdquo;
-              </p>
+            <div className="relative aspect-[4/5] rounded-lg overflow-hidden hidden md:block">
+              <Image
+                src="/images/Za koga jeste.jpg"
+                alt="Za koga je ovaj rad"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+                quality={90}
+              />
             </div>
           </div>
         </div>
@@ -137,29 +148,44 @@ export default function HomePage() {
                 num: "01",
                 title: "Uvid",
                 text: "Šta se dešava i kada. Šta je okidač, ciklus, tranzit, faza, trenutak… da se javi anksioznost, nervoza, bes, fobije, blokade, krize ili emotivni prekidi.",
+                image: "/images/Uvid.jpg",
               },
               {
                 num: "02",
                 title: "Fokus",
                 text: "Šta je cilj i pravac rada.",
+                image: "/images/Fokus.jpg",
               },
               {
                 num: "03",
                 title: "Rad (na sebi)",
                 text: "Kroz coaching, fokusirane metode, mentorstvo, konsultacije dolazimo do ZAŠTO, ali i kako dalje.",
+                image: "/images/Kako izgleda rad.jpg",
               },
             ].map((step) => (
               <div
                 key={step.num}
-                className="card group hover:border-gold/40 transition-colors duration-300"
+                className="card group hover:border-gold/40 transition-colors duration-300 overflow-hidden !p-0"
               >
-                <p className="font-serif text-3xl text-gold/30 mb-3 group-hover:text-gold/50 transition-colors">
-                  {step.num}
-                </p>
-                <h3 className="heading-md mb-3">{step.title}</h3>
-                <p className="text-cream-faint text-sm leading-relaxed">
-                  {step.text}
-                </p>
+                <div className="relative aspect-video w-full">
+                  <Image
+                    src={step.image}
+                    alt={step.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    quality={90}
+                  />
+                </div>
+                <div className="p-6">
+                  <p className="font-serif text-3xl text-gold/30 mb-3 group-hover:text-gold/50 transition-colors">
+                    {step.num}
+                  </p>
+                  <h3 className="heading-md mb-3">{step.title}</h3>
+                  <p className="text-cream-faint text-sm leading-relaxed">
+                    {step.text}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
