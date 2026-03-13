@@ -96,7 +96,7 @@ export default function ZaKogaPage() {
                     </FadeUp>
                   ))}
                 </div>
-                <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+                <FadeUp delay={0.3} className="relative aspect-[3/4] rounded-lg overflow-hidden">
                   <Image
                     src="/images/Za koga jeste.webp"
                     alt="Za koga jeste"
@@ -104,7 +104,7 @@ export default function ZaKogaPage() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
-                </div>
+                </FadeUp>
               </div>
             </div>
 
@@ -144,7 +144,7 @@ export default function ZaKogaPage() {
             </FadeUp>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-8">
-              <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+              <FadeUp delay={0.2} className="relative aspect-[3/4] rounded-lg overflow-hidden">
                 <Image
                   src="/images/Za koga nije.webp"
                   alt="Za koga nije"
@@ -152,7 +152,7 @@ export default function ZaKogaPage() {
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
-              </div>
+              </FadeUp>
               <div className="space-y-3 md:col-span-2">
                 {nijeZa.map((item, i) => (
                   <FadeUp

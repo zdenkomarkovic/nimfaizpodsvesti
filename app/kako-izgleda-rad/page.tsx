@@ -195,18 +195,18 @@ export default function KakoIzgledaRadPage() {
           </FadeUp>
 
           {/* Kontekst */}
-          <div className="max-w-6xl mx-auto mb-10">
+          <FadeUp className="max-w-6xl mx-auto mb-10">
             <p className="text-cream-muted leading-relaxed">
               Klijentkinja, 39 godina, sa ponavljajućim obrascem intenzivnih,
               sudbinskih odnosa koji započinju snažnom povezanošću i osećajem
               „kao da se znamo od ranije", a završavaju emocionalnim prekidom i
               osećajem gubitka koji prevazilazi realno trajanje veze.
             </p>
-          </div>
+          </FadeUp>
 
           <div className="max-w-6xl mx-auto space-y-6">
             {/* Korak 1 */}
-            <div className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp className="card group hover:border-gold/40 transition-colors duration-300">
               <div className="flex items-start gap-5">
                 <div className="shrink-0 text-center">
                   <p className="font-serif text-3xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
@@ -257,10 +257,10 @@ export default function KakoIzgledaRadPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeUp>
 
             {/* Korak 2 */}
-            <div className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp delay={0.1} className="card group hover:border-gold/40 transition-colors duration-300">
               <div className="flex items-start gap-5">
                 <div className="shrink-0 text-center">
                   <p className="font-serif text-3xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
@@ -303,10 +303,10 @@ export default function KakoIzgledaRadPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeUp>
 
             {/* Korak 3 */}
-            <div className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp delay={0.2} className="card group hover:border-gold/40 transition-colors duration-300">
               <div className="flex items-start gap-5">
                 <div className="shrink-0 text-center">
                   <p className="font-serif text-3xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
@@ -364,10 +364,10 @@ export default function KakoIzgledaRadPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeUp>
 
             {/* Zaključak */}
-            <div className="card border-gold/20 bg-bg-secondary">
+            <FadeUp delay={0.1} className="card border-gold/20 bg-bg-secondary">
               <p className="text-cream-muted leading-relaxed mb-3">
                 Ovaj primer pokazuje kako se:
               </p>
@@ -387,7 +387,7 @@ export default function KakoIzgledaRadPage() {
                 mogu koristiti kao alati za razumevanje i prekid ponavljajućih
                 obrazaca.
               </p>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -461,10 +461,10 @@ export default function KakoIzgledaRadPage() {
       {/* ── FORMAT RADA ──────────────────────────────────── */}
       <section className="relative z-10 border-t border-border">
         <div className="container-main section-padding">
-          <div className="text-center mb-10">
+          <FadeUp className="text-center mb-10">
             <h2 className="heading-lg mb-2">Format rada</h2>
             <div className="gold-divider" />
-          </div>
+          </FadeUp>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-lg mx-auto">
             {[
@@ -479,13 +479,13 @@ export default function KakoIzgledaRadPage() {
                 desc: "Za one koji preferiraju glas bez kamere",
               },
             ].map((f, i) => (
-              <div key={i} className="card text-center">
+              <FadeUp key={i} delay={i * 0.1} className="card text-center">
                 <p className="text-3xl mb-3" aria-hidden>
                   {f.icon}
                 </p>
                 <p className="text-cream font-semibold mb-1">{f.label}</p>
                 <p className="text-cream-faint text-sm">{f.desc}</p>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -493,7 +493,7 @@ export default function KakoIzgledaRadPage() {
 
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
-        <div className="container-main section-padding text-center">
+        <FadeUp className="container-main section-padding text-center">
           <h2 className="heading-md mb-6">Spreman/a da počnemo?</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/kontakt" className="btn-primary">
@@ -503,7 +503,7 @@ export default function KakoIzgledaRadPage() {
               Za koga je ovaj rad →
             </Link>
           </div>
-        </div>
+        </FadeUp>
       </section>
     </>
   );
