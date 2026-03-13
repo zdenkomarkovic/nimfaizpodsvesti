@@ -39,7 +39,7 @@ export default function KakoIzgledaRadPage() {
             </div>
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
-                src="/images/Kako izgleda rad samnom.jpeg"
+                src="/images/Kako izgleda rad samnom.webp"
                 alt="Kako izgleda rad sa mnom"
                 fill
                 className="object-cover"
@@ -405,25 +405,25 @@ export default function KakoIzgledaRadPage() {
                 icon: "☽",
                 name: "Astropsihologija",
                 desc: "Analitički uvid u psihološku strukturu i razvojne teme kroz natalnu kartu",
-                image: "/images/Astrologija (2).jpg",
+                image: "/images/Astrologija (2).webp",
               },
               {
                 icon: "◎",
                 name: "NLP coaching",
                 desc: "Prepoznavanje i promena nesvesnih obrazaca mišljenja i ponašanja",
-                image: "/images/NLP.jpg",
+                image: "/images/NLP.webp",
               },
               {
                 icon: "◈",
                 name: "Hipnotičke metode",
                 desc: "Stanje pojačane fokusirane pažnje za pristup dubljim slojevima svesti",
-                image: "/images/Hipnoza 2.jpg",
+                image: "/images/Hipnoza 2.webp",
               },
               {
                 icon: "♾",
                 name: "Regresivni rad & CRT",
                 desc: "Istraživanje dubokih unutrašnjih sadržaja sa fokusom na svesnu promenu",
-                image: "/images/Regresija.jpg",
+                image: "/images/Regresija.webp",
               },
             ].map((m, i) => (
               <div
@@ -431,7 +431,7 @@ export default function KakoIzgledaRadPage() {
                 className="card text-center hover:border-purple-soft/50 transition-colors duration-300 overflow-hidden !p-0"
               >
                 <div className="relative aspect-video w-full">
-                  <Image src={m.image} alt={m.name} fill className="object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" quality={90} />
+                  <Image src={m.image} alt={m.name} fill className="object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
                 </div>
                 <div className="p-4">
                   <div

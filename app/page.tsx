@@ -54,7 +54,7 @@ export default function HomePage() {
             {/* Slika */}
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
               <Image
-                src="/images/Home.jpeg"
+                src="/images/Home.webp"
                 alt="Nimfa iz Podsvesti"
                 fill
                 className="object-cover"
@@ -115,12 +115,12 @@ export default function HomePage() {
 
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden hidden md:block">
               <Image
-                src="/images/Za koga jeste.jpg"
+                src="/images/Za koga jeste.webp"
                 alt="Za koga je ovaj rad"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"
-                quality={90}
+               
               />
             </div>
           </div>
@@ -148,19 +148,19 @@ export default function HomePage() {
                 num: "01",
                 title: "Uvid",
                 text: "Šta se dešava i kada. Šta je okidač, ciklus, tranzit, faza, trenutak… da se javi anksioznost, nervoza, bes, fobije, blokade, krize ili emotivni prekidi.",
-                image: "/images/Uvid.jpg",
+                image: "/images/Uvid.webp",
               },
               {
                 num: "02",
                 title: "Fokus",
                 text: "Šta je cilj i pravac rada.",
-                image: "/images/Fokus.jpg",
+                image: "/images/Fokus.webp",
               },
               {
                 num: "03",
                 title: "Rad (na sebi)",
                 text: "Kroz coaching, fokusirane metode, mentorstvo, konsultacije dolazimo do ZAŠTO, ali i kako dalje.",
-                image: "/images/Kako izgleda rad.jpg",
+                image: "/images/Kako izgleda rad.webp",
               },
             ].map((step) => (
               <div
@@ -174,7 +174,7 @@ export default function HomePage() {
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    quality={90}
+                   
                   />
                 </div>
                 <div className="p-6">

@@ -13,7 +13,7 @@ const services = [
   {
     num: "01",
     emoji: "✦",
-    image: "/images/Astrologija 3.jpg",
+    image: "/images/Astrologija 3.webp",
     title: "Astrologija – individualni astrološki uvid",
     text: `Astrološko savetovanje pruža dubinski uvid u strukturu ličnosti, životne cikluse i razvojne teme kroz analizu natalne karte, aktuelnih tranzita uz primenu prognostičkih tehnika (npr. progresije, direkcije, solari...). Astrologiju koristim kao analitički i simbolički alat koji pomaže u razumevanju psiholoških obrazaca, odnosa, profesionalnih izazova i unutrašnjih potencijala.
 
@@ -22,7 +22,7 @@ Ova usluga može biti potpuno samostalna, namenjena onima koji žele isključivo
   {
     num: "02",
     emoji: "☽",
-    image: "/images/Astrologija 4.jpg",
+    image: "/images/Astrologija 4.webp",
     title: "Astropsihološko savetovanje (Astrohiling)",
     text: `Astropsihološko savetovanje kombinuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata, razvojnih izazova i životnih tema koje se ponavljaju kroz vreme. Natalna karta se koristi kao mapa psihološke strukture, dok se savetodavni rad fokusira na osvešćivanje obrazaca i donošenje svesnijih odluka. Ovaj pristup omogućava brži i precizniji uvid u unutrašnje konflikte i potencijale za rast i razvoj klijenta, koji bi bez astrologije zahtevali znatno duži istraživački proces i veći broj susreta u kontinuitetu.
 
@@ -31,7 +31,7 @@ Astrologija u ovom principu rada ne predstavlja krajnji cilj, već temeljni okvi
   {
     num: "03",
     emoji: "◎",
-    image: "/images/NLP.jpg",
+    image: "/images/NLP.webp",
     title: "Psihološko i NLP coaching savetovanje – paket (3–4 sesije)",
     text: `Psihološko i NLP coaching savetovanje namenjeno je ličnom razvoju, postavljanju ciljeva, pronalaženju motivacije, promeni ograničavajućih obrazaca i uverenja, kao i unapređenju emocionalnog i mentalnog funkcionisanja. Rad se odvija isključivo u paketu od 3 do 4 sesije u kontinuitetu, jer NLP tehnike zahtevaju proces i doslednost.
 
@@ -41,7 +41,7 @@ Fokus je na ciljevima, unutrašnjim strategijama, uverenjima i obrascima ponaša
     num: "04",
     emoji: "◈",
     title: "Hipnotičke tehnike – individualni rad",
-    image: "/images/Hipnoza.jpg",
+    image: "/images/Hipnoza.webp",
     text: `Hipnotičke tehnike koriste se za ulazak u stanje pojačane fokusirane pažnje, gde postaju dostupni dublji slojevi nesvesnog. Ovaj oblik rada pomaže u razrešavanju unutrašnjih blokada, emocionalnih zapisa i ponavljajućih obrazaca. Hipnotički fokusirani rad može biti primenjen kod različitih tema i unutrašnjih blokada, naročito kada osoba ima osećaj da racionalno razume problem, ali promena izostaje.
 
 Ova metoda se često koristi kod:
@@ -65,7 +65,7 @@ Hipnoza se ne kombinuje automatski sa drugim uslugama, već se bira kao poseban 
   {
     num: "05",
     emoji: "♾",
-    image: "/images/Regresija.jpg",
+    image: "/images/Regresija.webp",
     title: "Regresivni rad – regresija u prošle događaje ili živote",
     text: `Regresivni rad omogućava istraživanje duboko ukorenjenih iskustava koja se doživljavaju kao prošli životni sadržaji ili rani memorijski zapisi. U okviru astrološkog sistema, kontinuitet svesti i iskustava predstavlja prirodan deo psihološke strukture, zbog čega je regresija često logičan nastavak astrološkog i psihološkog rada.
 
@@ -74,7 +74,7 @@ Regresija se sprovodi od 1 do 6 seansi, sa jasno definisanom temom i ciljem, uz 
   {
     num: "06",
     emoji: "✺",
-    image: "/images/CRT.jpg",
+    image: "/images/CRT.webp",
     title: "Complete Restoration Therapy™",
     text: `Complete Restoration Therapy (CRT) je strukturisan proces koji kombinuje više oblasti iz različitih metoda, a u osnovi se nalazi hipnotička sugestija i NLP tehnike, koje se koriste u cilju donošenja kompozitne odluke i dubinske unutrašnje reorganizacije. CRT je intenzivna i fokusirana metoda koja može da se primeni za veliki broj problema.
 
@@ -150,7 +150,7 @@ export default function UslugePage() {
                           fill
                           className="object-cover"
                           sizes="(max-width: 768px) 100vw, 80vw"
-                          quality={90}
+                         
                         />
                       </div>
                     )}

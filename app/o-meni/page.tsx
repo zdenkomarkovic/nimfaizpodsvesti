@@ -39,7 +39,7 @@ export default function OMeniPage() {
             <div className="md:col-span-2">
               <div className="aspect-[3/4] rounded-lg overflow-hidden relative">
                 <Image
-                  src="/images/About me.jpg"
+                  src="/images/About me.webp"
                   alt="Jelena Stevanović – Nimfa iz Podsvesti"
                   fill
                   className="object-cover"
