@@ -56,19 +56,23 @@ export default function ZaKogaPage() {
       <section className="relative z-10">
         <div className="container-main section-padding">
           <div className="max-w-5xl">
-            <p className="text-body mb-10">
-              Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja ne
-              završavaju na površinskom nivou, a da im klasični dugotrajni,
-              isključivo klinički pristupi, često ne daju potpune odgovore.
-              Namenjen je onima koji žele razumevanje, ali i unutrašnju promenu,
-              kroz dublji uvid u sopstvene obrasce, odluke i životne teme.
-            </p>
+            <FadeUp>
+              <p className="text-body mb-10">
+                Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja ne
+                završavaju na površinskom nivou, a da im klasični dugotrajni,
+                isključivo klinički pristupi, često ne daju potpune odgovore.
+                Namenjen je onima koji žele razumevanje, ali i unutrašnju promenu,
+                kroz dublji uvid u sopstvene obrasce, odluke i životne teme.
+              </p>
+            </FadeUp>
 
             {/* Za koga JESTE */}
             <div className="mb-12">
-              <h2 className="heading-md mb-6">
-                Rad je posebno prikladan za vas ako:
-              </h2>
+              <FadeUp>
+                <h2 className="heading-md mb-6">
+                  Rad je posebno prikladan za vas ako:
+                </h2>
+              </FadeUp>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                 <div className="space-y-3 md:col-span-2">
@@ -105,22 +109,26 @@ export default function ZaKogaPage() {
             </div>
 
             {/* Zaključak */}
-            <p className="text-body mb-4">
-              Ovaj pristup je za ljude koji shvataju da su oni sami nosioci
-              sopstvene promene, koji žele svesniji odnos prema sebi, svojim
-              obrascima i potencijalima, a koji su otvoreni za integraciju uvida
-              na psihološkom, simboličkom i iskustvenom nivou. Ovaj rad ne
-              ostaje na pukoj analizi — već pruža jasnoću, fokus i svesno
-              delovanje, uz konkretan rad na ciljevima, odnosima i ličnom
-              razvoju.
-            </p>
+            <FadeUp>
+              <p className="text-body mb-4">
+                Ovaj pristup je za ljude koji shvataju da su oni sami nosioci
+                sopstvene promene, koji žele svesniji odnos prema sebi, svojim
+                obrascima i potencijalima, a koji su otvoreni za integraciju uvida
+                na psihološkom, simboličkom i iskustvenom nivou. Ovaj rad ne
+                ostaje na pukoj analizi — već pruža jasnoću, fokus i svesno
+                delovanje, uz konkretan rad na ciljevima, odnosima i ličnom
+                razvoju.
+              </p>
+            </FadeUp>
 
             {/* Pull quote */}
-            <div className="border-l-2 border-gold pl-6 py-2 my-8">
-              <p className="font-serif text-lg text-cream italic leading-relaxed">
-                Ako vam ovo zvuči zahtevno – verovatno je za vas.
-              </p>
-            </div>
+            <FadeUp>
+              <div className="border-l-2 border-gold pl-6 py-2 my-8">
+                <p className="font-serif text-lg text-cream italic leading-relaxed">
+                  Ako vam ovo zvuči zahtevno – verovatno je za vas.
+                </p>
+              </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -129,10 +137,11 @@ export default function ZaKogaPage() {
       <section className="relative z-10 bg-bg-secondary border-y border-border">
         <div className="container-main section-padding">
           <div className="max-w-5xl">
-            <h2 className="heading-lg mb-4">Za koga ovaj pristup nije</h2>
-            <div className="gold-divider mx-0 mb-8" />
-
-            <p className="text-body mb-8">Ovaj rad nije za osobe koje:</p>
+            <FadeUp>
+              <h2 className="heading-lg mb-4">Za koga ovaj pristup nije</h2>
+              <div className="gold-divider mx-0 mb-8" />
+              <p className="text-body mb-8">Ovaj rad nije za osobe koje:</p>
+            </FadeUp>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-8">
               <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
@@ -163,11 +172,13 @@ export default function ZaKogaPage() {
               </div>
             </div>
 
-            <p className="text-cream-muted leading-relaxed">
-              Ovaj rad podrazumeva svesno učešće, kontinuitet i ličnu
-              odgovornost. Ako tražite pasivni pristup ili brzu utehu – ovo
-              verovatno nije vaš pravi izbor.
-            </p>
+            <FadeUp>
+              <p className="text-cream-muted leading-relaxed">
+                Ovaj rad podrazumeva svesno učešće, kontinuitet i ličnu
+                odgovornost. Ako tražite pasivni pristup ili brzu utehu – ovo
+                verovatno nije vaš pravi izbor.
+              </p>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -176,43 +187,45 @@ export default function ZaKogaPage() {
       <section className="relative z-10">
         <div className="container-main section-padding">
           <div className="max-w-5xl">
-            <div className="card border-purple-soft/40">
-              <div className="flex items-start gap-4 mb-4">
-                <span
-                  className="text-gold text-xl shrink-0 mt-0.5"
-                  aria-hidden
-                  style={{
-                    filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
-                  }}
-                >
-                  ✦
-                </span>
-                <h2 className="heading-md">Važno je znati</h2>
+            <FadeUp>
+              <div className="card border-purple-soft/40">
+                <div className="flex items-start gap-4 mb-4">
+                  <span
+                    className="text-gold text-xl shrink-0 mt-0.5"
+                    aria-hidden
+                    style={{
+                      filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
+                    }}
+                  >
+                    ✦
+                  </span>
+                  <h2 className="heading-md">Važno je znati</h2>
+                </div>
+                <div className="space-y-3 text-cream-muted leading-relaxed pl-8">
+                  <p>
+                    Rad koji nudim ima za cilj lični razvoj, osvešćivanje obrazaca
+                    i dublje razumevanje unutrašnjih procesa.
+                  </p>
+                  <p>
+                    Ne predstavlja medicinski, psihijatrijski ili
+                    kliničko-terapijski tretman i ne zamenjuje zdravstvenu ili
+                    psihoterapijsku pomoć.
+                  </p>
+                  <p>
+                    U radu se ne postavljaju dijagnoze niti se daje medicinski
+                    savet. Klijent zadržava punu odgovornost za sopstvene odluke i
+                    postupke.
+                  </p>
+                </div>
               </div>
-              <div className="space-y-3 text-cream-muted leading-relaxed pl-8">
-                <p>
-                  Rad koji nudim ima za cilj lični razvoj, osvešćivanje obrazaca
-                  i dublje razumevanje unutrašnjih procesa.
-                </p>
-                <p>
-                  Ne predstavlja medicinski, psihijatrijski ili
-                  kliničko-terapijski tretman i ne zamenjuje zdravstvenu ili
-                  psihoterapijsku pomoć.
-                </p>
-                <p>
-                  U radu se ne postavljaju dijagnoze niti se daje medicinski
-                  savet. Klijent zadržava punu odgovornost za sopstvene odluke i
-                  postupke.
-                </p>
-              </div>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
 
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
-        <div className="container-main section-padding text-center">
+        <FadeUp className="container-main section-padding text-center">
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
             Sledeći korak
           </p>
@@ -230,7 +243,7 @@ export default function ZaKogaPage() {
               Pogledaj usluge →
             </Link>
           </div>
-        </div>
+        </FadeUp>
       </section>
     </>
   );

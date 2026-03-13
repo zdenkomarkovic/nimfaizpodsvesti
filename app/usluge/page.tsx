@@ -118,10 +118,9 @@ export default function UslugePage() {
       <section className="relative z-10">
         <div className="container-main section-padding">
           <div className="space-y-8">
-            {services.map((service, i) => (
+            {services.map((service) => (
               <FadeUp
                 key={service.num}
-                delay={i * 0.08}
                 className="card group hover:border-gold/40 transition-colors duration-300"
               >
                 <div className="flex items-start gap-5 md:gap-8">
