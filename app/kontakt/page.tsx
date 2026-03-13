@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FaWhatsapp, FaViber } from "react-icons/fa";
 import KontaktForm from "./KontaktForm";
+import { FadeUp, SlideRight, SlideLeft } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title: "Kontakt",
@@ -25,7 +26,7 @@ export default function KontaktPage() {
               "radial-gradient(ellipse 50% 50% at 50% 50%, rgba(201,168,76,0.08) 0%, transparent 70%)",
           }}
         />
-        <div className="container-main relative z-10">
+        <FadeUp className="container-main relative z-10">
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
             Sledeći korak
           </p>
@@ -35,7 +36,7 @@ export default function KontaktPage() {
             Napiši mi poruku ili se javi direktno. Odgovorim u roku od 24 sata
             i dogovorimo termin koji odgovara tvom rasporedu.
           </p>
-        </div>
+        </FadeUp>
       </section>
 
       {/* ── KONTAKT INFO + FORMA ─────────────────────────── */}
@@ -43,7 +44,7 @@ export default function KontaktPage() {
         <div className="container-main section-padding">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Leva kolona – kanali */}
-            <div>
+            <SlideRight>
               <h2 className="heading-md mb-6">Kako me pronaći</h2>
               <div className="space-y-4">
                 {/* Email */}
@@ -131,10 +132,10 @@ export default function KontaktPage() {
                   razvoja i samorazumevanja.
                 </p>
               </div>
-            </div>
+            </SlideRight>
 
             {/* Desna kolona – forma */}
-            <div>
+            <SlideLeft delay={0.15}>
               <h2 className="heading-md mb-6">Pošalji poruku</h2>
               <KontaktForm />
 
@@ -143,7 +144,7 @@ export default function KontaktPage() {
                   Imam pitanje → Pogledaj FAQ <span aria-hidden></span>
                 </Link>
               </div>
-            </div>
+            </SlideLeft>
           </div>
         </div>
       </section>

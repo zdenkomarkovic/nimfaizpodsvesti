@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { FadeUp, FadeIn, SlideRight, SlideLeft } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title:
@@ -65,33 +66,29 @@ export default function HomePage() {
         <div className="container-main section-padding relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Tekst */}
-            <div>
+            <SlideRight>
               <p className="text-gold text-xs uppercase tracking-[0.25em] mb-6">
                 Astropsihološko savetovanje &middot; Coaching &middot; Lični
                 razvoj
               </p>
-
               <h1 className="heading-xl mb-6">
                 Astropsihološko savetovanje, coaching mentorstvo i lični razvoj
                 online <span className="font-bold">Nimfa iz podsvesti</span>
               </h1>
-
               <div className="gold-divider mx-0" />
-
               <p className="text-body text-cream-muted mb-8">
                 Astropsihološko savetovanje koje povezuje psihologiju i
                 astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i
                 regresivne procese sa temama prošlih života, usmereno na lični
                 razvoj i svesnu promenu.
               </p>
-
               <Link href="/kontakt" className="btn-primary">
                 Zakaži konsultaciju
               </Link>
-            </div>
+            </SlideRight>
 
             {/* Slika */}
-            <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
+            <SlideLeft delay={0.2} className="relative aspect-[3/4] rounded-lg overflow-hidden">
               <Image
                 src="/images/Home.webp"
                 alt="Nimfa iz Podsvesti"
@@ -99,7 +96,7 @@ export default function HomePage() {
                 className="object-cover"
                 priority
               />
-            </div>
+            </SlideLeft>
           </div>
         </div>
       </section>
@@ -107,7 +104,7 @@ export default function HomePage() {
       {/* ── OPIS USLUGE ──────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-y border-border">
         <div className="container-main section-padding">
-          <div className="max-w-5xl mx-auto text-center">
+          <FadeUp className="max-w-5xl mx-auto text-center">
             <p className="text-body">
               Diplomirani sam psiholog. Radim individualno, online, kroz video
               ili telefonske konsultacije, koristeći integrativni pristup koji
@@ -117,7 +114,7 @@ export default function HomePage() {
               sa ciljem dubljeg razumevanja unutrašnjih obrazaca i ličnog
               razvoja.
             </p>
-          </div>
+          </FadeUp>
         </div>
       </section>
 
@@ -125,7 +122,7 @@ export default function HomePage() {
       <section className="relative z-10">
         <div className="container-main section-padding">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-stretch">
-            <div className="md:col-span-2">
+            <SlideRight className="md:col-span-2">
               <p className="text-gold text-xs uppercase tracking-[0.2em] mb-3">
                 Za koga
               </p>
@@ -150,9 +147,9 @@ export default function HomePage() {
                   Pročitaj više <span aria-hidden>→</span>
                 </Link>
               </div>
-            </div>
+            </SlideRight>
 
-            <div className="relative aspect-[4/5] rounded-lg overflow-hidden hidden md:block">
+            <SlideLeft delay={0.2} className="relative aspect-[4/5] rounded-lg overflow-hidden">
               <Image
                 src="/images/Za koga jeste.webp"
                 alt="Za koga je ovaj rad"
@@ -161,7 +158,7 @@ export default function HomePage() {
                 sizes="(max-width: 768px) 100vw, 33vw"
                
               />
-            </div>
+            </SlideLeft>
           </div>
         </div>
       </section>
@@ -169,7 +166,7 @@ export default function HomePage() {
       {/* ── KAKO IZGLEDA RAD ─────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-y border-border">
         <div className="container-main section-padding">
-          <div className="text-center mb-12">
+          <FadeUp className="text-center mb-12">
             <p className="text-gold text-xs uppercase tracking-[0.2em] mb-3">
               Proces
             </p>
@@ -179,7 +176,7 @@ export default function HomePage() {
               Online (telefon/video) individualan rad, strukturisan ali
               fleksibilan, prilagođen tvojoj spremnosti.
             </p>
-          </div>
+          </FadeUp>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -201,9 +198,10 @@ export default function HomePage() {
                 text: "Kroz coaching, fokusirane metode, mentorstvo, konsultacije dolazimo do ZAŠTO, ali i kako dalje.",
                 image: "/images/Kako izgleda rad.webp",
               },
-            ].map((step) => (
-              <div
+            ].map((step, i) => (
+              <FadeUp
                 key={step.num}
+                delay={i * 0.15}
                 className="card group hover:border-gold/40 transition-colors duration-300 overflow-hidden !p-0"
               >
                 <div className="relative aspect-video w-full">
@@ -225,7 +223,7 @@ export default function HomePage() {
                     {step.text}
                   </p>
                 </div>
-              </div>
+              </FadeUp>
             ))}
           </div>
 
@@ -239,7 +237,7 @@ export default function HomePage() {
 
       {/* ── BOTTOM CTA ───────────────────────────────────── */}
       <section className="relative z-10">
-        <div className="container-main section-padding text-center">
+        <FadeUp className="container-main section-padding text-center">
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
             Sledeći korak
           </p>
@@ -256,24 +254,23 @@ export default function HomePage() {
             Rad je savetodavnog i coaching karaktera i ne predstavlja zamenu za
             medicinski ili klinički tretman.
           </p>
-        </div>
+        </FadeUp>
       </section>
 
       {/* ── FAQ ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-white/30">
         <div className="container-main section-padding">
-          <div className="text-center mb-10">
+          <FadeUp className="text-center mb-10">
             <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
               Imate pitanja?
             </p>
             <h2 className="heading-lg mb-2">Često postavljana pitanja</h2>
             <div className="gold-divider" />
-          </div>
+          </FadeUp>
 
           <div className="max-w-3xl mx-auto space-y-3">
             {[
-              {
-                q: "Da li je astrologija obavezna?",
+              { q: "Da li je astrologija obavezna?",
                 a: "Ne. Astrologija može biti početna tačka rada, ali nije obavezna. Ako klijent već ima jasno definisanu temu ili cilj, moguće je odmah započeti NLP coaching, fokusirani rad ili druge metode. Astrologija se koristi kao alat koji ubrzava i produbljuje uvid, ali nije uslov za nastavak rada.",
               },
               {
@@ -297,8 +294,8 @@ export default function HomePage() {
                 a: "Ako niste sigurni koja je usluga najadekvatnija, dovoljno je da zakažete inicijalnu konsultaciju. Tokom razgovora zajedno definišemo temu, cilj i najefikasniji način rada.",
               },
             ].map((item, i) => (
+              <FadeUp key={i} delay={i * 0.08} className="block">
               <details
-                key={i}
                 className="group border border-white/40 rounded-lg"
                 style={{
                   background: "rgba(255,255,255,0.28)",
@@ -347,6 +344,7 @@ export default function HomePage() {
                   </p>
                 </div>
               </details>
+              </FadeUp>
             ))}
           </div>
 

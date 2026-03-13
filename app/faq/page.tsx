@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FadeUp } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title: "Često Postavljana Pitanja",
@@ -63,11 +64,11 @@ export default function FaqPage() {
               "radial-gradient(ellipse 50% 50% at 50% 50%, rgba(123,94,184,0.08) 0%, transparent 70%)",
           }}
         />
-        <div className="container-main relative z-10">
+        <FadeUp className="container-main relative z-10">
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">Pitanja i odgovori</p>
           <h1 className="heading-xl mb-4">Često postavljana pitanja</h1>
           <div className="gold-divider mx-0" />
-        </div>
+        </FadeUp>
       </section>
 
       {/* ── FAQ LISTA ────────────────────────────────────── */}
@@ -75,8 +76,8 @@ export default function FaqPage() {
         <div className="container-main section-padding">
           <div className="max-w-3xl space-y-3">
             {faqs.map((item, i) => (
+              <FadeUp key={i} delay={i * 0.06} className="block">
               <details
-                key={i}
                 className="group border border-border rounded-lg bg-bg-card
                            open:border-gold/40 transition-colors duration-200"
               >
@@ -122,6 +123,7 @@ export default function FaqPage() {
                   </p>
                 </div>
               </details>
+              </FadeUp>
             ))}
           </div>
         </div>

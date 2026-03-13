@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { FadeUp } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title: "Za Koga Je Ovaj Pristup",
@@ -42,13 +43,13 @@ export default function ZaKogaPage() {
               "radial-gradient(ellipse 50% 50% at 50% 50%, rgba(201,168,76,0.07) 0%, transparent 70%)",
           }}
         />
-        <div className="container-main relative z-10">
+        <FadeUp className="container-main relative z-10">
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
             Prepoznaješ li sebe?
           </p>
           <h1 className="heading-xl mb-4">Za koga je ovaj pristup</h1>
           <div className="gold-divider mx-0" />
-        </div>
+        </FadeUp>
       </section>
 
       {/* ── UVOD ─────────────────────────────────────────── */}
@@ -72,8 +73,9 @@ export default function ZaKogaPage() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                 <div className="space-y-3 md:col-span-2">
                   {jestePrikladan.map((item, i) => (
-                    <div
+                    <FadeUp
                       key={i}
+                      delay={i * 0.06}
                       className="flex items-start gap-4 p-4 rounded border border-border bg-bg-card
                                  hover:border-gold/40 transition-colors duration-200"
                     >
@@ -87,7 +89,7 @@ export default function ZaKogaPage() {
                         ✦
                       </span>
                       <p className="text-cream-muted leading-relaxed">{item}</p>
-                    </div>
+                    </FadeUp>
                   ))}
                 </div>
                 <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
@@ -97,7 +99,6 @@ export default function ZaKogaPage() {
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
-                   
                   />
                 </div>
               </div>
@@ -141,13 +142,13 @@ export default function ZaKogaPage() {
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
-                 
                 />
               </div>
               <div className="space-y-3 md:col-span-2">
                 {nijeZa.map((item, i) => (
-                  <div
+                  <FadeUp
                     key={i}
+                    delay={i * 0.08}
                     className="flex items-start gap-4 p-4 rounded border border-border/60 bg-bg-primary/50"
                   >
                     <span
@@ -157,7 +158,7 @@ export default function ZaKogaPage() {
                       ✕
                     </span>
                     <p className="text-bg-card leading-relaxed">{item}</p>
-                  </div>
+                  </FadeUp>
                 ))}
               </div>
             </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PunaBio from "./PunaBio";
+import { FadeUp, SlideRight, SlideLeft } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title: "O Meni",
@@ -22,13 +23,13 @@ export default function OMeniPage() {
               "radial-gradient(ellipse 60% 50% at 30% 50%, rgba(123,94,184,0.1) 0%, transparent 70%)",
           }}
         />
-        <div className="container-main relative z-10">
+        <FadeUp className="container-main relative z-10">
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
             Upoznajte me
           </p>
           <h1 className="heading-xl mb-4">O Meni</h1>
           <div className="gold-divider mx-0" />
-        </div>
+        </FadeUp>
       </section>
 
       {/* ── KRATKA BIO ───────────────────────────────────── */}
@@ -36,7 +37,7 @@ export default function OMeniPage() {
         <div className="container-main section-padding">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
             {/* Photo placeholder */}
-            <div className="md:col-span-2">
+            <SlideRight className="md:col-span-2">
               <div className="aspect-[3/4] rounded-lg overflow-hidden relative">
                 <Image
                   src="/images/About me.webp"
@@ -46,10 +47,10 @@ export default function OMeniPage() {
                   priority
                 />
               </div>
-            </div>
+            </SlideRight>
 
             {/* Short bio */}
-            <div className="md:col-span-3">
+            <SlideLeft delay={0.15} className="md:col-span-3">
               <p className="text-body mb-6">
                 Ja sam Jelena Stevanović, diplomirani psiholog i astropsihološki
                 savetnik, poznata kao{" "}
@@ -82,7 +83,7 @@ export default function OMeniPage() {
                 podršku, usmeravanje i dublje razumevanje sebe, svojih obrazaca
                 i potencijala.
               </p>
-            </div>
+            </SlideLeft>
           </div>
         </div>
       </section>
@@ -93,11 +94,13 @@ export default function OMeniPage() {
       <section className="relative z-10 border-t border-border">
         <div className="container-main section-padding">
           <div className="max-w-4xl mx-auto">
+            <FadeUp>
             <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
               Studies &amp; Certificates
             </p>
             <h2 className="heading-lg mb-4">Edukacije i sertifikati</h2>
             <div className="gold-divider mx-0 mb-10" />
+            </FadeUp>
 
             <div className="space-y-6">
               {[
@@ -142,8 +145,9 @@ export default function OMeniPage() {
                   institution: "NEW ERA akademija",
                 },
               ].map((edu, i) => (
-                <div
+                <FadeUp
                   key={i}
+                  delay={i * 0.07}
                   className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 pb-6 border-b border-border last:border-0 last:pb-0"
                 >
                   <div>
@@ -151,7 +155,7 @@ export default function OMeniPage() {
                     <p className="text-cream-muted text-sm mt-0.5">{edu.institution}</p>
                   </div>
                   <span className="text-gold text-sm shrink-0">{edu.period}</span>
-                </div>
+                </FadeUp>
               ))}
             </div>
           </div>
@@ -160,12 +164,12 @@ export default function OMeniPage() {
 
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 border-t border-border">
-        <div className="container-main section-padding text-center">
+        <FadeUp className="container-main section-padding text-center">
           <h2 className="heading-md mb-6">Zainteresovani za rad?</h2>
           <Link href="/kontakt" className="btn-primary">
             Zakaži konsultaciju
           </Link>
-        </div>
+        </FadeUp>
       </section>
     </>
   );

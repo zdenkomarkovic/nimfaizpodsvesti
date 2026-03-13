@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { FadeUp, SlideRight, SlideLeft } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title: "Kako Izgleda Rad",
@@ -23,7 +24,7 @@ export default function KakoIzgledaRadPage() {
         />
         <div className="container-main relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
+            <SlideRight>
               <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
                 Proces
               </p>
@@ -36,8 +37,8 @@ export default function KakoIzgledaRadPage() {
                 potrebama i spremnosti klijenta. Proces se odvija kroz jasne
                 faze, koje omogućavaju sigurnost, kontinuitet i dubinu uvida.
               </p>
-            </div>
-            <div className="relative aspect-square rounded-lg overflow-hidden">
+            </SlideRight>
+            <SlideLeft delay={0.2} className="relative aspect-square rounded-lg overflow-hidden">
               <Image
                 src="/images/Kako izgleda rad samnom.webp"
                 alt="Kako izgleda rad sa mnom"
@@ -45,7 +46,7 @@ export default function KakoIzgledaRadPage() {
                 className="object-cover"
                 priority
               />
-            </div>
+            </SlideLeft>
           </div>
         </div>
       </section>
@@ -55,7 +56,7 @@ export default function KakoIzgledaRadPage() {
         <div className="container-main section-padding">
           <div className="max-w-6xl space-y-12">
             {/* 01 */}
-            <div className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp className="card group hover:border-gold/40 transition-colors duration-300">
               <div className="flex items-start gap-6">
                 <div className="shrink-0 text-center">
                   <p className="font-serif text-4xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
@@ -96,10 +97,10 @@ export default function KakoIzgledaRadPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeUp>
 
             {/* 02 */}
-            <div className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp delay={0.1} className="card group hover:border-gold/40 transition-colors duration-300">
               <div className="flex items-start gap-6">
                 <div className="shrink-0 text-center">
                   <p className="font-serif text-4xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
@@ -130,10 +131,10 @@ export default function KakoIzgledaRadPage() {
                   </p>
                 </div>
               </div>
-            </div>
+            </FadeUp>
 
             {/* 03 */}
-            <div className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp delay={0.2} className="card group hover:border-gold/40 transition-colors duration-300">
               <div className="flex items-start gap-6">
                 <div className="shrink-0 text-center">
                   <p className="font-serif text-4xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
@@ -171,7 +172,7 @@ export default function KakoIzgledaRadPage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -179,7 +180,7 @@ export default function KakoIzgledaRadPage() {
       {/* ── PRIMER RADA ──────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <div className="container-main section-padding">
-          <div className="text-center mb-10">
+          <FadeUp className="text-center mb-10">
             <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
               Primer rada
             </p>
@@ -191,7 +192,7 @@ export default function KakoIzgledaRadPage() {
               Ovo je realan primer osobe (identitet i neki detalji su izmenjeni
               u cilju poštovanja privatnosti).
             </p>
-          </div>
+          </FadeUp>
 
           {/* Kontekst */}
           <div className="max-w-6xl mx-auto mb-10">
@@ -394,10 +395,10 @@ export default function KakoIzgledaRadPage() {
       {/* ── METODE ───────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <div className="container-main section-padding">
-          <div className="text-center mb-10">
+          <FadeUp className="text-center mb-10">
             <h2 className="heading-lg mb-2">Metode u radu</h2>
             <div className="gold-divider" />
-          </div>
+          </FadeUp>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -426,8 +427,9 @@ export default function KakoIzgledaRadPage() {
                 image: "/images/Regresija.webp",
               },
             ].map((m, i) => (
-              <div
+              <FadeUp
                 key={i}
+                delay={i * 0.1}
                 className="card text-center hover:border-purple-soft/50 transition-colors duration-300 overflow-hidden !p-0"
               >
                 <div className="relative aspect-video w-full">
@@ -444,7 +446,7 @@ export default function KakoIzgledaRadPage() {
                   <h3 className="text-cream font-semibold text-sm mb-2">{m.name}</h3>
                   <p className="text-cream-faint text-xs leading-relaxed">{m.desc}</p>
                 </div>
-              </div>
+              </FadeUp>
             ))}
           </div>
 

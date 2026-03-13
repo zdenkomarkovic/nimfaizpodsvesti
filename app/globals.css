@@ -23,7 +23,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   background: transparent;
 }
 
@@ -163,3 +162,4 @@ body {
 details.group[open] .group-open\:rotate-180 {
   transform: rotate(180deg);
 }
+

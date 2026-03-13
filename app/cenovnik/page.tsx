@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FadeUp } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title: "Cenovnik",
@@ -101,7 +102,7 @@ export default function CenovnikPage() {
               "radial-gradient(ellipse 50% 50% at 50% 50%, rgba(201,168,76,0.07) 0%, transparent 70%)",
           }}
         />
-        <div className="container-main relative z-10">
+        <FadeUp className="container-main relative z-10">
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">Transparentno</p>
           <h1 className="heading-xl mb-4">Cenovnik i format rada</h1>
           <div className="gold-divider mx-0 mb-4" />
@@ -110,7 +111,7 @@ export default function CenovnikPage() {
             klijent bira. Neke usluge se rade kao pojedinačne konsultacije, dok su druge
             organizovane u jasno definisane pakete.
           </p>
-        </div>
+        </FadeUp>
       </section>
 
       <section className="relative z-10">
@@ -118,7 +119,7 @@ export default function CenovnikPage() {
           <div className="space-y-10 max-w-3xl">
 
             {/* ── I. Astropsihološko savetovanje ── */}
-            <div className="card">
+            <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
                   className="text-gold text-lg shrink-0 mt-0.5"
@@ -162,10 +163,10 @@ export default function CenovnikPage() {
               <p className="text-cream-faint text-xs mt-4 italic">
                 ✦ Moguće kao samostalna usluga
               </p>
-            </div>
+            </FadeUp>
 
             {/* ── II. Astrohiling ── */}
-            <div className="card">
+            <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
                   className="text-gold text-lg shrink-0 mt-0.5"
@@ -195,10 +196,10 @@ export default function CenovnikPage() {
                   ✦ Trajanje paketa: 30 dana (paket 3), odnosno 40 dana (paket 4) od prve sesije
                 </p>
               </div>
-            </div>
+            </FadeUp>
 
             {/* ── III. NLP Coaching ── */}
-            <div className="card">
+            <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
                   className="text-gold text-lg shrink-0 mt-0.5"
@@ -231,10 +232,10 @@ export default function CenovnikPage() {
                   ✦ Trajanje paketa: 30 dana (paket 3), odnosno 40 dana (paket 4) od prve sesije
                 </p>
               </div>
-            </div>
+            </FadeUp>
 
             {/* ── IV. Hipnotički rad ── */}
-            <div className="card">
+            <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
                   className="text-gold text-lg shrink-0 mt-0.5"
@@ -262,10 +263,10 @@ export default function CenovnikPage() {
               <p className="text-cream-faint text-xs mt-4">
                 ✦ Isključivo video online (Zoom, Google Meet…)
               </p>
-            </div>
+            </FadeUp>
 
             {/* ── V. Regresivni rad ── */}
-            <div className="card">
+            <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
                   className="text-gold text-lg shrink-0 mt-0.5"
@@ -297,10 +298,10 @@ export default function CenovnikPage() {
               <p className="text-cream-faint text-xs mt-4">
                 ✦ Isključivo video online (Zoom, Google Meet…)
               </p>
-            </div>
+            </FadeUp>
 
             {/* ── VI. CRT ── */}
-            <div className="card border-purple-soft/50">
+            <FadeUp className="card border-purple-soft/50">
               <div className="flex items-start gap-3 mb-6">
                 <span
                   className="text-gold text-lg shrink-0 mt-0.5"
@@ -333,7 +334,7 @@ export default function CenovnikPage() {
               <p className="text-cream-faint text-xs mt-4">
                 ✦ Isključivo video online (Zoom, Google Meet…)
               </p>
-            </div>
+            </FadeUp>
 
             {/* ── Napomena ── */}
             <div className="border border-border/50 rounded-lg p-5 bg-bg-card/50">

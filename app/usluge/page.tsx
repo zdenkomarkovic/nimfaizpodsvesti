@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { FadeUp } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title:
@@ -95,7 +96,7 @@ export default function UslugePage() {
               "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(123,94,184,0.1) 0%, transparent 70%)",
           }}
         />
-        <div className="container-main relative z-10">
+        <FadeUp className="container-main relative z-10">
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
             Ponuda
           </p>
@@ -110,16 +111,17 @@ export default function UslugePage() {
             metode i regresivne procese, prilagođene individualnim potrebama i
             ciljevima.
           </p>
-        </div>
+        </FadeUp>
       </section>
 
       {/* ── LISTA USLUGA ─────────────────────────────────── */}
       <section className="relative z-10">
         <div className="container-main section-padding">
           <div className="space-y-8">
-            {services.map((service) => (
-              <div
+            {services.map((service, i) => (
+              <FadeUp
                 key={service.num}
+                delay={i * 0.08}
                 className="card group hover:border-gold/40 transition-colors duration-300"
               >
                 <div className="flex items-start gap-5 md:gap-8">
@@ -185,7 +187,7 @@ export default function UslugePage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </FadeUp>
             ))}
           </div>
         </div>
@@ -193,7 +195,7 @@ export default function UslugePage() {
 
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
-        <div className="container-main section-padding text-center">
+        <FadeUp className="container-main section-padding text-center">
           <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
             Sledeći korak
           </p>
@@ -212,7 +214,7 @@ export default function UslugePage() {
               Kako izgleda rad →
             </Link>
           </div>
-        </div>
+        </FadeUp>
       </section>
     </>
   );
