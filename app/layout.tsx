@@ -11,6 +11,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nimfaizpodsvesti.com"),
   title: {
     default: "Nimfa Iz Podsvesti | Astropsihološko savetovanje i lični razvoj",
     template: "%s | Nimfa Iz Podsvesti",
@@ -20,18 +21,41 @@ export const metadata: Metadata = {
   keywords: [
     "astropsihološko savetovanje",
     "psiholog",
-    "astrologiya",
+    "astrologija",
     "NLP",
     "coaching",
     "lični razvoj",
     "regresivni rad",
     "online savetovanje",
     "nimfa iz podsvesti",
+    "Jelena Stevanović",
+    "hipnoza",
+    "regresija",
   ],
+  alternates: {
+    canonical: "https://nimfaizpodsvesti.com",
+  },
   openGraph: {
     siteName: "Nimfa Iz Podsvesti",
     locale: "sr_RS",
     type: "website",
+    url: "https://nimfaizpodsvesti.com",
+    title: "Nimfa Iz Podsvesti | Astropsihološko savetovanje i lični razvoj",
+    description:
+      "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese.",
+    images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nimfa Iz Podsvesti | Astropsihološko savetovanje i lični razvoj",
+    description:
+      "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike.",
+    images: ["/images/Home.webp"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
   },
 };
 

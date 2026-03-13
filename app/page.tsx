@@ -9,9 +9,48 @@ export const metadata: Metadata = {
     "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese sa temama prošlih života, usmereno na lični razvoj i svesnu promenu.",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Jelena Stevanović",
+  alternateName: "Nimfa iz Podsvesti",
+  url: "https://nimfaizpodsvesti.com",
+  image: "https://nimfaizpodsvesti.com/images/About%20me.webp",
+  jobTitle: "Astropsihološki savetnik i coach",
+  description:
+    "Diplomirani psiholog i astropsihološki savetnik. Integrativni pristup koji obuhvata astrologiju, NLP, hipnotičke tehnike, CRT i regresivni rad.",
+  sameAs: ["https://www.instagram.com/nimfa_iz_podsvesti/"],
+  knowsAbout: [
+    "Astropsihološko savetovanje",
+    "NLP",
+    "Hipnoterapija",
+    "Regresivni rad",
+    "Lični razvoj",
+    "Coaching",
+  ],
+  worksFor: {
+    "@type": "LocalBusiness",
+    name: "Nimfa Iz Podsvesti",
+    url: "https://nimfaizpodsvesti.com",
+    telephone: "+381628068616",
+    email: "nimfaizpodsvesti@gmail.com",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "RS",
+      addressLocality: "Novi Pazar",
+    },
+    priceRange: "$$",
+    serviceType: "Astropsihološko savetovanje i coaching",
+  },
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* ── HERO ─────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center pt-20">
         {/* Glow effect */}
