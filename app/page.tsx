@@ -88,7 +88,10 @@ export default function HomePage() {
             </SlideRight>
 
             {/* Slika */}
-            <SlideLeft delay={0.2} className="relative aspect-[3/4] rounded-lg overflow-hidden md:order-1">
+            <SlideLeft
+              delay={0.2}
+              className="relative aspect-[3/4] rounded-lg overflow-hidden md:order-1"
+            >
               <Image
                 src="/images/Home.webp"
                 alt="Nimfa iz Podsvesti"
@@ -104,7 +107,7 @@ export default function HomePage() {
       {/* ── OPIS USLUGE ──────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-y border-border">
         <div className="container-main section-padding">
-          <FadeUp className="max-w-5xl mx-auto text-center">
+          <FadeUp className=" mx-auto text-center">
             <p className="text-body">
               Diplomirani sam psiholog. Radim individualno, online, kroz video
               ili telefonske konsultacije, koristeći integrativni pristup koji
@@ -149,14 +152,16 @@ export default function HomePage() {
               </div>
             </SlideRight>
 
-            <SlideLeft delay={0.2} className="relative aspect-[4/5] rounded-lg overflow-hidden">
+            <SlideLeft
+              delay={0.2}
+              className="relative w-full h-full md:-ml-12 rounded-lg overflow-hidden"
+            >
               <Image
                 src="/images/Za koga jeste.webp"
                 alt="Za koga je ovaj rad"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"
-               
               />
             </SlideLeft>
           </div>
@@ -211,7 +216,6 @@ export default function HomePage() {
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
-                   
                   />
                 </div>
                 <div className="p-6">
@@ -270,7 +274,8 @@ export default function HomePage() {
 
           <div className="max-w-3xl mx-auto space-y-3">
             {[
-              { q: "Da li je astrologija obavezna?",
+              {
+                q: "Da li je astrologija obavezna?",
                 a: "Ne. Astrologija može biti početna tačka rada, ali nije obavezna. Ako klijent već ima jasno definisanu temu ili cilj, moguće je odmah započeti NLP coaching, fokusirani rad ili druge metode. Astrologija se koristi kao alat koji ubrzava i produbljuje uvid, ali nije uslov za nastavak rada.",
               },
               {
@@ -295,55 +300,55 @@ export default function HomePage() {
               },
             ].map((item, i) => (
               <FadeUp key={i} delay={i * 0.08} className="block">
-              <details
-                className="group border border-white/40 rounded-lg"
-                style={{
-                  background: "rgba(255,255,255,0.28)",
-                  backdropFilter: "blur(12px)",
-                  WebkitBackdropFilter: "blur(12px)",
-                }}
-              >
-                <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer list-none select-none">
-                  <span className="flex items-start gap-3">
+                <details
+                  className="group border border-white/40 rounded-lg"
+                  style={{
+                    background: "rgba(255,255,255,0.28)",
+                    backdropFilter: "blur(12px)",
+                    WebkitBackdropFilter: "blur(12px)",
+                  }}
+                >
+                  <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer list-none select-none">
+                    <span className="flex items-start gap-3">
+                      <span
+                        className="text-teget text-xs shrink-0 mt-1"
+                        aria-hidden
+                      >
+                        ✦
+                      </span>
+                      <span
+                        className="font-sans font-semibold text-sm md:text-base leading-snug"
+                        style={{ color: "#1e1a50" }}
+                      >
+                        {item.q}
+                      </span>
+                    </span>
                     <span
-                      className="text-teget text-xs shrink-0 mt-1"
+                      className="shrink-0 text-teget transition-transform duration-300 group-open:rotate-180"
                       aria-hidden
                     >
-                      ✦
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      >
+                        <polyline points="6 9 12 15 18 9" />
+                      </svg>
                     </span>
-                    <span
-                      className="font-sans font-semibold text-sm md:text-base leading-snug"
-                      style={{ color: "#1e1a50" }}
+                  </summary>
+                  <div className="px-5 pb-5 pt-1 border-t border-white/30">
+                    <p
+                      className="leading-relaxed text-sm md:text-base pl-6"
+                      style={{ color: "#4e4a7a" }}
                     >
-                      {item.q}
-                    </span>
-                  </span>
-                  <span
-                    className="shrink-0 text-teget transition-transform duration-300 group-open:rotate-180"
-                    aria-hidden
-                  >
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                    >
-                      <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                  </span>
-                </summary>
-                <div className="px-5 pb-5 pt-1 border-t border-white/30">
-                  <p
-                    className="leading-relaxed text-sm md:text-base pl-6"
-                    style={{ color: "#4e4a7a" }}
-                  >
-                    {item.a}
-                  </p>
-                </div>
-              </details>
+                      {item.a}
+                    </p>
+                  </div>
+                </details>
               </FadeUp>
             ))}
           </div>

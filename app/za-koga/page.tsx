@@ -58,11 +58,12 @@ export default function ZaKogaPage() {
           <div className="max-w-5xl">
             <FadeUp>
               <p className="text-body mb-10">
-                Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja ne
-                završavaju na površinskom nivou, a da im klasični dugotrajni,
+                Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja
+                ne završavaju na površinskom nivou, a da im klasični dugotrajni,
                 isključivo klinički pristupi, često ne daju potpune odgovore.
-                Namenjen je onima koji žele razumevanje, ali i unutrašnju promenu,
-                kroz dublji uvid u sopstvene obrasce, odluke i životne teme.
+                Namenjen je onima koji žele razumevanje, ali i unutrašnju
+                promenu, kroz dublji uvid u sopstvene obrasce, odluke i životne
+                teme.
               </p>
             </FadeUp>
 
@@ -96,11 +97,16 @@ export default function ZaKogaPage() {
                       >
                         ✦
                       </span>
-                      <p className="text-cream-muted leading-relaxed">{item}</p>
+                      <p className="text-cream-muted font-bold leading-relaxed">
+                        {item}
+                      </p>
                     </FadeUp>
                   ))}
                 </div>
-                <FadeUp delay={0.3} className="relative aspect-[3/4] rounded-lg overflow-hidden">
+                <FadeUp
+                  delay={0.3}
+                  className="relative aspect-[3/4] rounded-lg overflow-hidden"
+                >
                   <Image
                     src="/images/Za koga jeste.webp"
                     alt="Za koga jeste"
@@ -117,9 +123,9 @@ export default function ZaKogaPage() {
               <p className="text-body mb-4">
                 Ovaj pristup je za ljude koji shvataju da su oni sami nosioci
                 sopstvene promene, koji žele svesniji odnos prema sebi, svojim
-                obrascima i potencijalima, a koji su otvoreni za integraciju uvida
-                na psihološkom, simboličkom i iskustvenom nivou. Ovaj rad ne
-                ostaje na pukoj analizi — već pruža jasnoću, fokus i svesno
+                obrascima i potencijalima, a koji su otvoreni za integraciju
+                uvida na psihološkom, simboličkom i iskustvenom nivou. Ovaj rad
+                ne ostaje na pukoj analizi — već pruža jasnoću, fokus i svesno
                 delovanje, uz konkretan rad na ciljevima, odnosima i ličnom
                 razvoju.
               </p>
@@ -148,7 +154,10 @@ export default function ZaKogaPage() {
             </FadeUp>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-8">
-              <FadeUp delay={0.2} className="relative aspect-[3/4] rounded-lg overflow-hidden">
+              <FadeUp
+                delay={0.2}
+                className="relative aspect-[3/4] rounded-lg overflow-hidden"
+              >
                 <Image
                   src="/images/Za koga nije.webp"
                   alt="Za koga nije"
@@ -170,7 +179,9 @@ export default function ZaKogaPage() {
                     >
                       ✕
                     </span>
-                    <p className="text-bg-card leading-relaxed">{item}</p>
+                    <p className="text-bg-card font-bold leading-relaxed">
+                      {item}
+                    </p>
                   </FadeUp>
                 ))}
               </div>
@@ -207,8 +218,8 @@ export default function ZaKogaPage() {
                 </div>
                 <div className="space-y-3 text-cream-muted leading-relaxed pl-8">
                   <p>
-                    Rad koji nudim ima za cilj lični razvoj, osvešćivanje obrazaca
-                    i dublje razumevanje unutrašnjih procesa.
+                    Rad koji nudim ima za cilj lični razvoj, osvešćivanje
+                    obrazaca i dublje razumevanje unutrašnjih procesa.
                   </p>
                   <p>
                     Ne predstavlja medicinski, psihijatrijski ili
@@ -217,8 +228,8 @@ export default function ZaKogaPage() {
                   </p>
                   <p>
                     U radu se ne postavljaju dijagnoze niti se daje medicinski
-                    savet. Klijent zadržava punu odgovornost za sopstvene odluke i
-                    postupke.
+                    savet. Klijent zadržava punu odgovornost za sopstvene odluke
+                    i postupke.
                   </p>
                 </div>
               </div>
