@@ -25,7 +25,7 @@ export default function KakoIzgledaRadPage() {
         <div className="container-main relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <SlideRight>
-              <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+              <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
                 Proces
               </p>
               <h1 className="heading-xl mb-4">
@@ -56,15 +56,15 @@ export default function KakoIzgledaRadPage() {
         <div className="container-main section-padding">
           <div className="max-w-6xl space-y-12">
             {/* 01 */}
-            <FadeUp className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp className="card group hover:border-teget/40 transition-colors duration-300">
               <div className="flex items-start gap-6">
                 <div className="shrink-0 text-center">
-                  <p className="font-serif text-4xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
+                  <p className="font-serif text-4xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
                     01
                   </p>
                   <span
                     aria-hidden
-                    className="text-gold/40 text-lg block mt-2"
+                    className="text-teget/40 text-lg block mt-2"
                     style={{
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
@@ -74,7 +74,7 @@ export default function KakoIzgledaRadPage() {
                 </div>
                 <div>
                   <h2 className="heading-md mb-1">Uvid</h2>
-                  <p className="text-gold text-sm italic mb-4">
+                  <p className="text-teget text-sm italic mb-4">
                     Razumevanje strukture i teme
                   </p>
                   <div className="space-y-3 text-cream-muted leading-relaxed">
@@ -100,15 +100,15 @@ export default function KakoIzgledaRadPage() {
             </FadeUp>
 
             {/* 02 */}
-            <FadeUp delay={0.1} className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp delay={0.1} className="card group hover:border-teget/40 transition-colors duration-300">
               <div className="flex items-start gap-6">
                 <div className="shrink-0 text-center">
-                  <p className="font-serif text-4xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
+                  <p className="font-serif text-4xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
                     02
                   </p>
                   <span
                     aria-hidden
-                    className="text-gold/40 text-lg block mt-2"
+                    className="text-teget/40 text-lg block mt-2"
                     style={{
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
@@ -118,7 +118,7 @@ export default function KakoIzgledaRadPage() {
                 </div>
                 <div>
                   <h2 className="heading-md mb-1">Fokus</h2>
-                  <p className="text-gold text-sm italic mb-4">
+                  <p className="text-teget text-sm italic mb-4">
                     Definisanje pravca rada
                   </p>
                   <p className="text-cream-muted leading-relaxed">
@@ -134,15 +134,15 @@ export default function KakoIzgledaRadPage() {
             </FadeUp>
 
             {/* 03 */}
-            <FadeUp delay={0.2} className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp delay={0.2} className="card group hover:border-teget/40 transition-colors duration-300">
               <div className="flex items-start gap-6">
                 <div className="shrink-0 text-center">
-                  <p className="font-serif text-4xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
+                  <p className="font-serif text-4xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
                     03
                   </p>
                   <span
                     aria-hidden
-                    className="text-gold/40 text-lg block mt-2"
+                    className="text-teget/40 text-lg block mt-2"
                     style={{
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
@@ -152,7 +152,7 @@ export default function KakoIzgledaRadPage() {
                 </div>
                 <div>
                   <h2 className="heading-md mb-1">Rad (na sebi)</h2>
-                  <p className="text-gold text-sm italic mb-4">
+                  <p className="text-teget text-sm italic mb-4">
                     Iskustveni i operativni proces
                   </p>
                   <div className="space-y-3 text-cream-muted leading-relaxed">
@@ -181,7 +181,7 @@ export default function KakoIzgledaRadPage() {
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <div className="container-main section-padding">
           <FadeUp className="text-center mb-10">
-            <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+            <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
               Primer rada
             </p>
             <h2 className="heading-lg mb-2">
@@ -206,15 +206,15 @@ export default function KakoIzgledaRadPage() {
 
           <div className="max-w-6xl mx-auto space-y-6">
             {/* Korak 1 */}
-            <FadeUp className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp className="card group hover:border-teget/40 transition-colors duration-300">
               <div className="flex items-start gap-5">
                 <div className="shrink-0 text-center">
-                  <p className="font-serif text-3xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
+                  <p className="font-serif text-3xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
                     1
                   </p>
                   <span
                     aria-hidden
-                    className="text-gold/40 text-lg block mt-2"
+                    className="text-teget/40 text-lg block mt-2"
                     style={{
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
@@ -224,7 +224,7 @@ export default function KakoIzgledaRadPage() {
                 </div>
                 <div>
                   <h3 className="heading-sm mb-1">Astrološki uvid</h3>
-                  <p className="text-gold text-sm italic mb-4">
+                  <p className="text-teget text-sm italic mb-4">
                     Pokazatelji karmičkih veza
                   </p>
                   <div className="space-y-3 text-cream-muted leading-relaxed">
@@ -236,7 +236,7 @@ export default function KakoIzgledaRadPage() {
                         "kontakt Saturna sa ličnim planetama",
                       ].map((item, i) => (
                         <li key={i} className="flex gap-2">
-                          <span className="text-gold/60 shrink-0">▪</span>
+                          <span className="text-teget/60 shrink-0">▪</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -260,15 +260,15 @@ export default function KakoIzgledaRadPage() {
             </FadeUp>
 
             {/* Korak 2 */}
-            <FadeUp delay={0.1} className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp delay={0.1} className="card group hover:border-teget/40 transition-colors duration-300">
               <div className="flex items-start gap-5">
                 <div className="shrink-0 text-center">
-                  <p className="font-serif text-3xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
+                  <p className="font-serif text-3xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
                     2
                   </p>
                   <span
                     aria-hidden
-                    className="text-gold/40 text-lg block mt-2"
+                    className="text-teget/40 text-lg block mt-2"
                     style={{
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
@@ -278,7 +278,7 @@ export default function KakoIzgledaRadPage() {
                 </div>
                 <div>
                   <h3 className="heading-sm mb-1">Astrohiling / savetodavni rad</h3>
-                  <p className="text-gold text-sm italic mb-4">
+                  <p className="text-teget text-sm italic mb-4">
                     Psihološki uvid i razumevanje obrasca
                   </p>
                   <div className="space-y-3 text-cream-muted leading-relaxed">
@@ -290,7 +290,7 @@ export default function KakoIzgledaRadPage() {
                         "prepoznavanje sopstvene uloge u dinamici odnosa",
                       ].map((item, i) => (
                         <li key={i} className="flex gap-2">
-                          <span className="text-gold/60 shrink-0">▪</span>
+                          <span className="text-teget/60 shrink-0">▪</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -306,15 +306,15 @@ export default function KakoIzgledaRadPage() {
             </FadeUp>
 
             {/* Korak 3 */}
-            <FadeUp delay={0.2} className="card group hover:border-gold/40 transition-colors duration-300">
+            <FadeUp delay={0.2} className="card group hover:border-teget/40 transition-colors duration-300">
               <div className="flex items-start gap-5">
                 <div className="shrink-0 text-center">
-                  <p className="font-serif text-3xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
+                  <p className="font-serif text-3xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
                     3
                   </p>
                   <span
                     aria-hidden
-                    className="text-gold/40 text-lg block mt-2"
+                    className="text-teget/40 text-lg block mt-2"
                     style={{
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
@@ -324,7 +324,7 @@ export default function KakoIzgledaRadPage() {
                 </div>
                 <div>
                   <h3 className="heading-sm mb-1">Regresivni rad</h3>
-                  <p className="text-gold text-sm italic mb-4">
+                  <p className="text-teget text-sm italic mb-4">
                     Lična prošlost i prošli životi
                   </p>
                   <div className="space-y-3 text-cream-muted leading-relaxed">
@@ -356,7 +356,7 @@ export default function KakoIzgledaRadPage() {
                         "osećaj 'sudbinske vezanosti' (iz 5. kuće) zamenjen je svesnijim izborom (iz 7. kuće)",
                       ].map((item, i) => (
                         <li key={i} className="flex gap-2">
-                          <span className="text-gold/60 shrink-0">▪</span>
+                          <span className="text-teget/60 shrink-0">▪</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -367,7 +367,7 @@ export default function KakoIzgledaRadPage() {
             </FadeUp>
 
             {/* Zaključak */}
-            <FadeUp delay={0.1} className="card border-gold/20 bg-bg-secondary">
+            <FadeUp delay={0.1} className="card border-teget/20 bg-bg-secondary">
               <p className="text-cream-muted leading-relaxed mb-3">
                 Ovaj primer pokazuje kako se:
               </p>
@@ -378,7 +378,7 @@ export default function KakoIzgledaRadPage() {
                   "i metoda regresivnog rada (uključujući i simboliku prošlih života)",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-2">
-                    <span className="text-gold/60 shrink-0">▪</span>
+                    <span className="text-teget/60 shrink-0">▪</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -438,7 +438,7 @@ export default function KakoIzgledaRadPage() {
                 <div className="p-4">
                   <div
                     aria-hidden
-                    className="text-2xl text-gold/50 mb-2"
+                    className="text-2xl text-teget/50 mb-2"
                     style={{ filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))" }}
                   >
                     {m.icon}

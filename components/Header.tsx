@@ -49,7 +49,7 @@ export default function Header() {
               href={link.href}
               className={`font-sans text-base tracking-wide transition-colors duration-200 ${
                 pathname === link.href
-                  ? "text-gold"
+                  ? "text-teget"
                   : "text-cream-muted hover:text-cream"
               }`}
             >
@@ -113,7 +113,7 @@ export default function Header() {
                 onClick={() => setMenuOpen(false)}
                 className={`font-sans text-sm py-2 transition-colors duration-200 ${
                   pathname === link.href
-                    ? "text-gold"
+                    ? "text-teget"
                     : "text-cream-muted hover:text-cream"
                 }`}
               >

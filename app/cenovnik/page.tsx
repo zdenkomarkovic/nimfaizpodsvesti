@@ -54,7 +54,7 @@ function PriceRow({
   return (
     <div className="flex items-center justify-between gap-4 py-3 border-b border-border/50 last:border-0 group">
       <div className="flex items-baseline gap-2 min-w-0">
-        <span className="text-gold/50 text-xs shrink-0" aria-hidden>
+        <span className="text-teget/50 text-xs shrink-0" aria-hidden>
           ✦
         </span>
         <span className="text-cream-muted text-sm leading-snug">{label}</span>
@@ -64,7 +64,7 @@ function PriceRow({
       </div>
       <div className="flex items-center gap-3 shrink-0 text-right">
         <span className="text-cream-faint text-xs hidden sm:block">{rsd}</span>
-        <span className="text-gold font-semibold text-sm">{eur}</span>
+        <span className="text-teget font-semibold text-sm">{eur}</span>
       </div>
     </div>
   );
@@ -74,14 +74,14 @@ function PackageRow({ label, rsd, eur }: { label: string; rsd: string; eur: stri
   return (
     <div className="flex items-center justify-between gap-4 py-3 border-b border-border/50 last:border-0">
       <div className="flex items-center gap-2 min-w-0">
-        <span className="text-gold/50 text-xs shrink-0" aria-hidden>
+        <span className="text-teget/50 text-xs shrink-0" aria-hidden>
           ✦
         </span>
         <span className="text-cream-muted text-sm">{label}</span>
       </div>
       <div className="flex items-center gap-3 shrink-0 text-right">
         <span className="text-cream-faint text-xs hidden sm:block">{rsd}</span>
-        <span className="text-gold font-semibold text-sm">{eur}</span>
+        <span className="text-teget font-semibold text-sm">{eur}</span>
       </div>
     </div>
   );
@@ -103,7 +103,7 @@ export default function CenovnikPage() {
           }}
         />
         <FadeUp className="container-main relative z-10">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">Transparentno</p>
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">Transparentno</p>
           <h1 className="heading-xl mb-4">Cenovnik i format rada</h1>
           <div className="gold-divider mx-0 mb-4" />
           <p className="text-body max-w-2xl">
@@ -122,7 +122,7 @@ export default function CenovnikPage() {
             <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
-                  className="text-gold text-lg shrink-0 mt-0.5"
+                  className="text-teget text-lg shrink-0 mt-0.5"
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
@@ -138,7 +138,7 @@ export default function CenovnikPage() {
 
               {/* Prva konsultacija */}
               <div className="mb-6">
-                <p className="text-gold text-xs uppercase tracking-widest mb-3">
+                <p className="text-teget text-xs uppercase tracking-widest mb-3">
                   Prva konsultacija u toku godine
                 </p>
                 <div>
@@ -150,7 +150,7 @@ export default function CenovnikPage() {
 
               {/* Sledeće */}
               <div>
-                <p className="text-gold text-xs uppercase tracking-widest mb-3">
+                <p className="text-teget text-xs uppercase tracking-widest mb-3">
                   Sledeće konsultacije u godini
                 </p>
                 <div>
@@ -169,7 +169,7 @@ export default function CenovnikPage() {
             <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
-                  className="text-gold text-lg shrink-0 mt-0.5"
+                  className="text-teget text-lg shrink-0 mt-0.5"
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
@@ -202,7 +202,7 @@ export default function CenovnikPage() {
             <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
-                  className="text-gold text-lg shrink-0 mt-0.5"
+                  className="text-teget text-lg shrink-0 mt-0.5"
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
@@ -238,7 +238,7 @@ export default function CenovnikPage() {
             <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
-                  className="text-gold text-lg shrink-0 mt-0.5"
+                  className="text-teget text-lg shrink-0 mt-0.5"
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
@@ -269,7 +269,7 @@ export default function CenovnikPage() {
             <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
-                  className="text-gold text-lg shrink-0 mt-0.5"
+                  className="text-teget text-lg shrink-0 mt-0.5"
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
@@ -304,7 +304,7 @@ export default function CenovnikPage() {
             <FadeUp className="card border-purple-soft/50">
               <div className="flex items-start gap-3 mb-6">
                 <span
-                  className="text-gold text-lg shrink-0 mt-0.5"
+                  className="text-teget text-lg shrink-0 mt-0.5"
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
@@ -320,14 +320,14 @@ export default function CenovnikPage() {
 
               <div className="flex items-center justify-between gap-4 py-3 border-b border-border/50">
                 <div className="flex items-center gap-2">
-                  <span className="text-gold/50 text-xs" aria-hidden>✦</span>
+                  <span className="text-teget/50 text-xs" aria-hidden>✦</span>
                   <span className="text-cream-muted text-sm">
                     Paket – 3 uzastopne seanse u 7 dana
                   </span>
                 </div>
                 <div className="flex items-center gap-3 shrink-0">
                   <span className="text-cream-faint text-xs hidden sm:block">12.000 RSD</span>
-                  <span className="text-gold font-semibold text-sm">120€</span>
+                  <span className="text-teget font-semibold text-sm">120€</span>
                 </div>
               </div>
 
@@ -354,7 +354,7 @@ export default function CenovnikPage() {
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <div className="container-main section-padding text-center">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">Sledeći korak</p>
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-4">Sledeći korak</p>
           <h2 className="heading-lg mb-4">Spremi za početak?</h2>
           <div className="gold-divider" />
           <p className="text-cream-muted mt-4 mb-8 max-w-md mx-auto">

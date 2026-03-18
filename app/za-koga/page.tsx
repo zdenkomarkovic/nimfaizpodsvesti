@@ -44,7 +44,7 @@ export default function ZaKogaPage() {
           }}
         />
         <FadeUp className="container-main relative z-10">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
             Prepoznaješ li sebe?
           </p>
           <h1 className="heading-xl mb-4">Za koga je ovaj pristup</h1>
@@ -80,11 +80,15 @@ export default function ZaKogaPage() {
                     <FadeUp
                       key={i}
                       delay={i * 0.06}
-                      className="flex items-start gap-4 p-4 rounded border border-border bg-bg-card
-                                 hover:border-gold/40 transition-colors duration-200"
+                      className="flex items-start gap-4 p-4 rounded border border-white/40 hover:border-teget/40 transition-colors duration-200"
+                      style={{
+                        background: "rgba(255,255,255,0.28)",
+                        backdropFilter: "blur(12px)",
+                        WebkitBackdropFilter: "blur(12px)",
+                      }}
                     >
                       <span
-                        className="text-gold shrink-0 mt-0.5 text-base"
+                        className="text-teget shrink-0 mt-0.5 text-base"
                         aria-hidden
                         style={{
                           filter: "drop-shadow(0 0 4px rgba(201,168,76,0.4))",
@@ -123,7 +127,7 @@ export default function ZaKogaPage() {
 
             {/* Pull quote */}
             <FadeUp>
-              <div className="border-l-2 border-gold pl-6 py-2 my-8">
+              <div className="border-l-2 border-teget pl-6 py-2 my-8">
                 <p className="font-serif text-lg text-cream italic leading-relaxed">
                   Ako vam ovo zvuči zahtevno – verovatno je za vas.
                 </p>
@@ -161,7 +165,7 @@ export default function ZaKogaPage() {
                     className="flex items-start gap-4 p-4 rounded border border-border/60 bg-bg-primary/50"
                   >
                     <span
-                      className="text-bg-card shrink-0 mt-0.5 text-base"
+                      className="text-red-500 shrink-0 mt-0.5 text-base"
                       aria-hidden
                     >
                       ✕
@@ -191,7 +195,7 @@ export default function ZaKogaPage() {
               <div className="card border-purple-soft/40">
                 <div className="flex items-start gap-4 mb-4">
                   <span
-                    className="text-gold text-xl shrink-0 mt-0.5"
+                    className="text-teget text-xl shrink-0 mt-0.5"
                     aria-hidden
                     style={{
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
@@ -226,7 +230,7 @@ export default function ZaKogaPage() {
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <FadeUp className="container-main section-padding text-center">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-4">
             Sledeći korak
           </p>
           <h2 className="heading-lg mb-4">Prepoznajete se?</h2>

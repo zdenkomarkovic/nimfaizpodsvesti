@@ -23,7 +23,7 @@ export default function PunaBio() {
         >
           <div className="container-main section-padding">
             <div className="max-w-4xl mx-auto">
-              <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+              <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
                 Cela priča
               </p>
               <h2 className="heading-lg mb-4">Jelena Stevanović</h2>

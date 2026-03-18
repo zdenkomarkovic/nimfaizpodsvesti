@@ -20,6 +20,10 @@ const config: Config = {
           light: "#e8c870",
           muted: "#9e7d30",
         },
+        teget: {
+          DEFAULT: "#1B3A5C",
+          light: "#2a5080",
+        },
         // bg.primary kept for btn text (dark on gold button)
         bg: {
           primary: "#0a0a18",

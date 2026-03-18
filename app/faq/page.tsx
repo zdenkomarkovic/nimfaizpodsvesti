@@ -65,7 +65,7 @@ export default function FaqPage() {
           }}
         />
         <FadeUp className="container-main relative z-10">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">Pitanja i odgovori</p>
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">Pitanja i odgovori</p>
           <h1 className="heading-xl mb-4">Često postavljana pitanja</h1>
           <div className="gold-divider mx-0" />
         </FadeUp>
@@ -78,8 +78,12 @@ export default function FaqPage() {
             {faqs.map((item, i) => (
               <FadeUp key={i} delay={i * 0.06} className="block">
               <details
-                className="group border border-border rounded-lg bg-bg-card
-                           open:border-gold/40 transition-colors duration-200"
+                className="group border border-white/40 rounded-lg open:border-teget/40 transition-colors duration-200"
+                style={{
+                  background: "rgba(255,255,255,0.28)",
+                  backdropFilter: "blur(12px)",
+                  WebkitBackdropFilter: "blur(12px)",
+                }}
               >
                 <summary
                   className="flex items-center justify-between gap-4 p-5 cursor-pointer
@@ -87,7 +91,7 @@ export default function FaqPage() {
                 >
                   <span className="flex items-start gap-3">
                     <span
-                      className="text-gold text-xs shrink-0 mt-1"
+                      className="text-teget text-xs shrink-0 mt-1"
                       aria-hidden
                       style={{ filter: "drop-shadow(0 0 4px rgba(201,168,76,0.4))" }}
                     >
@@ -99,7 +103,7 @@ export default function FaqPage() {
                   </span>
                   {/* Chevron */}
                   <span
-                    className="shrink-0 text-gold transition-transform duration-300
+                    className="shrink-0 text-teget transition-transform duration-300
                                group-open:rotate-180"
                     aria-hidden
                   >
@@ -132,7 +136,7 @@ export default function FaqPage() {
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <div className="container-main section-padding text-center">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">Ostala pitanja?</p>
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-4">Ostala pitanja?</p>
           <h2 className="heading-lg mb-4">Zakaži konsultaciju i definiši svoj pravac rada</h2>
           <div className="gold-divider" />
           <p className="text-cream-muted mt-4 mb-8 max-w-md mx-auto">

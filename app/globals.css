@@ -93,7 +93,7 @@ body {
   }
 
   .gold-divider {
-    @apply w-16 h-px bg-gold mx-auto my-8;
+    @apply w-16 h-px bg-teget mx-auto my-8;
   }
 
   /* Frosted glass card */
@@ -112,32 +112,32 @@ body {
   }
 
   .btn-primary {
-    @apply inline-block bg-gold font-sans font-semibold tracking-wide
+    @apply inline-block bg-teget font-sans font-semibold tracking-wide
            px-8 py-3 rounded text-sm uppercase
-           hover:bg-gold-light transition-colors duration-300 cursor-pointer;
-    color: #0a0a18;
+           hover:bg-teget-light transition-colors duration-300 cursor-pointer;
+    color: #ffffff;
   }
 
   .btn-outline {
     @apply inline-block font-sans font-semibold tracking-wide
            px-8 py-3 rounded text-sm uppercase
            transition-colors duration-300;
-    border: 1px solid #c9a84c;
-    color: #9e7d30;
+    border: 1px solid #1B3A5C;
+    color: #1B3A5C;
     background: rgba(255, 255, 255, 0.15);
   }
   .btn-outline:hover {
-    background: #c9a84c;
-    color: #0a0a18;
+    background: #1B3A5C;
+    color: #ffffff;
   }
 
   .link-arrow {
     @apply font-sans text-sm tracking-wider uppercase inline-flex items-center gap-2
            transition-colors duration-200;
-    color: #9e7d30;
+    color: #1B3A5C;
   }
   .link-arrow:hover {
-    color: #c9a84c;
+    color: #2a5080;
   }
 
   .mini-disclaimer {

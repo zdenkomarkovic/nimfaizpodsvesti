@@ -49,7 +49,7 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-cream-faint hover:text-gold text-sm transition-colors duration-200"
+                  className="text-cream-faint hover:text-teget text-sm transition-colors duration-200"
                 >
                   {link.label}
                 </Link>
@@ -65,7 +65,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2 text-sm text-cream-faint">
               <a
                 href="mailto:nimfaizpodsvesti@gmail.com"
-                className="hover:text-gold transition-colors duration-200"
+                className="hover:text-teget transition-colors duration-200"
               >
                 nimfaizpodsvesti@gmail.com
               </a>
@@ -73,13 +73,13 @@ export default function Footer() {
                 href="https://www.instagram.com/nimfa_iz_podsvesti/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gold transition-colors duration-200"
+                className="hover:text-teget transition-colors duration-200"
               >
                 @nimfa_iz_podsvesti
               </a>
               <a
                 href="tel:+381628068616"
-                className="hover:text-gold transition-colors duration-200"
+                className="hover:text-teget transition-colors duration-200"
               >
                 +381 62 806 8616
               </a>
@@ -87,13 +87,13 @@ export default function Footer() {
                 href="https://wa.me/381628068616"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gold transition-colors duration-200"
+                className="hover:text-teget transition-colors duration-200"
               >
                 WhatsApp
               </a>
               <a
                 href="viber://chat?number=%2B381628068616"
-                className="hover:text-gold transition-colors duration-200"
+                className="hover:text-teget transition-colors duration-200"
               >
                 Viber
               </a>
@@ -136,7 +136,7 @@ export default function Footer() {
                 href="https://manikamwebsolutions.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gold transition-colors duration-200"
+                className="hover:text-teget transition-colors duration-200"
               >
                 Manikam Web Solutions
               </a>

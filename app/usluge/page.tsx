@@ -97,7 +97,7 @@ export default function UslugePage() {
           }}
         />
         <FadeUp className="container-main relative z-10">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
             Ponuda
           </p>
           <h1 className="heading-xl mb-4">
@@ -121,16 +121,16 @@ export default function UslugePage() {
             {services.map((service) => (
               <FadeUp
                 key={service.num}
-                className="card group hover:border-gold/40 transition-colors duration-300"
+                className="card group hover:border-teget/40 transition-colors duration-300"
               >
                 <div className="flex items-start gap-5 md:gap-8">
                   {/* Number + icon */}
                   <div className="shrink-0 flex flex-col items-center gap-2">
-                    <span className="font-serif text-3xl text-gold/25 leading-none group-hover:text-gold/50 transition-colors">
+                    <span className="font-serif text-3xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
                       {service.num}
                     </span>
                     <span
-                      className="text-gold/40 text-lg"
+                      className="text-teget/40 text-lg"
                       aria-hidden
                       style={{
                         filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
@@ -167,7 +167,7 @@ export default function UslugePage() {
                                   key={j}
                                   className="text-cream-muted leading-relaxed text-sm md:text-base flex gap-2"
                                 >
-                                  <span className="text-gold/60 shrink-0">▪</span>
+                                  <span className="text-teget/60 shrink-0">▪</span>
                                   <span>{line.replace(/^▪\s*/, "")}</span>
                                 </li>
                               ))}
@@ -195,7 +195,7 @@ export default function UslugePage() {
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <FadeUp className="container-main section-padding text-center">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-4">
             Sledeći korak
           </p>
           <h2 className="heading-lg mb-4">Koja usluga odgovara tebi?</h2>

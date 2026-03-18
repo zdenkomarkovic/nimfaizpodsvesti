@@ -24,7 +24,7 @@ export default function OMeniPage() {
           }}
         />
         <FadeUp className="container-main relative z-10">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
             Upoznajte me
           </p>
           <h1 className="heading-xl mb-4">O Meni</h1>
@@ -95,7 +95,7 @@ export default function OMeniPage() {
         <div className="container-main section-padding">
           <div className="max-w-4xl mx-auto">
             <FadeUp>
-            <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+            <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
               Studies &amp; Certificates
             </p>
             <h2 className="heading-lg mb-4">Edukacije i sertifikati</h2>
@@ -154,7 +154,7 @@ export default function OMeniPage() {
                     <p className="text-cream font-semibold">{edu.title}</p>
                     <p className="text-cream-muted text-sm mt-0.5">{edu.institution}</p>
                   </div>
-                  <span className="text-gold text-sm shrink-0">{edu.period}</span>
+                  <span className="text-teget text-sm shrink-0">{edu.period}</span>
                 </FadeUp>
               ))}
             </div>

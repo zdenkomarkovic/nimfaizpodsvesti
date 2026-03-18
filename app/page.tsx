@@ -66,8 +66,8 @@ export default function HomePage() {
         <div className="container-main section-padding relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Tekst */}
-            <SlideRight>
-              <p className="text-gold text-xs uppercase tracking-[0.25em] mb-6">
+            <SlideRight className="md:order-2">
+              <p className="text-teget text-xs md:text-sm uppercase tracking-[0.25em] mb-6">
                 Astropsihološko savetovanje &middot; Coaching &middot; Lični
                 razvoj
               </p>
@@ -88,7 +88,7 @@ export default function HomePage() {
             </SlideRight>
 
             {/* Slika */}
-            <SlideLeft delay={0.2} className="relative aspect-[3/4] rounded-lg overflow-hidden">
+            <SlideLeft delay={0.2} className="relative aspect-[3/4] rounded-lg overflow-hidden md:order-1">
               <Image
                 src="/images/Home.webp"
                 alt="Nimfa iz Podsvesti"
@@ -123,7 +123,7 @@ export default function HomePage() {
         <div className="container-main section-padding">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-stretch">
             <SlideRight className="md:col-span-2">
-              <p className="text-gold text-xs uppercase tracking-[0.2em] mb-3">
+              <p className="text-teget text-xs uppercase tracking-[0.2em] mb-3">
                 Za koga
               </p>
               <h2 className="heading-lg mb-6">Za koga je ovaj rad</h2>
@@ -137,7 +137,7 @@ export default function HomePage() {
                   "ako ponekad osećaš da tvoji problemi nisu racionalno objašnjivi",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="text-gold mt-1 shrink-0">✦</span>
+                    <span className="text-teget mt-1 shrink-0">✦</span>
                     <span className="text-cream-muted">{item}</span>
                   </li>
                 ))}
@@ -167,7 +167,7 @@ export default function HomePage() {
       <section className="relative z-10 bg-bg-secondary border-y border-border">
         <div className="container-main section-padding">
           <FadeUp className="text-center mb-12">
-            <p className="text-gold text-xs uppercase tracking-[0.2em] mb-3">
+            <p className="text-teget text-xs uppercase tracking-[0.2em] mb-3">
               Proces
             </p>
             <h2 className="heading-lg mb-4">Kako izgleda rad</h2>
@@ -202,7 +202,7 @@ export default function HomePage() {
               <FadeUp
                 key={step.num}
                 delay={i * 0.15}
-                className="card group hover:border-gold/40 transition-colors duration-300 overflow-hidden !p-0"
+                className="card group hover:border-teget/40 transition-colors duration-300 overflow-hidden !p-0"
               >
                 <div className="relative aspect-video w-full">
                   <Image
@@ -215,7 +215,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="p-6">
-                  <p className="font-serif text-3xl text-gold/30 mb-3 group-hover:text-gold/50 transition-colors">
+                  <p className="font-serif text-3xl text-teget/30 mb-3 group-hover:text-teget/50 transition-colors">
                     {step.num}
                   </p>
                   <h3 className="heading-md mb-3">{step.title}</h3>
@@ -238,7 +238,7 @@ export default function HomePage() {
       {/* ── BOTTOM CTA ───────────────────────────────────── */}
       <section className="relative z-10">
         <FadeUp className="container-main section-padding text-center">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-4">
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-4">
             Sledeći korak
           </p>
           <h2 className="heading-lg mb-4">
@@ -261,7 +261,7 @@ export default function HomePage() {
       <section className="relative z-10 bg-bg-secondary border-t border-white/30">
         <div className="container-main section-padding">
           <FadeUp className="text-center mb-10">
-            <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+            <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
               Imate pitanja?
             </p>
             <h2 className="heading-lg mb-2">Često postavljana pitanja</h2>
@@ -306,7 +306,7 @@ export default function HomePage() {
                 <summary className="flex items-center justify-between gap-4 p-5 cursor-pointer list-none select-none">
                   <span className="flex items-start gap-3">
                     <span
-                      className="text-gold text-xs shrink-0 mt-1"
+                      className="text-teget text-xs shrink-0 mt-1"
                       aria-hidden
                     >
                       ✦
@@ -319,7 +319,7 @@ export default function HomePage() {
                     </span>
                   </span>
                   <span
-                    className="shrink-0 text-gold transition-transform duration-300 group-open:rotate-180"
+                    className="shrink-0 text-teget transition-transform duration-300 group-open:rotate-180"
                     aria-hidden
                   >
                     <svg

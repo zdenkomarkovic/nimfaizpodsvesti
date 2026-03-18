@@ -27,7 +27,7 @@ export default function KontaktPage() {
           }}
         />
         <FadeUp className="container-main relative z-10">
-          <p className="text-gold text-xs uppercase tracking-[0.25em] mb-3">
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
             Sledeći korak
           </p>
           <h1 className="heading-xl mb-4">Kontakt</h1>
@@ -50,14 +50,14 @@ export default function KontaktPage() {
                 {/* Email */}
                 <a
                   href="mailto:nimfaizpodsvesti@gmail.com"
-                  className="card flex items-center gap-4 hover:border-gold/40 transition-colors duration-300 group"
+                  className="card flex items-center gap-4 hover:border-teget/40 transition-colors duration-300 group"
                 >
-                  <span className="text-gold text-xl" aria-hidden>✉</span>
+                  <span className="text-teget text-xl" aria-hidden>✉</span>
                   <div>
                     <p className="text-cream-muted text-xs uppercase tracking-widest mb-0.5">
                       Email
                     </p>
-                    <p className="text-cream group-hover:text-gold transition-colors text-sm">
+                    <p className="text-cream group-hover:text-teget transition-colors text-sm">
                       nimfaizpodsvesti@gmail.com
                     </p>
                   </div>
@@ -68,14 +68,14 @@ export default function KontaktPage() {
                   href="https://www.instagram.com/nimfa_iz_podsvesti/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="card flex items-center gap-4 hover:border-gold/40 transition-colors duration-300 group"
+                  className="card flex items-center gap-4 hover:border-teget/40 transition-colors duration-300 group"
                 >
-                  <span className="text-gold text-xl" aria-hidden>◈</span>
+                  <span className="text-teget text-xl" aria-hidden>◈</span>
                   <div>
                     <p className="text-cream-muted text-xs uppercase tracking-widest mb-0.5">
                       Instagram
                     </p>
-                    <p className="text-cream group-hover:text-gold transition-colors text-sm">
+                    <p className="text-cream group-hover:text-teget transition-colors text-sm">
                       @nimfa_iz_podsvesti
                     </p>
                   </div>
@@ -84,7 +84,7 @@ export default function KontaktPage() {
                 {/* Telefon – 3 dugmeta */}
                 <div className="card">
                   <div className="flex items-center gap-4 mb-4">
-                    <span className="text-gold text-xl" aria-hidden>☎</span>
+                    <span className="text-teget text-xl" aria-hidden>☎</span>
                     <div>
                       <p className="text-cream-muted text-xs uppercase tracking-widest mb-0.5">
                         Telefon
@@ -96,7 +96,7 @@ export default function KontaktPage() {
                     {/* Pozovi */}
                     <a
                       href={`tel:${PHONE}`}
-                      className="flex items-center gap-2 px-4 py-2 rounded border border-border text-cream-muted text-xs hover:border-gold/40 hover:text-cream transition-colors duration-200"
+                      className="flex items-center gap-2 px-4 py-2 rounded border border-border text-cream-muted text-xs hover:border-teget/40 hover:text-cream transition-colors duration-200"
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.27 6.27l1.06-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                       Pozovi
@@ -106,7 +106,7 @@ export default function KontaktPage() {
                       href={`https://wa.me/${PHONE.replace("+", "")}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 rounded border border-border text-cream-muted text-xs hover:border-gold/40 hover:text-cream transition-colors duration-200"
+                      className="flex items-center gap-2 px-4 py-2 rounded border border-border text-cream-muted text-xs hover:border-teget/40 hover:text-cream transition-colors duration-200"
                     >
                       <FaWhatsapp size={15} aria-hidden />
                       WhatsApp
@@ -114,7 +114,7 @@ export default function KontaktPage() {
                     {/* Viber */}
                     <a
                       href={`viber://chat?number=${encodeURIComponent(PHONE)}`}
-                      className="flex items-center gap-2 px-4 py-2 rounded border border-border text-cream-muted text-xs hover:border-gold/40 hover:text-cream transition-colors duration-200"
+                      className="flex items-center gap-2 px-4 py-2 rounded border border-border text-cream-muted text-xs hover:border-teget/40 hover:text-cream transition-colors duration-200"
                     >
                       <FaViber size={15} aria-hidden />
                       Viber

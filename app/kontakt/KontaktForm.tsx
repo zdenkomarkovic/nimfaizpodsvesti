@@ -23,8 +23,8 @@ export default function KontaktForm() {
 
   if (status === "ok") {
     return (
-      <div className="card text-center border-gold/30 py-10">
-        <div className="text-4xl text-gold/60 mb-4" aria-hidden>✦</div>
+      <div className="card text-center border-teget/30 py-10">
+        <div className="text-4xl text-teget/60 mb-4" aria-hidden>✦</div>
         <p className="text-cream font-semibold mb-2">Poruka je poslata!</p>
         <p className="text-cream-muted text-sm">
           Odgovorim u roku od 24 sata.
@@ -44,7 +44,7 @@ export default function KontaktForm() {
           required
           value={form.ime}
           onChange={(e) => setForm({ ...form, ime: e.target.value })}
-          className="w-full bg-bg-card border border-border rounded px-4 py-2.5 text-cream text-sm placeholder:text-cream-faint focus:outline-none focus:border-gold/50 transition-colors"
+          className="w-full bg-bg-card border border-border rounded px-4 py-2.5 text-cream text-sm placeholder:text-cream-faint focus:outline-none focus:border-teget/50 transition-colors"
           placeholder="Tvoje ime"
         />
       </div>
@@ -58,7 +58,7 @@ export default function KontaktForm() {
           required
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
-          className="w-full bg-bg-card border border-border rounded px-4 py-2.5 text-cream text-sm placeholder:text-cream-faint focus:outline-none focus:border-gold/50 transition-colors"
+          className="w-full bg-bg-card border border-border rounded px-4 py-2.5 text-cream text-sm placeholder:text-cream-faint focus:outline-none focus:border-teget/50 transition-colors"
           placeholder="tvoj@email.com"
         />
       </div>
@@ -72,7 +72,7 @@ export default function KontaktForm() {
           rows={5}
           value={form.poruka}
           onChange={(e) => setForm({ ...form, poruka: e.target.value })}
-          className="w-full bg-bg-card border border-border rounded px-4 py-2.5 text-cream text-sm placeholder:text-cream-faint focus:outline-none focus:border-gold/50 transition-colors resize-none"
+          className="w-full bg-bg-card border border-border rounded px-4 py-2.5 text-cream text-sm placeholder:text-cream-faint focus:outline-none focus:border-teget/50 transition-colors resize-none"
           placeholder="Ukratko opiši šta te dovodi..."
         />
       </div>
