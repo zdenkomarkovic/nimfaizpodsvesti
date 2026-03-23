@@ -64,23 +64,29 @@ export default function HomePage() {
           }}
         />
         <div className="container-main section-padding relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
             {/* Tekst */}
             <SlideRight className="md:order-2">
-              <p className="text-teget text-xs md:text-sm uppercase tracking-[0.25em] mb-6">
+              <p className="text-teget text-xs md:text-sm uppercase tracking-[0.25em] mb-4">
                 Astropsihološko savetovanje &middot; Coaching &middot; Lični
                 razvoj
               </p>
-              <h1 className="heading-xl mb-6">
+              <h1 className="heading-xl lg:!text-[2.6rem] mb-4">
                 Astropsihološko savetovanje, coaching mentorstvo i lični razvoj
-                online <span className="font-bold">Nimfa iz podsvesti</span>
+                online <span className="font-bold">Nimfa Iz Podsvesti</span>
               </h1>
               <div className="gold-divider mx-0" />
-              <p className="text-body text-cream-muted mb-8">
-                Astropsihološko savetovanje koje povezuje psihologiju i
-                astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i
-                regresivne procese sa temama prošlih života, usmereno na lični
-                razvoj i svesnu promenu.
+              <p className="text-body text-cream-muted mb-4">
+                Postoje trenuci kada osećamo da se nešto ponavlja, ali ne znamo
+                zašto. Određeni odnosi, emocije i situacije se vraćaju bez
+                jasnog objašnjenja.
+              </p>
+              <p className="text-body text-cream-muted mb-4">
+                Astropsihološko savetovanje koje povezuje psihologiju uz NLP
+                tehnike, hipnotički fokusirani rad i regresivne procese sa
+                temama prošlih života — omogućava da to postane vidljivo. Da
+                razumete sebe na dubljem nivou i donesete odluke koje su u
+                skladu sa vama.
               </p>
               <Link href="/kontakt" className="btn-primary">
                 Zakaži konsultaciju
@@ -108,24 +114,134 @@ export default function HomePage() {
       <section className="relative z-10 bg-bg-secondary border-y border-border">
         <div className="container-main section-padding">
           <FadeUp className=" mx-auto text-center">
-            <p className="text-body">
-              Diplomirani sam psiholog. Radim individualno, online, kroz video
-              ili telefonske konsultacije, koristeći integrativni pristup koji
-              povezuje psihologiju, astrologiju i coaching i regresivne tehnike.
-              U radu primenjujem NLP, hipnotičke metode i regresivni rad usmeren
-              na istraživanje prošlih životnih ili ranijih životnih iskustava,
-              sa ciljem dubljeg razumevanja unutrašnjih obrazaca i ličnog
-              razvoja.
-            </p>
+            <div className="space-y-4 text-body text-cream-muted">
+              <p>
+                Ja sam Jelena i diplomirani sam psiholog. Radim individualno,
+                online, kroz video i telefonske konsultacije, koristeći
+                integrativni pristup koji povezuje psihologiju, astrologiju,
+                coaching i regresivne tehnike. Moj rad nastao je iz potrebe da
+                se razume ono što nije odmah vidljivo — unutrašnji procesi koji
+                oblikuju naše misli, emocije i odnose.
+              </p>
+              <p>
+                Astropsihologiju ne posmatram kao predviđanje, već kao način
+                razumevanja. Razumevanja obrazaca koje ponavljamo, reakcija koje
+                ne biramo svesno i dinamike odnosa u kojima se prepoznajemo —
+                ili gubimo.
+              </p>
+              <p>
+                Kroz rad sa mnom otvara se prostor u kojem je moguće sagledati
+                sebe bez pritiska, bez uloga i bez potrebe da se nešto
+                „ispravi"... jer odgovori koje tražimo nisu izvan nas. Oni su
+                već tu — potrebno je samo da ih postepeno osvestimo.
+              </p>
+              <p>
+                U tom procesu nisam tu da vam dam odgovore, već da vam pomognem
+                da ih pronađete.
+              </p>
+            </div>
           </FadeUp>
+        </div>
+      </section>
+
+      {/* ── USLUGE ───────────────────────────────────────── */}
+      <section className="relative z-10">
+        <div className="container-main section-padding">
+          <FadeUp className="text-center mb-12">
+            <p className="text-teget text-xs uppercase tracking-[0.2em] mb-3">
+              Usluge
+            </p>
+            <h2 className="heading-lg mb-4">Šta nudim</h2>
+            <div className="gold-divider" />
+          </FadeUp>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                title: "Astrologija",
+                subtitle: "Individualni uvid",
+                text: "Dubinski uvid u ličnost, odnose i životne cikluse kroz analizu natalne karte i aktuelnih tranzita. Razumevanje obrazaca koji oblikuju vaš život.",
+                image: "/images/astro.png",
+                href: "/usluge#astrologija",
+              },
+              {
+                title: "Astropsihološko savetovanje",
+                subtitle: "Astrohiling",
+                text: "Povezivanje astrologije i psihologije u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca. Rad usmeren ka svesnijim izborima i ličnom razvoju.",
+                image: "/images/astropsiholosko savetovanje.png",
+                href: "/usluge#astropsiholosko-savetovanje",
+              },
+              {
+                title: "Psihološko i NLP coaching",
+                subtitle: "Paket sesija",
+                text: "Rad na ciljevima, uverenjima i promeni obrazaca koji vas ograničavaju. Proces koji donosi jasnije odluke i stabilniji unutrašnji osećaj.",
+                image: "/images/psiholoski i NLP Coaching.png",
+                href: "/usluge#nlp-coaching",
+              },
+              {
+                title: "Hipnotičke tehnike",
+                subtitle: "Individualni rad",
+                text: "Rad sa nesvesnim kada razumete problem, ali promena izostaje. Otklanjanje blokada i pristup dubljim slojevima ličnosti.",
+                image: "/images/hipnoza.png",
+                href: "/usluge#hipnoticke-tehnike",
+              },
+              {
+                title: "Regresivni rad",
+                subtitle: null,
+                text: "Istraživanje dubokih unutrašnjih iskustava i obrazaca koji utiču na sadašnji život. Proces razumevanja i integracije.",
+                image: "/images/regresija.png",
+                href: "/usluge#regresivni-rad",
+              },
+              {
+                title: "CRT proces",
+                subtitle: "Complete Restoration Therapy",
+                text: "Intenzivan rad usmeren na razrešenje unutrašnjih konflikata i donošenje jasnih odluka. Brz i fokusiran proces promene.",
+                image: "/images/CRT.png",
+                href: "/usluge#crt-proces",
+              },
+            ].map((usluga, i) => (
+              <FadeUp
+                key={usluga.title}
+                delay={i * 0.1}
+                className="card group hover:border-teget/40 transition-colors duration-300 overflow-hidden !p-0 flex flex-col"
+              >
+                <div className="relative aspect-video w-full">
+                  <Image
+                    src={usluga.image}
+                    alt={usluga.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <h3 className="heading-md mb-1">{usluga.title}</h3>
+                  {usluga.subtitle && (
+                    <p className="text-teget text-xs uppercase tracking-widest mb-3">
+                      {usluga.subtitle}
+                    </p>
+                  )}
+                  <p className="text-cream-faint text-sm leading-relaxed flex-1 mb-5">
+                    {usluga.text}
+                  </p>
+                  <Link
+                    href={usluga.href}
+                    className="btn-primary text-center text-sm py-2"
+                  >
+                    Saznaj više
+                  </Link>
+                </div>
+              </FadeUp>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* ── ZA KOGA JE OVAJ RAD ──────────────────────────── */}
       <section className="relative z-10">
         <div className="container-main section-padding">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-stretch">
-            <SlideRight className="md:col-span-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+            <SlideRight>
               <p className="text-teget text-xs uppercase tracking-[0.2em] mb-3">
                 Za koga
               </p>
@@ -157,7 +273,7 @@ export default function HomePage() {
               className="relative w-full h-full md:-ml-12 rounded-lg overflow-hidden"
             >
               <Image
-                src="/images/Za koga jeste.webp"
+                src="/images/za koga je ovaj rad.png"
                 alt="Za koga je ovaj rad"
                 fill
                 className="object-cover"

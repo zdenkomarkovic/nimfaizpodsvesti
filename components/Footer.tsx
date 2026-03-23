@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-3">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.jpg"
                 alt="Nimfa Iz Podsvesti"
                 height={200}
                 width={320}

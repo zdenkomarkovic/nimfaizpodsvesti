@@ -88,7 +88,7 @@ body {
   }
 
   .text-body {
-    @apply text-base md:text-lg leading-relaxed;
+    @apply text-lg md:text-lg leading-relaxed;
     color: #4e4a7a;
   }
 
@@ -122,19 +122,19 @@ body {
     @apply inline-block font-sans font-semibold tracking-wide
            px-8 py-3 rounded text-sm uppercase
            transition-colors duration-300;
-    border: 1px solid #1B3A5C;
-    color: #1B3A5C;
+    border: 1px solid #1b3a5c;
+    color: #1b3a5c;
     background: rgba(255, 255, 255, 0.15);
   }
   .btn-outline:hover {
-    background: #1B3A5C;
+    background: #1b3a5c;
     color: #ffffff;
   }
 
   .link-arrow {
     @apply font-sans text-sm tracking-wider uppercase inline-flex items-center gap-2
            transition-colors duration-200;
-    color: #1B3A5C;
+    color: #1b3a5c;
   }
   .link-arrow:hover {
     color: #2a5080;
@@ -162,4 +162,3 @@ body {
 details.group[open] .group-open\:rotate-180 {
   transform: rotate(180deg);
 }
-

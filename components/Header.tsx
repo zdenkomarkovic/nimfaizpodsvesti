@@ -32,7 +32,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/logo.png"
+            src="/images/logo.jpg"
             alt="Nimfa Iz Podsvesti"
             height={48}
             width={160}

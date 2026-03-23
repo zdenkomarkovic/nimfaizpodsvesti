@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 const services = [
   {
     num: "01",
-    emoji: "✦",
+    id: "astrologija",
+    emoji: "✺",
     image: "/images/Astrologija 3.webp",
     title: "Astrologija – individualni astrološki uvid",
     text: `Astrološko savetovanje pruža dubinski uvid u strukturu ličnosti, životne cikluse i razvojne teme kroz analizu natalne karte, aktuelnih tranzita uz primenu prognostičkih tehnika (npr. progresije, direkcije, solari...). Astrologiju koristim kao analitički i simbolički alat koji pomaže u razumevanju psiholoških obrazaca, odnosa, profesionalnih izazova i unutrašnjih potencijala.
@@ -22,7 +23,8 @@ Ova usluga može biti potpuno samostalna, namenjena onima koji žele isključivo
   },
   {
     num: "02",
-    emoji: "☽",
+    id: "astropsiholosko-savetovanje",
+    emoji: "✺",
     image: "/images/Astrologija 4.webp",
     title: "Astropsihološko savetovanje (Astrohiling)",
     text: `Astropsihološko savetovanje kombinuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata, razvojnih izazova i životnih tema koje se ponavljaju kroz vreme. Natalna karta se koristi kao mapa psihološke strukture, dok se savetodavni rad fokusira na osvešćivanje obrazaca i donošenje svesnijih odluka. Ovaj pristup omogućava brži i precizniji uvid u unutrašnje konflikte i potencijale za rast i razvoj klijenta, koji bi bez astrologije zahtevali znatno duži istraživački proces i veći broj susreta u kontinuitetu.
@@ -31,7 +33,8 @@ Astrologija u ovom principu rada ne predstavlja krajnji cilj, već temeljni okvi
   },
   {
     num: "03",
-    emoji: "◎",
+    id: "nlp-coaching",
+    emoji: "✺",
     image: "/images/NLP.webp",
     title: "Psihološko i NLP coaching savetovanje – paket (3–4 sesije)",
     text: `Psihološko i NLP coaching savetovanje namenjeno je ličnom razvoju, postavljanju ciljeva, pronalaženju motivacije, promeni ograničavajućih obrazaca i uverenja, kao i unapređenju emocionalnog i mentalnog funkcionisanja. Rad se odvija isključivo u paketu od 3 do 4 sesije u kontinuitetu, jer NLP tehnike zahtevaju proces i doslednost.
@@ -40,7 +43,8 @@ Fokus je na ciljevima, unutrašnjim strategijama, uverenjima i obrascima ponaša
   },
   {
     num: "04",
-    emoji: "◈",
+    id: "hipnoticke-tehnike",
+    emoji: "✺",
     title: "Hipnotičke tehnike – individualni rad",
     image: "/images/Hipnoza.webp",
     text: `Hipnotičke tehnike koriste se za ulazak u stanje pojačane fokusirane pažnje, gde postaju dostupni dublji slojevi nesvesnog. Ovaj oblik rada pomaže u razrešavanju unutrašnjih blokada, emocionalnih zapisa i ponavljajućih obrazaca. Hipnotički fokusirani rad može biti primenjen kod različitih tema i unutrašnjih blokada, naročito kada osoba ima osećaj da racionalno razume problem, ali promena izostaje.
@@ -65,7 +69,8 @@ Hipnoza se ne kombinuje automatski sa drugim uslugama, već se bira kao poseban 
   },
   {
     num: "05",
-    emoji: "♾",
+    id: "regresivni-rad",
+    emoji: "✺",
     image: "/images/Regresija.webp",
     title: "Regresivni rad – regresija u prošle događaje ili živote",
     text: `Regresivni rad omogućava istraživanje duboko ukorenjenih iskustava koja se doživljavaju kao prošli životni sadržaji ili rani memorijski zapisi. U okviru astrološkog sistema, kontinuitet svesti i iskustava predstavlja prirodan deo psihološke strukture, zbog čega je regresija često logičan nastavak astrološkog i psihološkog rada.
@@ -74,6 +79,7 @@ Regresija se sprovodi od 1 do 6 seansi, sa jasno definisanom temom i ciljem, uz 
   },
   {
     num: "06",
+    id: "crt-proces",
     emoji: "✺",
     image: "/images/CRT.webp",
     title: "Complete Restoration Therapy™",
@@ -121,6 +127,7 @@ export default function UslugePage() {
             {services.map((service) => (
               <FadeUp
                 key={service.num}
+                id={service.id}
                 className="card group hover:border-teget/40 transition-colors duration-300"
               >
                 <div className="flex items-start gap-5 md:gap-8">
