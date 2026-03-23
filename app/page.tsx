@@ -273,7 +273,7 @@ export default function HomePage() {
               className="relative w-full h-full md:-ml-12 rounded-lg overflow-hidden"
             >
               <Image
-                src="/images/za koga je ovaj rad.png"
+                src="/images/za koga je ovaj rad.webp"
                 alt="Za koga je ovaj rad"
                 fill
                 className="object-cover"
