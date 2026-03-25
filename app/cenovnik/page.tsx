@@ -126,7 +126,7 @@ export default function CenovnikPage() {
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
-                  ☽
+                  ✺
                 </span>
                 <div>
                   <h2 className="heading-md mb-1">Astropsihološko savetovanje</h2>
@@ -173,7 +173,7 @@ export default function CenovnikPage() {
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
-                  ◎
+                  ✺
                 </span>
                 <div>
                   <h2 className="heading-md mb-1">Astropsihološko savetovanje (Astrohiling)</h2>
@@ -206,7 +206,7 @@ export default function CenovnikPage() {
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
-                  ◈
+                  ✺
                 </span>
                 <div>
                   <h2 className="heading-md mb-1">Psihološko i NLP coaching savetovanje</h2>
@@ -242,7 +242,7 @@ export default function CenovnikPage() {
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
-                  ✦
+                  ✺
                 </span>
                 <div>
                   <h2 className="heading-md mb-1">Hipnotički fokusirani rad</h2>
@@ -273,7 +273,7 @@ export default function CenovnikPage() {
                   aria-hidden
                   style={{ filter: "drop-shadow(0 0 5px rgba(201,168,76,0.4))" }}
                 >
-                  ♾
+                  ✺
                 </span>
                 <div>
                   <h2 className="heading-md mb-1">Regresivni rad</h2>

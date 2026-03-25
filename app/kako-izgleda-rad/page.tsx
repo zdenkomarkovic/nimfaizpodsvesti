@@ -72,7 +72,7 @@ export default function KakoIzgledaRadPage() {
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
                   >
-                    ☽
+                    ✺
                   </span>
                 </div>
                 <div>
@@ -119,7 +119,7 @@ export default function KakoIzgledaRadPage() {
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
                   >
-                    ◎
+                    ✺
                   </span>
                 </div>
                 <div>
@@ -156,7 +156,7 @@ export default function KakoIzgledaRadPage() {
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
                   >
-                    ✦
+                    ✺
                   </span>
                 </div>
                 <div>
@@ -228,7 +228,7 @@ export default function KakoIzgledaRadPage() {
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
                   >
-                    ☽
+                    ✺
                   </span>
                 </div>
                 <div>
@@ -285,7 +285,7 @@ export default function KakoIzgledaRadPage() {
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
                   >
-                    ◎
+                    ✺
                   </span>
                 </div>
                 <div>
@@ -336,7 +336,7 @@ export default function KakoIzgledaRadPage() {
                       filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
                     }}
                   >
-                    ✦
+                    ✺
                   </span>
                 </div>
                 <div>
@@ -423,25 +423,25 @@ export default function KakoIzgledaRadPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               {
-                icon: "☽",
+                icon: "✺",
                 name: "Astropsihologija",
                 desc: "Analitički uvid u psihološku strukturu i razvojne teme kroz natalnu kartu",
                 image: "/images/Astrologija (2).webp",
               },
               {
-                icon: "◎",
+                icon: "✺",
                 name: "NLP coaching",
                 desc: "Prepoznavanje i promena nesvesnih obrazaca mišljenja i ponašanja",
                 image: "/images/NLP2.webp",
               },
               {
-                icon: "◈",
+                icon: "✺",
                 name: "Hipnotičke metode",
                 desc: "Stanje pojačane fokusirane pažnje za pristup dubljim slojevima svesti",
                 image: "/images/Hipnoza 2.webp",
               },
               {
-                icon: "♾",
+                icon: "✺",
                 name: "Regresivni rad & CRT",
                 desc: "Istraživanje dubokih unutrašnjih sadržaja sa fokusom na svesnu promenu",
                 image: "/images/Rad samnom.webp",
