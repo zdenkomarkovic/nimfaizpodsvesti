@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-3">
               <Image
-                src="/images/logo.jpg"
+                src="/images/logo.webp"
                 alt="Nimfa Iz Podsvesti"
                 height={200}
                 width={320}
@@ -128,7 +128,8 @@ export default function Footer() {
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-2">
             <p className="text-cream-faint text-xs">
-              © {new Date().getFullYear()} Nimfa Iz Podsvesti. Sva prava zadržana.
+              © {new Date().getFullYear()} Nimfa Iz Podsvesti. Sva prava
+              zadržana.
             </p>
             <p className="text-cream-faint text-xs">
               Izrada sajta:{" "}

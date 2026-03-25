@@ -108,7 +108,7 @@ export default function ZaKogaPage() {
                   className="relative aspect-[3/4] rounded-lg overflow-hidden"
                 >
                   <Image
-                    src="/images/za koga je ovaj rad.webp"
+                    src="/images/Za koga je.webp"
                     alt="Za koga jeste"
                     fill
                     className="object-cover"

@@ -161,42 +161,42 @@ export default function HomePage() {
                 title: "Astrologija",
                 subtitle: "Individualni uvid",
                 text: "Dubinski uvid u ličnost, odnose i životne cikluse kroz analizu natalne karte i aktuelnih tranzita. Razumevanje obrazaca koji oblikuju vaš život.",
-                image: "/images/astro.png",
+                image: "/images/astro.webp",
                 href: "/usluge#astrologija",
               },
               {
                 title: "Astropsihološko savetovanje",
                 subtitle: "Astrohiling",
                 text: "Povezivanje astrologije i psihologije u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca. Rad usmeren ka svesnijim izborima i ličnom razvoju.",
-                image: "/images/astropsiholosko savetovanje.png",
+                image: "/images/astropsiholosko savetovanje.webp",
                 href: "/usluge#astropsiholosko-savetovanje",
               },
               {
                 title: "Psihološko i NLP coaching",
                 subtitle: "Paket sesija",
                 text: "Rad na ciljevima, uverenjima i promeni obrazaca koji vas ograničavaju. Proces koji donosi jasnije odluke i stabilniji unutrašnji osećaj.",
-                image: "/images/psiholoski i NLP Coaching.png",
+                image: "/images/psiholoski i NLP Coaching.webp",
                 href: "/usluge#nlp-coaching",
               },
               {
                 title: "Hipnotičke tehnike",
                 subtitle: "Individualni rad",
                 text: "Rad sa nesvesnim kada razumete problem, ali promena izostaje. Otklanjanje blokada i pristup dubljim slojevima ličnosti.",
-                image: "/images/hipnoza.png",
+                image: "/images/hipnoza.webp",
                 href: "/usluge#hipnoticke-tehnike",
               },
               {
                 title: "Regresivni rad",
                 subtitle: null,
                 text: "Istraživanje dubokih unutrašnjih iskustava i obrazaca koji utiču na sadašnji život. Proces razumevanja i integracije.",
-                image: "/images/regresija.png",
+                image: "/images/regresija2.webp",
                 href: "/usluge#regresivni-rad",
               },
               {
                 title: "CRT proces",
                 subtitle: "Complete Restoration Therapy",
                 text: "Intenzivan rad usmeren na razrešenje unutrašnjih konflikata i donošenje jasnih odluka. Brz i fokusiran proces promene.",
-                image: "/images/CRT.png",
+                image: "/images/CRT.webp",
                 href: "/usluge#crt-proces",
               },
             ].map((usluga, i) => (
@@ -205,7 +205,7 @@ export default function HomePage() {
                 delay={i * 0.1}
                 className="card group hover:border-teget/40 transition-colors duration-300 overflow-hidden !p-0 flex flex-col"
               >
-                <div className="relative aspect-video w-full">
+                <div className="relative aspect-square w-full">
                   <Image
                     src={usluga.image}
                     alt={usluga.title}
@@ -234,6 +234,12 @@ export default function HomePage() {
               </FadeUp>
             ))}
           </div>
+
+          <FadeUp className="text-center mt-10">
+            <p className="heading-md text-teget uppercase tracking-[0.3em]">
+              JA NUDIM &middot; TI DOBIJAŠ
+            </p>
+          </FadeUp>
         </div>
       </section>
 
@@ -305,19 +311,19 @@ export default function HomePage() {
                 num: "01",
                 title: "Uvid",
                 text: "Šta se dešava i kada. Šta je okidač, ciklus, tranzit, faza, trenutak… da se javi anksioznost, nervoza, bes, fobije, blokade, krize ili emotivni prekidi.",
-                image: "/images/Uvid.webp",
+                image: "/images/uvid.webp",
               },
               {
                 num: "02",
                 title: "Fokus",
                 text: "Šta je cilj i pravac rada.",
-                image: "/images/Fokus.webp",
+                image: "/images/fokus.webp",
               },
               {
                 num: "03",
                 title: "Rad (na sebi)",
                 text: "Kroz coaching, fokusirane metode, mentorstvo, konsultacije dolazimo do ZAŠTO, ali i kako dalje.",
-                image: "/images/Kako izgleda rad.webp",
+                image: "/images/radnasebi.webp",
               },
             ].map((step, i) => (
               <FadeUp
@@ -325,7 +331,7 @@ export default function HomePage() {
                 delay={i * 0.15}
                 className="card group hover:border-teget/40 transition-colors duration-300 overflow-hidden !p-0"
               >
-                <div className="relative aspect-video w-full">
+                <div className="relative aspect-square w-full">
                   <Image
                     src={step.image}
                     alt={step.title}

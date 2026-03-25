@@ -38,7 +38,10 @@ export default function KakoIzgledaRadPage() {
                 faze, koje omogućavaju sigurnost, kontinuitet i dubinu uvida.
               </p>
             </SlideRight>
-            <SlideLeft delay={0.2} className="relative aspect-square rounded-lg overflow-hidden">
+            <SlideLeft
+              delay={0.2}
+              className="relative aspect-square rounded-lg overflow-hidden"
+            >
               <Image
                 src="/images/Kako izgleda rad samnom.webp"
                 alt="Kako izgleda rad sa mnom"
@@ -100,7 +103,10 @@ export default function KakoIzgledaRadPage() {
             </FadeUp>
 
             {/* 02 */}
-            <FadeUp delay={0.1} className="card group hover:border-teget/40 transition-colors duration-300">
+            <FadeUp
+              delay={0.1}
+              className="card group hover:border-teget/40 transition-colors duration-300"
+            >
               <div className="flex items-start gap-6">
                 <div className="shrink-0 text-center">
                   <p className="font-serif text-4xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
@@ -134,7 +140,10 @@ export default function KakoIzgledaRadPage() {
             </FadeUp>
 
             {/* 03 */}
-            <FadeUp delay={0.2} className="card group hover:border-teget/40 transition-colors duration-300">
+            <FadeUp
+              delay={0.2}
+              className="card group hover:border-teget/40 transition-colors duration-300"
+            >
               <div className="flex items-start gap-6">
                 <div className="shrink-0 text-center">
                   <p className="font-serif text-4xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
@@ -260,7 +269,10 @@ export default function KakoIzgledaRadPage() {
             </FadeUp>
 
             {/* Korak 2 */}
-            <FadeUp delay={0.1} className="card group hover:border-teget/40 transition-colors duration-300">
+            <FadeUp
+              delay={0.1}
+              className="card group hover:border-teget/40 transition-colors duration-300"
+            >
               <div className="flex items-start gap-5">
                 <div className="shrink-0 text-center">
                   <p className="font-serif text-3xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
@@ -277,7 +289,9 @@ export default function KakoIzgledaRadPage() {
                   </span>
                 </div>
                 <div>
-                  <h3 className="heading-sm mb-1">Astrohiling / savetodavni rad</h3>
+                  <h3 className="heading-sm mb-1">
+                    Astrohiling / savetodavni rad
+                  </h3>
                   <p className="text-teget text-sm italic mb-4">
                     Psihološki uvid i razumevanje obrasca
                   </p>
@@ -306,7 +320,10 @@ export default function KakoIzgledaRadPage() {
             </FadeUp>
 
             {/* Korak 3 */}
-            <FadeUp delay={0.2} className="card group hover:border-teget/40 transition-colors duration-300">
+            <FadeUp
+              delay={0.2}
+              className="card group hover:border-teget/40 transition-colors duration-300"
+            >
               <div className="flex items-start gap-5">
                 <div className="shrink-0 text-center">
                   <p className="font-serif text-3xl text-teget/25 leading-none group-hover:text-teget/50 transition-colors">
@@ -329,9 +346,9 @@ export default function KakoIzgledaRadPage() {
                   </p>
                   <div className="space-y-3 text-cream-muted leading-relaxed">
                     <p>
-                      Tokom regresivnog procesa u dve seanse, radili smo prvo
-                      na „otvaranju" ranih iskustava iz detinjstva – situacija
-                      u kojima je ljubav bila povezana sa napetošću i
+                      Tokom regresivnog procesa u dve seanse, radili smo prvo na
+                      „otvaranju" ranih iskustava iz detinjstva – situacija u
+                      kojima je ljubav bila povezana sa napetošću i
                       neizvesnošću. Prema dogovoru, narednom seansom smo kroz
                       produbljeni rad „otišli" u scene iz „drugog vremena" – i
                       stekli uvid u iskustvo odnosa u kojem je postojala snažna
@@ -342,8 +359,8 @@ export default function KakoIzgledaRadPage() {
                       U radu fokus nije bio na dokazivanju da li je to
                       objektivno prošli život, već na emocionalnom naboju koji
                       je scena nosila. Kroz proces integracije, smanjena je
-                      intenzivna potreba za „dovršavanjem" odnosa koji su
-                      realno već završeni.
+                      intenzivna potreba za „dovršavanjem" odnosa koji su realno
+                      već završeni.
                     </p>
                     <p>
                       S obzirom da je rad sa klijentkinjom nastavljen još 6
@@ -367,7 +384,10 @@ export default function KakoIzgledaRadPage() {
             </FadeUp>
 
             {/* Zaključak */}
-            <FadeUp delay={0.1} className="card border-teget/20 bg-bg-secondary">
+            <FadeUp
+              delay={0.1}
+              className="card border-teget/20 bg-bg-secondary"
+            >
               <p className="text-cream-muted leading-relaxed mb-3">
                 Ovaj primer pokazuje kako se:
               </p>
@@ -412,7 +432,7 @@ export default function KakoIzgledaRadPage() {
                 icon: "◎",
                 name: "NLP coaching",
                 desc: "Prepoznavanje i promena nesvesnih obrazaca mišljenja i ponašanja",
-                image: "/images/NLP.webp",
+                image: "/images/NLP2.webp",
               },
               {
                 icon: "◈",
@@ -424,7 +444,7 @@ export default function KakoIzgledaRadPage() {
                 icon: "♾",
                 name: "Regresivni rad & CRT",
                 desc: "Istraživanje dubokih unutrašnjih sadržaja sa fokusom na svesnu promenu",
-                image: "/images/Regresija.webp",
+                image: "/images/Rad samnom.webp",
               },
             ].map((m, i) => (
               <FadeUp
@@ -433,18 +453,30 @@ export default function KakoIzgledaRadPage() {
                 className="card text-center hover:border-purple-soft/50 transition-colors duration-300 overflow-hidden !p-0"
               >
                 <div className="relative aspect-video w-full">
-                  <Image src={m.image} alt={m.name} fill className="object-cover" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" />
+                  <Image
+                    src={m.image}
+                    alt={m.name}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
                 </div>
                 <div className="p-4">
                   <div
                     aria-hidden
                     className="text-2xl text-teget/50 mb-2"
-                    style={{ filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))" }}
+                    style={{
+                      filter: "drop-shadow(0 0 6px rgba(201,168,76,0.3))",
+                    }}
                   >
                     {m.icon}
                   </div>
-                  <h3 className="text-cream font-semibold text-sm mb-2">{m.name}</h3>
-                  <p className="text-cream-faint text-xs leading-relaxed">{m.desc}</p>
+                  <h3 className="text-cream font-semibold text-sm mb-2">
+                    {m.name}
+                  </h3>
+                  <p className="text-cream-faint text-xs leading-relaxed">
+                    {m.desc}
+                  </p>
                 </div>
               </FadeUp>
             ))}
