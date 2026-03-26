@@ -66,14 +66,19 @@ export default function HomePage() {
         <div className="container-main section-padding relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
             {/* Tekst */}
-            <SlideRight className="md:order-2">
-              <p className="text-teget text-xs md:text-sm uppercase tracking-[0.25em] mb-4">
+            <SlideRight className="">
+              {/* <p className="text-teget text-xs md:text-sm uppercase tracking-[0.25em] mb-4">
                 Astropsihološko savetovanje &middot; Coaching &middot; Lični
                 razvoj
-              </p>
-              <h1 className="heading-xl lg:!text-[2.6rem] mb-4">
-                Astropsihološko savetovanje, coaching mentorstvo i lični razvoj
-                online <span className="font-bold">Nimfa Iz Podsvesti</span>
+              </p> */}
+              <h1 className="text-[1rem] lg:text-[1.1rem] mb-4 ">
+                <span className="uppercase">
+                  Online Astropsihološko savetovanje - Coaching - Lični razvoj -
+                  mentorstvo i lični razvoj{" "}
+                </span>
+                <span className="font-bold block text-3xl lg:text-4xl">
+                  Nimfa Iz Podsvesti
+                </span>
               </h1>
               <div className="gold-divider mx-0" />
               <p className="text-body text-cream-muted mb-4">
@@ -82,11 +87,14 @@ export default function HomePage() {
                 jasnog objašnjenja.
               </p>
               <p className="text-body text-cream-muted mb-4">
-                Astropsihološko savetovanje koje povezuje psihologiju uz NLP
-                tehnike, hipnotički fokusirani rad i regresivne procese sa
-                temama prošlih života — omogućava da to postane vidljivo. Da
-                razumete sebe na dubljem nivou i donesete odluke koje su u
-                skladu sa vama.
+                Kroz{" "}
+                <strong>
+                  {" "}
+                  astropsihološko savetovanje, NLP coaching, hipnotičke tehnike
+                  i regresivni rad sa podsvešću i temama prošlih života
+                </strong>
+                , ti obrasci postaju jasni i omogućavaju ti da donosiš odluke
+                koje su zaista tvoje.
               </p>
               <Link href="/kontakt" className="btn-primary">
                 Zakaži konsultaciju
@@ -113,31 +121,45 @@ export default function HomePage() {
       {/* ── OPIS USLUGE ──────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-y border-border">
         <div className="container-main section-padding">
-          <FadeUp className=" mx-auto text-center">
+          <FadeUp className=" mx-auto text-justify ">
             <div className="space-y-4 text-body text-cream-muted">
               <p>
                 Ja sam Jelena i diplomirani sam psiholog. Radim individualno,
                 online, kroz video i telefonske konsultacije, koristeći
-                integrativni pristup koji povezuje psihologiju, astrologiju,
-                coaching i regresivne tehnike. Moj rad nastao je iz potrebe da
-                se razume ono što nije odmah vidljivo — unutrašnji procesi koji
-                oblikuju naše misli, emocije i odnose.
+                <strong>
+                  {" "}
+                  integrativni pristup kroz astropsihološko savetovanje, NLP
+                  coaching, rad sa podsvešću, hipnotičke tehnike i regresivne
+                  procese sa temama prošlih života
+                </strong>
+                . Moj rad nastao je iz potrebe da se razume ono što nije odmah
+                vidljivo — unutrašnji procesi koji oblikuju naše misli, emocije
+                i odnose.
               </p>
               <p>
-                Astropsihologiju ne posmatram kao predviđanje, već kao način
-                razumevanja. Razumevanja obrazaca koje ponavljamo, reakcija koje
-                ne biramo svesno i dinamike odnosa u kojima se prepoznajemo —
-                ili gubimo.
+                <strong> Astropsihološko savetovanje</strong> ne posmatram kao
+                predviđanje, već kao način razumevanja obrazaca koje ponavljamo,
+                reakcija koje ne biramo svesno i dinamike odnosa u kojima se
+                prepoznajemo — ili gubimo.
               </p>
               <p>
                 Kroz rad sa mnom otvara se prostor u kojem je moguće sagledati
                 sebe bez pritiska, bez uloga i bez potrebe da se nešto
-                „ispravi"... jer odgovori koje tražimo nisu izvan nas. Oni su
-                već tu — potrebno je samo da ih postepeno osvestimo.
+                „ispravi"...{" "}
+                <strong>
+                  {" "}
+                  kroz rad sa podsvešću, NLP coaching, hipnotičke tehnike i
+                  regresivni rad sa temama prošlih života
+                </strong>
+                , jer odgovori koje tražimo nisu izvan nas. Oni su već tu —
+                potrebno je samo da ih postepeno osvestimo.
               </p>
               <p>
-                U tom procesu nisam tu da vam dam odgovore, već da vam pomognem
-                da ih pronađete.
+                U tom procesu nisam tu da vam dam odgovore. Tu sam da vam
+                pomognem da ih pronađete kroz{" "}
+                <strong> savetovanje, mentorstvo i rad sa podsvešću</strong> i
+                omogućim dublje razumevanje i donošenje odluka koje su u skladu
+                sa vama.
               </p>
             </div>
           </FadeUp>
@@ -151,7 +173,7 @@ export default function HomePage() {
             <p className="text-teget text-xs uppercase tracking-[0.2em] mb-3">
               Usluge
             </p>
-            <h2 className="heading-lg mb-4">Šta nudim</h2>
+            <h2 className="heading-lg mb-4">JA NUDIM &middot; TI DOBIJAŠ</h2>
             <div className="gold-divider" />
           </FadeUp>
 
@@ -224,22 +246,13 @@ export default function HomePage() {
                   <p className="text-cream-faint text-sm leading-relaxed flex-1 mb-5">
                     {usluga.text}
                   </p>
-                  <Link
-                    href={usluga.href}
-                    className="btn-primary text-center text-sm py-2"
-                  >
-                    Saznaj više
+                  <Link href={usluga.href} className="link-arrow">
+                    Saznaj više <span aria-hidden>→</span>
                   </Link>
                 </div>
               </FadeUp>
             ))}
           </div>
-
-          <FadeUp className="text-center mt-10">
-            <p className="heading-md text-teget uppercase tracking-[0.3em]">
-              JA NUDIM &middot; TI DOBIJAŠ
-            </p>
-          </FadeUp>
         </div>
       </section>
 
