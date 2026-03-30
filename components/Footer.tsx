@@ -26,7 +26,8 @@ export default function Footer() {
             </Link>
 
             <p className="text-cream-faint text-sm leading-relaxed">
-              Astropsihološko savetovanje, coaching i lični razvoj online.
+              Online Astropsihološko savetovanje &middot; Coaching &middot;
+              Lični razvoj &middot; Mentorstvo
             </p>
           </div>
 
@@ -78,10 +79,10 @@ export default function Footer() {
                 @nimfa_iz_podsvesti
               </a>
               <a
-                href="tel:+381628068616"
+                href="sms:+381628068616"
                 className="hover:text-teget transition-colors duration-200"
               >
-                +381 62 806 8616
+                +381 62 806 8616 · Pošalji poruku
               </a>
               <a
                 href="https://wa.me/381628068616"
@@ -107,7 +108,8 @@ export default function Footer() {
           <div className="text-cream-faint text-xs leading-relaxed mb-6 space-y-1">
             <p className="font-semibold text-cream-muted">Impressum</p>
             <p>
-              JELENA STEOVIĆ PR DAVANJE OSTALIH SAVETA PROMODADŽIJA NOVI PAZAR
+              JELENA STEVANOVIĆ PR DAVANJE OSTALIH SAVETA PROMODADŽIJA NOVI
+              PAZAR
             </p>
             <p>PIB: 111947661 &nbsp;|&nbsp; MB: 65760002</p>
           </div>

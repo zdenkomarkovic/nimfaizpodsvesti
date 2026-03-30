@@ -63,8 +63,8 @@ function PriceRow({
         )}
       </div>
       <div className="flex items-center gap-3 shrink-0 text-right">
-        <span className="text-cream-faint text-xs hidden sm:block">{rsd}</span>
-        <span className="text-teget font-semibold text-sm">{eur}</span>
+        <span className="text-teget font-semibold text-sm hidden sm:block">{rsd}</span>
+        <span className="text-cream-faint text-xs">{eur}</span>
       </div>
     </div>
   );
@@ -80,8 +80,8 @@ function PackageRow({ label, rsd, eur }: { label: string; rsd: string; eur: stri
         <span className="text-cream-muted text-sm">{label}</span>
       </div>
       <div className="flex items-center gap-3 shrink-0 text-right">
-        <span className="text-cream-faint text-xs hidden sm:block">{rsd}</span>
-        <span className="text-teget font-semibold text-sm">{eur}</span>
+        <span className="text-teget font-semibold text-sm hidden sm:block">{rsd}</span>
+        <span className="text-cream-faint text-xs">{eur}</span>
       </div>
     </div>
   );
@@ -163,6 +163,11 @@ export default function CenovnikPage() {
               <p className="text-cream-faint text-xs mt-4 italic">
                 ✦ Moguće kao samostalna usluga
               </p>
+              <p className="text-cream-faint text-xs mt-3 italic">
+                PREPORUKA: Najbolje je da biraš u odnosu na to koliko želiš da
+                traje razgovor, odnosno koliko imaš{" "}
+                <strong>nedoumica, nejasnoća i nerešenih pitanja</strong>.
+              </p>
             </FadeUp>
 
             {/* ── II. Astrohiling ── */}
@@ -209,7 +214,7 @@ export default function CenovnikPage() {
                   ✺
                 </span>
                 <div>
-                  <h2 className="heading-md mb-1">Psihološko i NLP coaching savetovanje</h2>
+                  <h2 className="heading-md mb-1">Psihološko savetovanje i NLP coaching</h2>
                   <p className="text-cream-faint text-xs italic">
                     paket – 3 ili 4 sesije u kontinuitetu
                   </p>
@@ -326,8 +331,8 @@ export default function CenovnikPage() {
                   </span>
                 </div>
                 <div className="flex items-center gap-3 shrink-0">
-                  <span className="text-cream-faint text-xs hidden sm:block">12.000 RSD</span>
-                  <span className="text-teget font-semibold text-sm">120€</span>
+                  <span className="text-teget font-semibold text-sm hidden sm:block">12.000 RSD</span>
+                  <span className="text-cream-faint text-xs">120€</span>
                 </div>
               </div>
 
@@ -342,8 +347,9 @@ export default function CenovnikPage() {
                 Napomena
               </p>
               <p className="text-cream-muted text-sm leading-relaxed">
-                Izbor usluge i metoda uvek se dogovara u skladu sa temom, ciljem i spremnošću
-                klijenta. Astrologija može, ali ne mora biti početna tačka rada.
+                Izbor usluge i metoda uvek se dogovara u skladu sa tvojom
+                temom, ciljem i spremnošću. Astrologija može, ali ne mora biti
+                početna tačka rada.
               </p>
             </div>
 
@@ -355,7 +361,7 @@ export default function CenovnikPage() {
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <div className="container-main section-padding text-center">
           <p className="text-teget text-xs uppercase tracking-[0.25em] mb-4">Sledeći korak</p>
-          <h2 className="heading-lg mb-4">Spremi za početak?</h2>
+          <h2 className="heading-lg mb-4">Spreman za početak?</h2>
           <div className="gold-divider" />
           <p className="text-cream-muted mt-4 mb-8 max-w-md mx-auto">
             Zakaži konsultaciju i zajedno ćemo definisati koji oblik rada odgovara tvojem cilju i

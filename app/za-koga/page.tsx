@@ -10,15 +10,15 @@ export const metadata: Metadata = {
 };
 
 const jestePrikladan = [
-  "otvoreni ste za spoj psihološkog uvida, astrosimbolike, mentorskog i coaching pristupa usmerenog na konkretne promene",
-  "imate osećaj da isti životni ili emocionalni obrasci stalno ponavljaju",
-  "želite da razumete zašto se nešto dešava (astrosimbolički, neurolingvistički ili na osnovu prethodnih iskustava), ali i kako da to promenite u praksi",
-  "želite jasno da definišete lične ili profesionalne ciljeve",
-  "želite da istrajete u svojim odlukama, bez odlaganja, sabotaže ili vraćanja na staro",
-  "želite da prepoznate i aktivirate unutrašnje resurse, motivatore i kapacitete",
-  "imate iskustvo više partnerskih odnosa, ali i osećaj da 'nijedan nije bio pravi'",
-  "primećujete toksične ponavljajuće obrasce u odnosima, izborima partnera ili dinamici bliskosti",
-  "spremni ste da preuzmete aktivnu i odgovornu ulogu u sopstvenom procesu i odlukama",
+  "otvoren si za spoj psihološkog uvida, astrosimbolike, mentorskog i coaching pristupa usmerenog na konkretne promene",
+  "imaš osećaj da se isti životni ili emocionalni obrasci stalno ponavljaju",
+  "želiš da razumeš zašto se nešto dešava (astrosimbolički, neurolingvistički ili na osnovu prethodnih iskustava), ali i kako da to promeniš u praksi",
+  "želiš jasno da definišeš lične ili profesionalne ciljeve",
+  "želiš da istraješ u svojim odlukama, bez odlaganja, sabotaže ili vraćanja na staro",
+  "želiš da prepoznaš i aktiviraš unutrašnje resurse, motivatore i kapacitete",
+  "imaš iskustvo više partnerskih odnosa, ali i osećaj da nijedan nije bio pravi",
+  "primećuješ toksične ponavljajuće obrasce u odnosima, izborima partnera ili dinamici bliskosti",
+  "spreman si da preuzmeš aktivnu i odgovornu ulogu u sopstvenom procesu i odlukama",
 ];
 
 const nijeZa = [
@@ -58,10 +58,13 @@ export default function ZaKogaPage() {
           <div className="max-w-5xl">
             <FadeUp>
               <p className="text-body mb-10">
-                Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja
-                ne završavaju na površinskom nivou, a da im klasični dugotrajni,
-                isključivo klinički pristupi, često ne daju potpune odgovore.
-                Namenjen je onima koji žele razumevanje, ali i unutrašnju
+                Ovaj rad je namenjen ljudima koji{" "}
+                <strong>
+                  osećaju da se njihova pitanja ne završavaju na površinskom
+                  nivou, a da im klasični dugotrajni, isključivo klinički
+                  pristupi, često ne daju potpune odgovore
+                </strong>
+                . Namenjen je onima koji žele razumevanje, ali i unutrašnju
                 promenu, kroz dublji uvid u sopstvene obrasce, odluke i životne
                 teme.
               </p>
@@ -71,7 +74,7 @@ export default function ZaKogaPage() {
             <div className="mb-12">
               <FadeUp>
                 <h2 className="heading-md mb-6">
-                  Rad je posebno prikladan za vas ako:
+                  Rad je posebno prikladan za tebe ako:
                 </h2>
               </FadeUp>
 
@@ -121,13 +124,20 @@ export default function ZaKogaPage() {
             {/* Zaključak */}
             <FadeUp>
               <p className="text-body mb-4">
-                Ovaj pristup je za ljude koji shvataju da su oni sami nosioci
-                sopstvene promene, koji žele svesniji odnos prema sebi, svojim
-                obrascima i potencijalima, a koji su otvoreni za integraciju
-                uvida na psihološkom, simboličkom i iskustvenom nivou. Ovaj rad
-                ne ostaje na pukoj analizi — već pruža jasnoću, fokus i svesno
-                delovanje, uz konkretan rad na ciljevima, odnosima i ličnom
-                razvoju.
+                Ovaj pristup je{" "}
+                <strong>
+                  za ljude koji shvataju da su oni sami nosioci sopstvene
+                  promene
+                </strong>
+                , koji žele svesniji odnos prema sebi, svojim obrascima i
+                potencijalima, a koji su otvoreni za integraciju uvida na
+                psihološkom, simboličkom i iskustvenom nivou.{" "}
+                <strong>Ovaj rad</strong> ne ostaje na pukoj analizi —{" "}
+                <strong>
+                  već pruža jasnoću, fokus i svesno delovanje, uz konkretan rad
+                  na ciljevima, odnosima i ličnom razvoju
+                </strong>
+                .
               </p>
             </FadeUp>
 
@@ -135,7 +145,9 @@ export default function ZaKogaPage() {
             <FadeUp>
               <div className="border-l-2 border-teget pl-6 py-2 my-8">
                 <p className="font-serif text-lg text-cream italic leading-relaxed">
-                  Ako vam ovo zvuči zahtevno – verovatno je za vas.
+                  <strong>
+                    Ako ti ovo zvuči zahtevno – verovatno je za tebe.
+                  </strong>
                 </p>
               </div>
             </FadeUp>
@@ -244,7 +256,7 @@ export default function ZaKogaPage() {
           <p className="text-teget text-xs uppercase tracking-[0.25em] mb-4">
             Sledeći korak
           </p>
-          <h2 className="heading-lg mb-4">Prepoznajete se?</h2>
+          <h2 className="heading-lg mb-4">Prepoznaješ se?</h2>
           <div className="gold-divider" />
           <p className="text-cream-muted mt-4 mb-8 max-w-md mx-auto">
             Zakazivanjem inicijalnog razgovora počinjemo sa uvidom — bez obaveze

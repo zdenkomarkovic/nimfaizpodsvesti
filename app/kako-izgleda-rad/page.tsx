@@ -29,13 +29,14 @@ export default function KakoIzgledaRadPage() {
                 Proces
               </p>
               <h1 className="heading-xl mb-4">
-                Kako sa mnom izgleda vaš rad na sebi
+                Kako sa mnom izgleda tvoj rad na sebi
               </h1>
               <div className="gold-divider mx-0 mb-4" />
               <p className="text-body">
-                Rad je strukturisan, ali fleksibilan, i uvek se prilagođava
-                potrebama i spremnosti klijenta. Proces se odvija kroz jasne
-                faze, koje omogućavaju sigurnost, kontinuitet i dubinu uvida.
+                Rad je <strong>strukturisan, ali fleksibilan</strong> i uvek se
+                prilagođava potrebama i spremnosti klijenta. Proces se odvija
+                kroz <strong>jasne faze</strong>, koje omogućavaju sigurnost,
+                kontinuitet i dubinu uvida.
               </p>
             </SlideRight>
             <SlideLeft
@@ -82,18 +83,18 @@ export default function KakoIzgledaRadPage() {
                   </p>
                   <div className="space-y-3 text-cream-muted leading-relaxed">
                     <p>
-                      Proces najčešće započinje astropsihološkim savetovanjem,
+                      Proces <strong>najčešće započinje astropsihološkim savetovanjem</strong>,
                       kroz koje se, uz astrološki okvir, sagledavaju osnovni
                       psihološki obrasci, razvojne teme i unutrašnji konflikti.
-                      Ova faza pruža mapu i kontekst — razumevanje šta se dešava
+                      Ova faza <strong>pruža mapu i kontekst</strong> — razumevanje šta se dešava
                       i kada, odnosno u kojim životnim periodima, odnosima ili
                       situacijama se javljaju teme poput anksioznosti, straha,
                       besa, unutrašnje napetosti, emotivne vezanosti ili
                       ponavljajućih problema.
                     </p>
                     <p>
-                      Ukoliko klijent već ima jasno definisane teme i ciljeve za
-                      lični rast i razvoj, astrološki uvod se može preskočiti, a
+                      Ukoliko <strong>klijent već ima jasno definisane teme i ciljeve za
+                      lični rast i razvoj, astrološki uvod se može preskočiti</strong>, a
                       deo prve zakazane seanse koristiti za preciziranje fokusa
                       i načina daljeg rada.
                     </p>
@@ -128,11 +129,14 @@ export default function KakoIzgledaRadPage() {
                     Definisanje pravca rada
                   </p>
                   <p className="text-cream-muted leading-relaxed">
-                    Na osnovu dobijenog uvida, zajedno sa klijentom definiše se
-                    fokus rada i prelazi se u operativni i iskustveni proces. U
-                    ovoj fazi jasno se postavlja šta se menja, šta je cilj i šta
-                    stoji na putu te promene, a zatim se bira odgovarajući metod
-                    ili kombinacija metoda, u skladu sa temom, ciljem i
+                    Na osnovu dobijenog uvida, zajedno sa klijentom{" "}
+                    <strong>
+                      definiše se fokus rada i prelazi se u operativni i
+                      iskustveni proces
+                    </strong>
+                    . U ovoj fazi jasno se postavlja šta se menja, šta je cilj i
+                    šta stoji na putu te promene, a zatim se bira odgovarajući
+                    metod ili kombinacija metoda, u skladu sa temom, ciljem i
                     unutrašnjom dinamikom klijenta.
                   </p>
                 </div>
@@ -166,17 +170,17 @@ export default function KakoIzgledaRadPage() {
                   </p>
                   <div className="space-y-3 text-cream-muted leading-relaxed">
                     <p>
-                      U zavisnosti od cilja, rad se nastavlja kroz fokusirane
-                      metode: NLP coaching u kontinuitetu, hipnotički fokusirani
-                      rad, regresivne procese ili CRT pristup. Ova faza je
-                      usmerena na promenu unutrašnjih obrazaca, integraciju
-                      uvida i lični razvoj.
+                      <strong>U zavisnosti od cilja</strong>, rad se nastavlja
+                      kroz fokusirane metode: NLP coaching u kontinuitetu,
+                      hipnotički fokusirani rad, regresivne procese ili CRT
+                      pristup. Ova faza je usmerena na promenu unutrašnjih
+                      obrazaca, integraciju uvida i lični razvoj.
                     </p>
                     <p>
-                      U ovoj fazi zajedno dolazimo do odgovora zašto se određeni
-                      obrasci ponavljaju i zašto su neki odnosi, stanja ili
-                      odluke teško promenljivi. Metode se, po potrebi i u
-                      dogovoru sa klijentom, mogu kombinovati.
+                      U ovoj fazi <strong>zajedno dolazimo do odgovora zašto</strong>{" "}
+                      se određeni obrasci ponavljaju i zašto su neki odnosi,
+                      stanja ili odluke teško promenljivi. Metode se, po potrebi
+                      i u dogovoru sa klijentom, mogu kombinovati.
                     </p>
                   </div>
                 </div>
@@ -206,10 +210,14 @@ export default function KakoIzgledaRadPage() {
           {/* Kontekst */}
           <FadeUp className="max-w-6xl mx-auto mb-10">
             <p className="text-cream-muted leading-relaxed">
-              Klijentkinja, 39 godina, sa ponavljajućim obrascem intenzivnih,
-              sudbinskih odnosa koji započinju snažnom povezanošću i osećajem
-              „kao da se znamo od ranije", a završavaju emocionalnim prekidom i
-              osećajem gubitka koji prevazilazi realno trajanje veze.
+              Klijentkinja, 39 godina,{" "}
+              <strong>
+                sa ponavljajućim obrascem intenzivnih, sudbinskih odnosa koji
+                započinju snažnom povezanošću i osećajem &lsquo;kao da se znamo
+                od ranije&rsquo;
+              </strong>
+              , a završavaju emocionalnim prekidom i osećajem gubitka koji
+              prevazilazi realno trajanje veze.
             </p>
           </FadeUp>
 
@@ -257,11 +265,14 @@ export default function KakoIzgledaRadPage() {
                     <p>
                       Ove kombinacije (ali ne i samo ove!) često ukazuju na
                       karmičke veze, nerešene emotivne obrasce i ponavljanje
-                      dinamika koje imaju osećaj „nedovršenosti". Astrologija
-                      ovde nije korišćena kao dokaz prošlih života, već kao
-                      simbolički pokazatelj da se radi o obrascu koji nadilazi
-                      racionalno objašnjenje i ima duboko ukorenjen emotivni
-                      naboj.
+                      dinamika koje{" "}
+                      <strong>
+                        imaju osećaj &ldquo;nedovršenosti&rdquo;
+                      </strong>
+                      . Astrologija ovde nije korišćena kao dokaz prošlih
+                      života, već kao simbolički pokazatelj da se radi o obrascu
+                      koji nadilazi racionalno objašnjenje i ima duboko
+                      ukorenjen emotivni naboj.
                     </p>
                   </div>
                 </div>
@@ -310,9 +321,13 @@ export default function KakoIzgledaRadPage() {
                       ))}
                     </ul>
                     <p>
-                      Klijentkinja je jasno uvidela obrazac, ali je i dalje
-                      osećala snažnu emocionalnu vezanost čak i kada je
-                      postojala svesnost da odnos objektivno nije bio zdrav.
+                      Klijentkinja je{" "}
+                      <strong>
+                        jasno uvidela obrazac, ali je i dalje osećala snažnu
+                        emocionalnu vezanost
+                      </strong>{" "}
+                      čak i kada je postojala svesnost da odnos objektivno nije
+                      bio zdrav.
                     </p>
                   </div>
                 </div>
@@ -346,31 +361,38 @@ export default function KakoIzgledaRadPage() {
                   </p>
                   <div className="space-y-3 text-cream-muted leading-relaxed">
                     <p>
-                      Tokom regresivnog procesa u dve seanse, radili smo prvo na
-                      „otvaranju" ranih iskustava iz detinjstva – situacija u
-                      kojima je ljubav bila povezana sa napetošću i
-                      neizvesnošću. Prema dogovoru, narednom seansom smo kroz
-                      produbljeni rad „otišli" u scene iz „drugog vremena" – i
-                      stekli uvid u iskustvo odnosa u kojem je postojala snažna
-                      emotivna povezanost (ali ne partnerska!) i njegov nagli
-                      prekid bez razrešenja.
+                      Tokom regresivnog procesa u dve seanse,{" "}
+                      <strong>
+                        radili smo prvo na &lsquo;otvaranju&rsquo; ranih
+                        iskustava iz detinjstva
+                      </strong>{" "}
+                      – situacija u kojima je ljubav bila povezana sa napetošću
+                      i neizvesnošću. Prema dogovoru, narednom seansom smo kroz
+                      produbljeni rad &ldquo;otišli&rdquo; u scene iz
+                      &ldquo;drugog vremena&rdquo; – i{" "}
+                      <strong>
+                        stekli uvid u iskustvo odnosa u kojem je postojala
+                        snažna emotivna povezanost
+                      </strong>{" "}
+                      (ali ne partnerska!) i njegov nagli prekid bez razrešenja.
                     </p>
                     <p>
                       U radu fokus nije bio na dokazivanju da li je to
                       objektivno prošli život, već na emocionalnom naboju koji
                       je scena nosila. Kroz proces integracije, smanjena je
-                      intenzivna potreba za „dovršavanjem" odnosa koji su realno
-                      već završeni.
+                      intenzivna potreba za &ldquo;dovršavanjem&rdquo; odnosa
+                      koji su realno već završeni.
                     </p>
                     <p>
                       S obzirom da je rad sa klijentkinjom nastavljen još 6
-                      meseci, efekti promene su se ogledali u sledećem:
+                      meseci,{" "}
+                      <strong>efekti promene su se ogledali u sledećem:</strong>
                     </p>
                     <ul className="space-y-1 pl-1">
                       {[
                         "naredna veza započeta je sporije i stabilnije, a partner nije bio emotivno nedostupan",
                         "nestao je impuls da se po svaku cenu ostane u dinamici koja boli",
-                        "osećaj 'sudbinske vezanosti' (iz 5. kuće) zamenjen je svesnijim izborom (iz 7. kuće)",
+                        "osećaj \u2018sudbinske vezanosti\u2019 (iz 5. kuće) zamenjen je svesnijim izborom (iz 7. kuće)",
                       ].map((item, i) => (
                         <li key={i} className="flex gap-2">
                           <span className="text-teget/60 shrink-0">▪</span>
@@ -503,12 +525,12 @@ export default function KakoIzgledaRadPage() {
               {
                 icon: "📱",
                 label: "Video poziv",
-                desc: "Zoom, Google Meet ili drugi video alat",
+                desc: "Viber, WhatsApp, Telegram – osim za metode koje uključuju hipnotičke tehnike gde je potreban Zoom, Google Meet ili drugi sličan video alat",
               },
               {
                 icon: "📞",
                 label: "Telefonski poziv",
-                desc: "Za one koji preferiraju glas bez kamere",
+                desc: "Individualni astrološki uvid",
               },
             ].map((f, i) => (
               <FadeUp key={i} delay={i * 0.1} className="card text-center">

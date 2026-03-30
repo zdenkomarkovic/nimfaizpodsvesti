@@ -28,7 +28,7 @@ export default function PunaBio() {
               </p>
               <h2 className="heading-lg mb-4">Jelena Stevanović</h2>
               <p className="text-cream-faint text-sm mb-6 italic">
-                alijas Nimfa iz Podsvesti (poznata i kao Nimfa bez Manije)
+                alijas Nimfa Iz Podsvesti (poznata i kao Nimfa Bez Manije)
               </p>
               <div className="gold-divider mx-0 mb-10" />
 
@@ -36,91 +36,140 @@ export default function PunaBio() {
                 <p>
                   Moje formalno obrazovanje iz psihologije završava se 2000.
                   godine, ali moje istinsko putovanje u razumevanje čoveka
-                  počinje mnogo ranije — u trenutku kada sa petnaest godina prvi
-                  put proračunavam i, uz pomoć šestara i lenjira, crtam
-                  astrološku kartu. Već tada osećam da simbolički jezik neba
-                  govori o onome što psihologija tek kasnije počinje da imenuje.
-                </p>
-
-                <p>
-                  Tokom naredne 24 godine radim u marketingu inostranih
-                  kompanija i agencija, u svetu strategije, istraživanja
-                  tržišta, komunikacije i brendova. To iskustvo mi je omogućilo
-                  duboko razumevanje načina na koji ljudi razmišljaju, donose
-                  odluke i projektuju svoje unutrašnje procese u spoljašnji
-                  svet. Paralelno s tim, astrologija ostaje moja lična
-                  disciplina, prostor istraživanja i unutrašnjeg dijaloga. Sa
-                  razvojem tehnologije i dostupnošću savremenih alata, čini mi
-                  se da poslednjih 25 godina nije prošao nijedan dan bez
-                  otvaranja barem jedne astrološke karte — makar kao pogled na
-                  aktuelne tranzite u odnosu na sopstveni natal.
-                </p>
-
-                <p>
-                  Astrologiju doživljavam kao drevnu umetnost precizne analize —
-                  spoj matematičkog proračuna kretanja nebeskih tela,
-                  energetskih ciklusa i mitoloških obrazaca koji imaju snažan
-                  uticaj na formiranje ličnosti u trenutku rođenja. Ona
-                  istovremeno pokazuje kako se struktura i dinamika psihe
-                  ogledaju u spoljašnjim okolnostima koje podstiču psihološki i
-                  duhovni razvoj. U svom radu astrologiju koristim kao
-                  analitički i interpretativni alat koji pruža dubok uvid u
-                  osnovne psihološke obrasce i razvojne izazove ličnosti.
-                  Natalni horoskop posmatram kao ličnu priču koja se vremenom
-                  razvija, progresira — priču u kojoj se iskustva menjaju
-                  uporedo sa razvojem svesti i karaktera.
-                </p>
-
-                <p>
-                  U jednom trenutku (tranzit Saturna preko natalnog Urana)
-                  odlučujem da veliku ljubav prema astrologiji i hobi
-                  formalizujem, pa godine 2014. završavam školu Prediktivne
-                  astrologije i sinastrije, čime se dugogodišnji hobi oblikuje u
-                  strukturisan i profesionalan rad, ali u tom periodu ostaje u
-                  domenu lične prakse i neprofitnog angažmana.{" "}
-                  <span className="font-bold">
+                  počinje mnogo ranije — u trenutku kada sa{" "}
+                  <strong> petnaest godina</strong> prvi put proračunavam i, uz
+                  pomoć šestara i lenjira,
+                  <strong> crtam astrološku kartu</strong>.
+                  <br />
+                  Već tada prepoznajem da<strong>
                     {" "}
-                    Ipak, moj Uran (astrolog) je vladar mog 5. polja
-                    (hobi/ljubav prema nečemu), koji je egzaltiran (maksimalna
-                    snaga) u Škorpiji (psihologija) u 2. kući mog natala
-                    (novac/zarada/sposobnost sticanja), što vodi ka tome da od
-                    2024. godine započinjem intenzivnu integraciju astrologije
-                    sa psihološkim savetovanjem
-                  </span>
-                  . Kroz NLP edukaciju (Master nivo 2026), hipnotičke metode,
-                  CRT pristup i regresivni rad, dodatno produbljujem
-                  integrativni pristup koji povezuje psihologiju, astrologiju i
-                  savremene coaching tehnike.
+                    simbolički jezik neba
+                  </strong>{" "}
+                  govori o onome što<strong> psihologija</strong> tek
+                  <strong> kasnije počinje da imenuje</strong>.
+                </p>
+                <p>
+                  Tokom naredne 24 godine
+                  <strong>
+                    {" "}
+                    radim u marketingu inostranih kompanija i agencija
+                  </strong>{" "}
+                  — u svetu strategije, istraživanja tržišta, komunikacije i
+                  brendova.
+                  <br />
+                  To iskustvo mi donosi duboko razumevanje načina na koji ljudi
+                  razmišljaju, donose odluke i projektuju unutrašnje procese u
+                  spoljašnji svet.
+                  <br />
+                  Paralelno s tim,
+                  <strong> astrologija ostaje moja lična disciplina</strong> —
+                  prostor istraživanja i unutrašnjeg dijaloga.
+                  <br />
+                  Sa razvojem tehnologije, čini mi se da poslednjih 25 godina
+                  nije prošao nijedan dan bez otvaranja barem jedne astrološke
+                  karte — makar kroz pogled na aktuelne tranzite u odnosu na
+                  sopstveni natal.
+                </p>
+                <p>
+                  <strong>
+                    {" "}
+                    Astrologiju doživljavam kao drevnu umetnost precizne analize
+                  </strong>{" "}
+                  — spoj matematičkog proračuna kretanja nebeskih tela,
+                  energetskih ciklusa i mitoloških obrazaca koji imaju snažan
+                  uticaj na formiranje ličnosti u trenutku rođenja. Istovremeno
+                  pokazuje kako se struktura i dinamika psihe ogledaju u
+                  spoljašnjim okolnostima koje podstiču psihološki i duhovni
+                  razvoj. U svom radu
+                  <strong>
+                    {" "}
+                    astrologiju koristim kao analitički i interpretativni alat
+                  </strong>{" "}
+                  koji pruža dubok uvid u osnovne psihološke obrasce i razvojne
+                  izazove ličnosti.
+                  <strong>
+                    {" "}
+                    Natalni horoskop posmatram kao ličnu priču koja se razvija i
+                    menja
+                  </strong>{" "}
+                  — uporedo sa razvojem svesti i karaktera.
                 </p>
 
                 <p>
-                  U radu koristim NLP tehnike koje omogućavaju prepoznavanje i
-                  promenu nesvesnih obrazaca mišljenja i ponašanja, kao i
-                  hipnotičke metode koje klijentima pomažu da uđu u stanje
-                  pojačane fokusirane pažnje. U tom prostoru postaju dostupni
-                  slojevi svesti koji u svakodnevnom funkcionisanju ostaju
-                  skriveni. Regresivni rad omogućava uvid u sadržaje koji se
-                  doživljavaju kao prošli životni ili duboko ukorenjeni
-                  memorijski obrasci — uvek sa fokusom na integraciju,
-                  razumevanje i svesnu promenu u sadašnjem životu.
+                  U jednom trenutku
+                  <strong> (tranzit Saturna preko natalnog Urana)</strong>{" "}
+                  odlučujem da veliku ljubav prema astrologiji formalizujem.
+                  Godine 2014. završavam školu prediktivne astrologije i
+                  sinastrije, čime se dugogodišnji hobi oblikuje u strukturisan
+                  i profesionalan rad, ali u tom periodu ostaje u domenu lične
+                  prakse i neprofitnog angažmana.
                 </p>
 
                 <p>
-                  U astrološkom sistemu takođe postoji jasan postulat
-                  kontinuiteta svesti i iskustava, gde se teme prošlih života
-                  ili ranijih inkarnacija posmatraju kao prirodan deo psihološke
-                  strukture pojedinca. Upravo zato regresivni rad doživljavam
-                  kao logičan nastavak astrološkog uvida — ne kao verovanje, već
-                  kao metod istraživanja dubokih unutrašnjih sadržaja.
+                  Ipak,
+                  <strong>
+                    {" "}
+                    moj Uran (astrolog) je vladar mog 5. polja (hobi/ljubav
+                    prema nečemu), egzaltiran u Škorpiji (psihologija) u 2. kući
+                    mog natala (novac/zarada/sposobnost sticanja)
+                  </strong>
+                  , što prirodno vodi ka tome da od 2024. godine započinjem
+                  intenzivnu integraciju astrologije sa psihološkim
+                  savetovanjem.
                 </p>
 
                 <p>
-                  Danas radim individualno astropsihološko savetovanje, online
-                  putem direktnih konsultacija, namenjeno onima koji osećaju da
-                  se njihova pitanja ne završavaju na jednom životnom sloju. Moj
-                  rad je usmeren na razumevanje unutrašnjih obrazaca, lični
-                  razvoj i osvešćivanje potencijala kroz spoj simboličkog,
-                  psihološkog i iskustvenog uvida.
+                  Kroz
+                  <strong>
+                    {" "}
+                    NLP edukaciju, hipnotičke metode, CRT pristup i regresivni
+                    rad
+                  </strong>
+                  , dodatno produbljujem integrativni pristup koji
+                  <strong>
+                    {" "}
+                    povezuje psihologiju, astrologiju i savremene coaching
+                    tehnike
+                  </strong>
+                  . <br /> U radu koristim NLP tehnike koje omogućavaju
+                  prepoznavanje i promenu nesvesnih obrazaca mišljenja i
+                  ponašanja, kao i hipnotičke metode koje klijentima pomažu da
+                  uđu u stanje pojačane fokusirane pažnje. U tom prostoru
+                  postaju dostupni slojevi svesti koji u svakodnevnom
+                  funkcionisanju ostaju skriveni.
+                </p>
+                <p>
+                  <strong> Regresivni rad</strong> omogućava uvid u sadržaje
+                  koji se doživljavaju kao
+                  <strong>
+                    {" "}
+                    prošli životni ili duboko ukorenjeni memorijski obrasci
+                  </strong>{" "}
+                  — uvek sa fokusom na integraciju, razumevanje i svesnu promenu
+                  u sadašnjem životu. U astrološkom sistemu takođe postoji jasan
+                  postulat kontinuiteta svesti i iskustava, gde se teme prošlih
+                  života ili ranijih inkarnacija posmatraju kao prirodan deo
+                  psihološke strukture pojedinca. Upravo zato
+                  <strong>
+                    {" "}
+                    regresivni rad doživljavam kao logičan nastavak astrološkog
+                    uvida — ne kao verovanje, već kao metod istraživanja dubokih
+                    unutrašnjih sadržaja
+                  </strong>
+                  .
+                </p>
+                <p>
+                  Finalno, danas radim
+                  <strong>
+                    {" "}
+                    individualno astropsihološko savetovanje, online putem
+                    direktnih konsultacija
+                  </strong>
+                  , namenjeno onima koji osećaju da se njihova pitanja ne
+                  završavaju na jednom životnom sloju. Moj rad usmeren je na
+                  razumevanje unutrašnjih obrazaca, lični razvoj i osvešćivanje
+                  potencijala kroz spoj simboličkog, psihološkog i iskustvenog
+                  uvida.
                 </p>
               </div>
             </div>

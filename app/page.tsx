@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { FadeUp, FadeIn, SlideRight, SlideLeft } from "@/components/Motion";
+import { FadeUp, SlideRight, SlideLeft } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title:
@@ -73,8 +73,8 @@ export default function HomePage() {
               </p> */}
               <h1 className="text-[1rem] lg:text-[1.1rem] mb-4 ">
                 <span className="uppercase">
-                  Online Astropsihološko savetovanje - Coaching - Lični razvoj -
-                  mentorstvo i lični razvoj{" "}
+                  Online Astropsihološko savetovanje &middot; Coaching &middot;
+                  Lični razvoj &middot; mentorstvo i lični razvoj{" "}
                 </span>
                 <span className="font-bold block text-3xl lg:text-4xl">
                   Nimfa Iz Podsvesti
@@ -88,11 +88,15 @@ export default function HomePage() {
               </p>
               <p className="text-body text-cream-muted mb-4">
                 Kroz{" "}
-                <strong>
+                <span className="">
                   {" "}
                   astropsihološko savetovanje, NLP coaching, hipnotičke tehnike
-                  i regresivni rad sa podsvešću i temama prošlih života
-                </strong>
+                  i{" "}
+                </span>
+                <span className="font-bold">
+                  {" "}
+                  regresivni rad sa podsvešću i temama prošlih života
+                </span>{" "}
                 , ti obrasci postaju jasni i omogućavaju ti da donosiš odluke
                 koje su zaista tvoje.
               </p>
@@ -124,13 +128,14 @@ export default function HomePage() {
           <FadeUp className=" mx-auto text-justify ">
             <div className="space-y-4 text-body text-cream-muted">
               <p>
-                Ja sam Jelena i diplomirani sam psiholog. Radim individualno,
-                online, kroz video i telefonske konsultacije, koristeći
+                Ja sam Jelena, <strong> diplomirani psiholog</strong>. Radim
+                individualno, online, kroz video i telefonske konsultacije,
+                koristeći{" "}
                 <strong>
                   {" "}
-                  integrativni pristup kroz astropsihološko savetovanje, NLP
-                  coaching, rad sa podsvešću, hipnotičke tehnike i regresivne
-                  procese sa temama prošlih života
+                  integrativni pristup koji obuhvata astropsihološko
+                  savetovanje, NLP coaching, rad sa podsvešću, hipnotičke
+                  tehnike i regresivne procese sa temama iz prošlih života
                 </strong>
                 . Moj rad nastao je iz potrebe da se razume ono što nije odmah
                 vidljivo — unutrašnji procesi koji oblikuju naše misli, emocije
@@ -145,21 +150,25 @@ export default function HomePage() {
               <p>
                 Kroz rad sa mnom otvara se prostor u kojem je moguće sagledati
                 sebe bez pritiska, bez uloga i bez potrebe da se nešto
-                „ispravi"...{" "}
+                ‘ispravi’. Kroz rad sa podsvešću, NLP coaching, hipnotičke
+                tehnike i regresivni rad sa temama iz prošlih života dolazimo do
+                uvida, jer{" "}
                 <strong>
                   {" "}
-                  kroz rad sa podsvešću, NLP coaching, hipnotičke tehnike i
-                  regresivni rad sa temama prošlih života
+                  odgovori koje tražimo nisu izvan nas — oni su već tu
                 </strong>
-                , jer odgovori koje tražimo nisu izvan nas. Oni su već tu —
-                potrebno je samo da ih postepeno osvestimo.
+                .
+                <br /> Potrebno je samo da ih postepeno osvestimo.
               </p>
               <p>
-                U tom procesu nisam tu da vam dam odgovore. Tu sam da vam
-                pomognem da ih pronađete kroz{" "}
-                <strong> savetovanje, mentorstvo i rad sa podsvešću</strong> i
-                omogućim dublje razumevanje i donošenje odluka koje su u skladu
-                sa vama.
+                U tom procesu{" "}
+                <strong>
+                  {" "}
+                  nisam tu da ti dam odgovore. Tu sam da ti pomognem da ih
+                  pronađeš
+                </strong>{" "}
+                kroz savetovanje, mentorstvo i rad sa podsvešću i da ti omogućim
+                dublje razumevanje i donošenje odluka koje su u skladu sa tobom.
               </p>
             </div>
           </FadeUp>
@@ -182,7 +191,7 @@ export default function HomePage() {
               {
                 title: "Astrologija",
                 subtitle: "Individualni uvid",
-                text: "Dubinski uvid u ličnost, odnose i životne cikluse kroz analizu natalne karte i aktuelnih tranzita. Razumevanje obrazaca koji oblikuju vaš život.",
+                text: "Dubinski uvid u ličnost, odnose i životne cikluse kroz analizu natalne karte i aktuelnih tranzita. Razumevanje obrazaca koji oblikuju tvoj život.",
                 image: "/images/astro.webp",
                 href: "/usluge#astrologija",
               },
@@ -194,16 +203,16 @@ export default function HomePage() {
                 href: "/usluge#astropsiholosko-savetovanje",
               },
               {
-                title: "Psihološko i NLP coaching",
+                title: "Psihološko savetovanje i NLP coaching",
                 subtitle: "Paket sesija",
-                text: "Rad na ciljevima, uverenjima i promeni obrazaca koji vas ograničavaju. Proces koji donosi jasnije odluke i stabilniji unutrašnji osećaj.",
+                text: "Rad na ciljevima, uverenjima i promeni obrazaca koji te ograničavaju. Proces koji donosi jasnije odluke i stabilniji unutrašnji osećaj.",
                 image: "/images/psiholoski i NLP Coaching.webp",
                 href: "/usluge#nlp-coaching",
               },
               {
                 title: "Hipnotičke tehnike",
                 subtitle: "Individualni rad",
-                text: "Rad sa nesvesnim kada razumete problem, ali promena izostaje. Otklanjanje blokada i pristup dubljim slojevima ličnosti.",
+                text: "Rad sa nesvesnim - kada razumeš problem, ali promena izostaje. Otklanjanje blokada i pristup dubljim slojevima ličnosti.",
                 image: "/images/hipnoza.webp",
                 href: "/usluge#hipnoticke-tehnike",
               },
@@ -271,8 +280,8 @@ export default function HomePage() {
                   "ako ti se isti životni i emotivni obrasci ponavljaju",
                   "ako želiš da definišeš ciljeve i istraješ u njima",
                   "ako imaš mnogo odnosa, ali nijedan 'pravi'",
-                  "ako znaš, ali ne uspevaš da istraješ i to sprovedeš",
-                  "ako ponekad osećaš da tvoji problemi nisu racionalno objašnjivi",
+                  "ako znaš, ali ne uspevaš da istraješ u tome i to sprovedeš",
+                  "ako ponekad osećaš da tvoji problemi nisu u potpunosti racionalno objašnjivi",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <span className="text-teget mt-1 shrink-0">✦</span>
@@ -314,7 +323,11 @@ export default function HomePage() {
             <div className="gold-divider" />
             <p className="text-cream-muted mt-4 max-w-xl mx-auto">
               Online (telefon/video) individualan rad, strukturisan ali
-              fleksibilan, prilagođen tvojoj spremnosti.
+              fleksibilan.
+            </p>
+            <p className="text-cream-muted  max-w-xl mx-auto">
+              Prilagođen tvojoj spremnosti, uz odabir metoda u skladu sa
+              procesom.
             </p>
           </FadeUp>
 
@@ -381,7 +394,7 @@ export default function HomePage() {
             Sledeći korak
           </p>
           <h2 className="heading-lg mb-4">
-            Spremni ste za jasnoću i svesnu promenu?
+            Spreman si za jasnoću i svesnu promenu?
           </h2>
           <div className="gold-divider" />
           <div className="mt-8">
@@ -415,7 +428,7 @@ export default function HomePage() {
               },
               {
                 q: "Da li mogu da zakažem samo astrološku konsultaciju?",
-                a: "Da. Astrološki uvid može biti potpuno samostalna usluga, bez ikakvog daljeg psihološkog ili coaching rada. Sa jednim delom klijenata radim isključivo astrologiju.",
+                a: "Da. Astrološki uvid može biti potpuno samostalna usluga, bez ikakvog daljeg psihološkog ili coaching rada. Sa jednim delom klijenata radim isključivo astrološke konsultacije.",
               },
               {
                 q: "Da li je ovo terapija?",
@@ -423,15 +436,37 @@ export default function HomePage() {
               },
               {
                 q: "Zašto se NLP coaching i mentorstvo radi u paketu?",
-                a: "NLP tehnike zahtevaju kontinuitet i proces. Zbog toga se psihološko i NLP coaching savetovanje radi isključivo u minimalnom paketu od 3 ili 4 sesije, a cena je niža nego za isti broj individualnih konsultacija.",
+                a: "NLP tehnike zahtevaju kontinuitet i proces. Zbog toga se psihološko savetovanje  i NLP coaching radi isključivo u minimalnom paketu od 3 ili 4 sesije, a cena je niža nego za isti broj individualnih konsultacija.",
               },
               {
                 q: "Da li radite uživo?",
-                a: "Ne. Sav rad se odvija online – putem video ili telefonskog poziva (ako metod to dopušta). Ovakav format omogućava kontinuitet, fleksibilnost i pristup klijentima bez obzira na lokaciju.",
+                a: "Ne, celokupan rad se odvija online – putem video ili telefonskog poziva (ako metod to dopušta). Ovakav format omogućava kontinuitet, fleksibilnost i pristup, bez obzira na lokaciju.",
               },
               {
                 q: "Kako da znam koja je usluga za mene?",
-                a: "Ako niste sigurni koja je usluga najadekvatnija, dovoljno je da zakažete inicijalnu konsultaciju. Tokom razgovora zajedno definišemo temu, cilj i najefikasniji način rada.",
+                a: (
+                  <>
+                    <span className="block mb-2">
+                      Ako nisi siguran odakle da počneš, možeš da zakažeš:
+                    </span>
+                    <ul className="space-y-1 mb-2">
+                      <li className="flex items-start gap-2">
+                        <span className="text-teget shrink-0">✦</span>
+                        <span>15 minuta uvodnog razgovora (bez nadoknade)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-teget shrink-0">✦</span>
+                        <span>
+                          ili 30 minuta po ceni individualnog astrološkog uvida,
+                          koji možemo uključiti po potrebi
+                        </span>
+                      </li>
+                    </ul>
+                    <span className="block">
+                      Kroz razgovor dolazimo do jasnoće i pravca daljeg rada.
+                    </span>
+                  </>
+                ),
               },
             ].map((item, i) => (
               <FadeUp key={i} delay={i * 0.08} className="block">
@@ -476,12 +511,12 @@ export default function HomePage() {
                     </span>
                   </summary>
                   <div className="px-5 pb-5 pt-1 border-t border-white/30">
-                    <p
+                    <div
                       className="leading-relaxed text-sm md:text-base pl-6"
                       style={{ color: "#4e4a7a" }}
                     >
                       {item.a}
-                    </p>
+                    </div>
                   </div>
                 </details>
               </FadeUp>
