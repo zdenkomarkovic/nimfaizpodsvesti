@@ -74,7 +74,7 @@ export default function HomePage() {
               <h1 className="text-[1rem] lg:text-[1.1rem] mb-4 ">
                 <span className="uppercase">
                   Online Astropsihološko savetovanje &middot; Coaching &middot;
-                  Lični razvoj &middot; mentorstvo i lični razvoj{" "}
+                  Lični razvoj &middot; mentorstvo
                 </span>
                 <span className="font-bold block text-3xl lg:text-4xl">
                   Nimfa Iz Podsvesti
