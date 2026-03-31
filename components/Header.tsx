@@ -9,8 +9,8 @@ const navLinks = [
   { href: "/", label: "Početna" },
   { href: "/o-meni", label: "O Meni" },
   { href: "/usluge", label: "Usluge" },
-  { href: "/za-koga", label: "Za Koga je ovaj pristup" },
-  { href: "/kako-izgleda-rad", label: "Kako Izgleda Rad" },
+  { href: "/za-koga", label: "Za koga je ovaj pristup" },
+  { href: "/kako-izgleda-rad", label: "Kako izgleda rad" },
   { href: "/cenovnik", label: "Cenovnik" },
   { href: "/kontakt", label: "Kontakt" },
 ];

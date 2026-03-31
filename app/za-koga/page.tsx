@@ -132,10 +132,10 @@ export default function ZaKogaPage() {
                 , koji žele svesniji odnos prema sebi, svojim obrascima i
                 potencijalima, a koji su otvoreni za integraciju uvida na
                 psihološkom, simboličkom i iskustvenom nivou.{" "}
-                <strong>Ovaj rad</strong> ne ostaje na pukoj analizi —{" "}
+                <strong>Ovaj rad</strong> ne ostaje na pukoj analizi — već{" "}
                 <strong>
-                  već pruža jasnoću, fokus i svesno delovanje, uz konkretan rad
-                  na ciljevima, odnosima i ličnom razvoju
+                  pruža jasnoću, fokus i svesno delovanje, uz konkretan rad na
+                  ciljevima, odnosima i ličnom razvoju
                 </strong>
                 .
               </p>

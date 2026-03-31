@@ -150,9 +150,9 @@ export default function HomePage() {
               <p>
                 Kroz rad sa mnom otvara se prostor u kojem je moguće sagledati
                 sebe bez pritiska, bez uloga i bez potrebe da se nešto
-                ‘ispravi’. Kroz rad sa podsvešću, NLP coaching, hipnotičke
-                tehnike i regresivni rad sa temama iz prošlih života dolazimo do
-                uvida, jer{" "}
+                ‘ispravi’. <br /> Kroz rad sa podsvešću, NLP coaching,
+                hipnotičke tehnike i regresivni rad sa temama iz prošlih života
+                dolazimo do uvida, jer{" "}
                 <strong>
                   {" "}
                   odgovori koje tražimo nisu izvan nas — oni su već tu
@@ -414,7 +414,7 @@ export default function HomePage() {
         <div className="container-main section-padding">
           <FadeUp className="text-center mb-10">
             <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
-              Imate pitanja?
+              Imaš pitanja?
             </p>
             <h2 className="heading-lg mb-2">Često postavljana pitanja</h2>
             <div className="gold-divider" />
@@ -435,7 +435,7 @@ export default function HomePage() {
                 a: "Ne. Ovaj rad nije klinička terapija i ne koristi medicinski ili dijagnostički pristup. Fokus je na razumevanju obrazaca, donošenju odluka, ličnom razvoju i svesnom radu na ciljevima i motivaciji, uz coaching i iskustvene metode.",
               },
               {
-                q: "Zašto se NLP coaching i mentorstvo radi u paketu?",
+                q: "Zašto se NLP coaching i psihološko savetovanje radi u paketu?",
                 a: "NLP tehnike zahtevaju kontinuitet i proces. Zbog toga se psihološko savetovanje  i NLP coaching radi isključivo u minimalnom paketu od 3 ili 4 sesije, a cena je niža nego za isti broj individualnih konsultacija.",
               },
               {

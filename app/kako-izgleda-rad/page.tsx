@@ -213,8 +213,8 @@ export default function KakoIzgledaRadPage() {
               Klijentkinja, 39 godina,{" "}
               <strong>
                 sa ponavljajućim obrascem intenzivnih, sudbinskih odnosa koji
-                započinju snažnom povezanošću i osećajem &lsquo;kao da se znamo
-                od ranije&rsquo;
+                započinju snažnom povezanošću i osećajem 'kao da se znamo
+                od ranije'
               </strong>
               , a završavaju emocionalnim prekidom i osećajem gubitka koji
               prevazilazi realno trajanje veze.
@@ -267,7 +267,7 @@ export default function KakoIzgledaRadPage() {
                       karmičke veze, nerešene emotivne obrasce i ponavljanje
                       dinamika koje{" "}
                       <strong>
-                        imaju osećaj &ldquo;nedovršenosti&rdquo;
+                        imaju osećaj 'nedovršenosti'
                       </strong>
                       . Astrologija ovde nije korišćena kao dokaz prošlih
                       života, već kao simbolički pokazatelj da se radi o obrascu
@@ -363,13 +363,13 @@ export default function KakoIzgledaRadPage() {
                     <p>
                       Tokom regresivnog procesa u dve seanse,{" "}
                       <strong>
-                        radili smo prvo na &lsquo;otvaranju&rsquo; ranih
+                        radili smo prvo na 'otvaranju' ranih
                         iskustava iz detinjstva
                       </strong>{" "}
                       – situacija u kojima je ljubav bila povezana sa napetošću
                       i neizvesnošću. Prema dogovoru, narednom seansom smo kroz
-                      produbljeni rad &ldquo;otišli&rdquo; u scene iz
-                      &ldquo;drugog vremena&rdquo; – i{" "}
+                      produbljeni rad 'otišli' u scene iz
+                      'drugog vremena' – i{" "}
                       <strong>
                         stekli uvid u iskustvo odnosa u kojem je postojala
                         snažna emotivna povezanost
@@ -380,7 +380,7 @@ export default function KakoIzgledaRadPage() {
                       U radu fokus nije bio na dokazivanju da li je to
                       objektivno prošli život, već na emocionalnom naboju koji
                       je scena nosila. Kroz proces integracije, smanjena je
-                      intenzivna potreba za &ldquo;dovršavanjem&rdquo; odnosa
+                      intenzivna potreba za 'dovršavanjem' odnosa
                       koji su realno već završeni.
                     </p>
                     <p>

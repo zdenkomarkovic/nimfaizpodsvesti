@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Da li mogu da zakažem samo astrološku konsultaciju?",
-    a: "Da. Astrološki uvid može biti potpuno samostalna usluga, bez ikakvog daljeg psihološkog ili coaching rada. Sa jednim delom klijenata radim isključivo astrologiju.",
+    a: "Da. Astrološki uvid može biti potpuno samostalna usluga, bez ikakvog daljeg psihološkog ili coaching rada. Sa jednim delom klijenata radim isključivo astrološke konsultacije.",
   },
   {
     q: "Kako izgleda astropsihološko savetovanje, odnosno Astrohiling?",
@@ -26,8 +26,8 @@ const faqs = [
     a: "Ne. Ovaj rad nije klinička terapija i ne koristi medicinski ili dijagnostički pristup. Fokus je na razumevanju obrazaca, donošenju odluka, ličnom razvoju i svesnom radu na ciljevima i motivaciji, uz coaching i iskustvene metode.",
   },
   {
-    q: "Zašto se NLP coaching i mentorstvo radi u paketu?",
-    a: "NLP tehnike zahtevaju kontinuitet i proces. Zbog toga se psihološko i NLP coaching savetovanje radi isključivo u minimalnom paketu od 3 ili 4 sesije, a cena je niža nego za isti broj individualnih konsultacija. Pojedinačna sesija retko daje stabilne i dugoročno održive rezultate, pa su paketi osmišljeni kao strukturisan proces i dvostruki benefit za klijenta – i metodološki i finansijski.",
+    q: "Zašto se NLP coaching i psihološko savetovanje radi u paketu?",
+    a: "NLP tehnike zahtevaju kontinuitet i proces. Zbog toga se psihološko savetovanje i NLP coaching radi isključivo u minimalnom paketu od 3 ili 4 sesije, a cena je niža nego za isti broj individualnih konsultacija. Pojedinačna sesija retko daje stabilne i dugoročno održive rezultate, pa su paketi osmišljeni kao strukturisan proces i dvostruki benefit za klijenta – i metodološki i finansijski.",
   },
   {
     q: "Koliko sesija je potrebno za hipnotički ili regresivni rad?",
@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     q: "Kako da znam koja je usluga za mene?",
-    a: "Ako niste sigurni koja je usluga najadekvatnija, dovoljno je da zakažete inicijalnu konsultaciju. Tokom razgovora zajedno definišemo temu, cilj i najefikasniji način rada.",
+    a: "Ako nisi siguran odakle da počneš, možeš da zakažeš:\n✦ 15 minuta uvodnog razgovora (bez nadoknade)\n✦ ili 30 minuta po ceni individualnog astrološkog uvida, koji možemo uključiti po potrebi\nKroz razgovor dolazimo do jasnoće i pravca daljeg rada.",
   },
 ];
 
@@ -65,7 +65,9 @@ export default function FaqPage() {
           }}
         />
         <FadeUp className="container-main relative z-10">
-          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">Pitanja i odgovori</p>
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-3">
+            Pitanja i odgovori
+          </p>
           <h1 className="heading-xl mb-4">Često postavljana pitanja</h1>
           <div className="gold-divider mx-0" />
         </FadeUp>
@@ -77,56 +79,58 @@ export default function FaqPage() {
           <div className="max-w-3xl space-y-3">
             {faqs.map((item, i) => (
               <FadeUp key={i} delay={i * 0.06} className="block">
-              <details
-                className="group border border-white/40 rounded-lg open:border-teget/40 transition-colors duration-200"
-                style={{
-                  background: "rgba(255,255,255,0.28)",
-                  backdropFilter: "blur(12px)",
-                  WebkitBackdropFilter: "blur(12px)",
-                }}
-              >
-                <summary
-                  className="flex items-center justify-between gap-4 p-5 cursor-pointer
-                             list-none select-none"
+                <details
+                  className="group border border-white/40 rounded-lg open:border-teget/40 transition-colors duration-200"
+                  style={{
+                    background: "rgba(255,255,255,0.28)",
+                    backdropFilter: "blur(12px)",
+                    WebkitBackdropFilter: "blur(12px)",
+                  }}
                 >
-                  <span className="flex items-start gap-3">
-                    <span
-                      className="text-teget text-xs shrink-0 mt-1"
-                      aria-hidden
-                      style={{ filter: "drop-shadow(0 0 4px rgba(201,168,76,0.4))" }}
-                    >
-                      ✦
-                    </span>
-                    <span className="font-sans font-semibold text-cream text-sm md:text-base leading-snug">
-                      {item.q}
-                    </span>
-                  </span>
-                  {/* Chevron */}
-                  <span
-                    className="shrink-0 text-teget transition-transform duration-300
-                               group-open:rotate-180"
-                    aria-hidden
+                  <summary
+                    className="flex items-center justify-between gap-4 p-5 cursor-pointer
+                             list-none select-none"
                   >
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
+                    <span className="flex items-start gap-3">
+                      <span
+                        className="text-teget text-xs shrink-0 mt-1"
+                        aria-hidden
+                        style={{
+                          filter: "drop-shadow(0 0 4px rgba(201,168,76,0.4))",
+                        }}
+                      >
+                        ✦
+                      </span>
+                      <span className="font-sans font-semibold text-cream text-sm md:text-base leading-snug">
+                        {item.q}
+                      </span>
+                    </span>
+                    {/* Chevron */}
+                    <span
+                      className="shrink-0 text-teget transition-transform duration-300
+                               group-open:rotate-180"
+                      aria-hidden
                     >
-                      <polyline points="6 9 12 15 18 9" />
-                    </svg>
-                  </span>
-                </summary>
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      >
+                        <polyline points="6 9 12 15 18 9" />
+                      </svg>
+                    </span>
+                  </summary>
 
-                <div className="px-5 pb-5 pt-1 border-t border-border/50">
-                  <p className="text-cream-muted leading-relaxed text-sm md:text-base pl-6">
-                    {item.a}
-                  </p>
-                </div>
-              </details>
+                  <div className="px-5 pb-5 pt-1 border-t border-border/50">
+                    <p className="text-cream-muted leading-relaxed text-sm md:text-base pl-6 whitespace-pre-line">
+                      {item.a}
+                    </p>
+                  </div>
+                </details>
               </FadeUp>
             ))}
           </div>
@@ -136,12 +140,16 @@ export default function FaqPage() {
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="relative z-10 bg-bg-secondary border-t border-border">
         <div className="container-main section-padding text-center">
-          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-4">Ostala pitanja?</p>
-          <h2 className="heading-lg mb-4">Zakaži konsultaciju i definiši svoj pravac rada</h2>
+          <p className="text-teget text-xs uppercase tracking-[0.25em] mb-4">
+            Ostala pitanja?
+          </p>
+          <h2 className="heading-lg mb-4">
+            Zakaži konsultaciju i definiši svoj pravac rada
+          </h2>
           <div className="gold-divider" />
           <p className="text-cream-muted mt-4 mb-8 max-w-md mx-auto">
-            Ako nisi pronašao/la odgovor na svoje pitanje, slobodno se javi — razgovorićemo o
-            svemu što te zanima.
+            Ako nisi pronašao/la odgovor na svoje pitanje, slobodno se javi —
+            razgovaraćemo o svemu što te zanima.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/kontakt" className="btn-primary">

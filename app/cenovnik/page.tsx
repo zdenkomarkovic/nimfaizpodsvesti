@@ -63,7 +63,7 @@ function PriceRow({
         )}
       </div>
       <div className="flex items-center gap-3 shrink-0 text-right">
-        <span className="text-teget font-semibold text-sm hidden sm:block">{rsd}</span>
+        <span className="text-teget font-semibold text-sm block">{rsd}</span>
         <span className="text-cream-faint text-xs">{eur}</span>
       </div>
     </div>
@@ -80,7 +80,7 @@ function PackageRow({ label, rsd, eur }: { label: string; rsd: string; eur: stri
         <span className="text-cream-muted text-sm">{label}</span>
       </div>
       <div className="flex items-center gap-3 shrink-0 text-right">
-        <span className="text-teget font-semibold text-sm hidden sm:block">{rsd}</span>
+        <span className="text-teget font-semibold text-sm block">{rsd}</span>
         <span className="text-cream-faint text-xs">{eur}</span>
       </div>
     </div>
@@ -331,7 +331,7 @@ export default function CenovnikPage() {
                   </span>
                 </div>
                 <div className="flex items-center gap-3 shrink-0">
-                  <span className="text-teget font-semibold text-sm hidden sm:block">12.000 RSD</span>
+                  <span className="text-teget font-semibold text-sm block">12.000 RSD</span>
                   <span className="text-cream-faint text-xs">120€</span>
                 </div>
               </div>
