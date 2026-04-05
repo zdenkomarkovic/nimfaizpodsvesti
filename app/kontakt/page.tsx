@@ -83,7 +83,7 @@ export default function KontaktPage() {
 
                 {/* Telefon – 3 dugmeta */}
                 <div className="card">
-                  <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center gap-4 mb-3">
                     <span className="text-teget text-xl" aria-hidden>☎</span>
                     <div>
                       <p className="text-cream-muted text-xs uppercase tracking-widest mb-0.5">
@@ -92,6 +92,11 @@ export default function KontaktPage() {
                       <p className="text-cream text-sm">{PHONE_DISPLAY}</p>
                     </div>
                   </div>
+                  <p className="text-cream-muted text-xs leading-relaxed mb-3 pb-3 border-b border-border/50">
+                    Kontakt i zakazivanje termina moguće je ostvariti putem
+                    poruke (Viber, WhatsApp, Instagram) ili e-maila.{" "}
+                    <span className="text-cream font-medium">Pozivi i razgovori se organizuju isključivo po prethodnom dogovoru.</span>
+                  </p>
                   <div className="flex flex-wrap gap-2">
                     {/* Pošalji poruku */}
                     <a
@@ -124,7 +129,7 @@ export default function KontaktPage() {
               </div>
 
               {/* Disclaimer */}
-              <div className="mt-8 p-4 border border-border/50 rounded bg-bg-card">
+              <div className="mt-4 p-4 border border-border/50 rounded bg-bg-card">
                 <p className="text-cream-faint text-xs leading-relaxed">
                   Rad je savetodavnog i coaching karaktera i ne predstavlja
                   zamenu za medicinski ili klinički tretman. Usluge i sadržaji

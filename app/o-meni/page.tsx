@@ -142,7 +142,7 @@ export default function OMeniPage() {
                 },
                 {
                   title: "NLP Master (on going)",
-                  period: "2024 – 2026",
+                  period: "2025 – 2026",
                   institution: "MYND akademija – IANLP sertifikat",
                 },
                 {

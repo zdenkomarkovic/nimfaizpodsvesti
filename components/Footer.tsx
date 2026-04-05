@@ -84,6 +84,10 @@ export default function Footer() {
               >
                 +381 62 806 8616 · Pošalji poruku
               </a>
+              <p className="text-cream-muted text-xs leading-relaxed py-2 border-t border-border/40">
+                Kontakt i zakazivanje termina moguće je ostvariti putem poruke (Viber, WhatsApp, Instagram) ili e-maila.{" "}
+                <span className="text-cream font-medium">Pozivi i razgovori se organizuju isključivo po prethodnom dogovoru.</span>
+              </p>
               <a
                 href="https://wa.me/381628068616"
                 target="_blank"
