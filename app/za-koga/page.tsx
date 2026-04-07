@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   title: "Za Koga Je Ovaj Pristup",
   description:
     "Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja ne završavaju na površinskom nivou. Astropsihološko savetovanje, coaching i lični razvoj za one koji žele razumevanje i unutrašnju promenu.",
+  alternates: {
+    canonical: "https://nimfaizpodsvesti.com/za-koga",
+  },
+  openGraph: {
+    title: "Za Koga Je Ovaj Pristup | Nimfa Iz Podsvesti",
+    description:
+      "Astropsihološko savetovanje, coaching i lični razvoj za one koji žele razumevanje ponavljajućih obrazaca i unutrašnju promenu.",
+    url: "https://nimfaizpodsvesti.com/za-koga",
+    images: [{ url: "/images/za koga je ovaj rad.webp", width: 1200, height: 630 }],
+  },
 };
 
 const jestePrikladan = [
@@ -30,9 +40,19 @@ const nijeZa = [
   "dolaze bez jasne namere ili otvorenosti za proces",
 ];
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Početna", item: "https://nimfaizpodsvesti.com" },
+    { "@type": "ListItem", position: 2, name: "Za Koga", item: "https://nimfaizpodsvesti.com/za-koga" },
+  ],
+};
+
 export default function ZaKogaPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* ── PAGE HEADER ──────────────────────────────────── */}
       <section className="relative pt-32 pb-16 border-b border-border">
         <div

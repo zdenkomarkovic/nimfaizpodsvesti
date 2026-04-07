@@ -8,14 +8,34 @@ export const metadata: Metadata = {
   title: "Kontakt",
   description:
     "Zakaži online konsultaciju — astropsihološko savetovanje, coaching i lični razvoj sa Jelenom Stevanović, Nimfa iz Podsvesti.",
+  alternates: {
+    canonical: "https://nimfaizpodsvesti.com/kontakt",
+  },
+  openGraph: {
+    title: "Kontakt – Zakaži konsultaciju | Nimfa Iz Podsvesti",
+    description:
+      "Zakaži online konsultaciju — astropsihološko savetovanje, coaching i lični razvoj sa Jelenom Stevanović.",
+    url: "https://nimfaizpodsvesti.com/kontakt",
+    images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
+  },
 };
 
 const PHONE = "+381628068616";
 const PHONE_DISPLAY = "+381 62 806 8616";
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Početna", item: "https://nimfaizpodsvesti.com" },
+    { "@type": "ListItem", position: 2, name: "Kontakt", item: "https://nimfaizpodsvesti.com/kontakt" },
+  ],
+};
+
 export default function KontaktPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* ── PAGE HEADER ──────────────────────────────────── */}
       <section className="relative pt-32 pb-16 border-b border-border">
         <div

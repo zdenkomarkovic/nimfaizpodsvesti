@@ -6,6 +6,16 @@ export const metadata: Metadata = {
   title: "Često Postavljana Pitanja",
   description:
     "Odgovori na najčešća pitanja o astropsihološkom savetovanju, NLP coachingu, hipnotičkom radu, regresiji i CRT metodama – Nimfa Iz Podsvesti.",
+  alternates: {
+    canonical: "https://nimfaizpodsvesti.com/faq",
+  },
+  openGraph: {
+    title: "Često Postavljana Pitanja | Nimfa Iz Podsvesti",
+    description:
+      "Odgovori na najčešća pitanja o astropsihološkom savetovanju, NLP coachingu, hipnotičkom radu, regresiji i CRT metodama.",
+    url: "https://nimfaizpodsvesti.com/faq",
+    images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
+  },
 };
 
 const faqs = [
@@ -51,9 +61,33 @@ const faqs = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+    },
+  })),
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Početna", item: "https://nimfaizpodsvesti.com" },
+    { "@type": "ListItem", position: 2, name: "FAQ", item: "https://nimfaizpodsvesti.com/faq" },
+  ],
+};
+
 export default function FaqPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* ── PAGE HEADER ──────────────────────────────────── */}
       <section className="relative pt-32 pb-16 border-b border-border">
         <div

@@ -10,6 +10,19 @@ export const metadata: Metadata = {
     "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese sa temama prošlih života, usmereno na lični razvoj i svesnu promenu.",
 };
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Nimfa Iz Podsvesti",
+  url: "https://nimfaizpodsvesti.com",
+  description:
+    "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese.",
+  publisher: {
+    "@type": "Person",
+    name: "Jelena Stevanović",
+  },
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -48,6 +61,7 @@ const jsonLd = {
 export default function HomePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
