@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Cene i način rada – online individualne konsultacije. Astropsihološko savetovanje, NLP coaching, hipnotički rad, regresija i CRT.",
   alternates: {
-    canonical: "https://nimfaizpodsvesti.com/cenovnik",
+    canonical: "https://www.nimfaizpodsvesti.com/cenovnik",
   },
   openGraph: {
     title: "Cenovnik | Nimfa Iz Podsvesti",
     description:
       "Cene online konsultacija — astropsihološko savetovanje, NLP coaching, hipnotički rad, regresija i CRT. Od 1.500 RSD / 15€.",
-    url: "https://nimfaizpodsvesti.com/cenovnik",
+    url: "https://www.nimfaizpodsvesti.com/cenovnik",
     images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
   },
 };
@@ -103,8 +103,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Početna", item: "https://nimfaizpodsvesti.com" },
-    { "@type": "ListItem", position: 2, name: "Cenovnik", item: "https://nimfaizpodsvesti.com/cenovnik" },
+    { "@type": "ListItem", position: 1, name: "Početna", item: "https://www.nimfaizpodsvesti.com" },
+    { "@type": "ListItem", position: 2, name: "Cenovnik", item: "https://www.nimfaizpodsvesti.com/cenovnik" },
   ],
 };
 

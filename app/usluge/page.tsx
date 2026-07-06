@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   description:
     "Online astrologija i astropsihološko savetovanje, uz psihološki, coaching i mentorski rad kroz NLP tehnike, hipnotički fokusirane metode i regresivne procese, prilagođene individualnim potrebama i ciljevima.",
   alternates: {
-    canonical: "https://nimfaizpodsvesti.com/usluge",
+    canonical: "https://www.nimfaizpodsvesti.com/usluge",
   },
   openGraph: {
     title:
       "Usluge | Astrologija, astropsihološko savetovanje, NLP coaching, hipnoza i regresija",
     description:
       "Online astrologija i astropsihološko savetovanje, uz psihološki, coaching i mentorski rad kroz NLP tehnike, hipnotički fokusirane metode i regresivne procese.",
-    url: "https://nimfaizpodsvesti.com/usluge",
+    url: "https://www.nimfaizpodsvesti.com/usluge",
     images: [{ url: "/images/astro.webp", width: 1200, height: 630 }],
   },
 };
@@ -260,7 +260,7 @@ const serviceJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Usluge – Nimfa Iz Podsvesti",
-  url: "https://nimfaizpodsvesti.com/usluge",
+  url: "https://www.nimfaizpodsvesti.com/usluge",
   itemListElement: [
     {
       "@type": "ListItem",
@@ -268,7 +268,7 @@ const serviceJsonLd = {
       item: {
         "@type": "Service",
         name: "Astrologija – individualni astrološki uvid",
-        url: "https://nimfaizpodsvesti.com/usluge#astrologija",
+        url: "https://www.nimfaizpodsvesti.com/usluge#astrologija",
         description: "Dubinski uvid u ličnost, odnose i životne cikluse kroz analizu natalne karte i aktuelnih tranzita.",
         provider: { "@type": "Person", name: "Jelena Stevanović" },
         areaServed: "RS",
@@ -281,7 +281,7 @@ const serviceJsonLd = {
       item: {
         "@type": "Service",
         name: "Astropsihološko savetovanje (Astrohiling)",
-        url: "https://nimfaizpodsvesti.com/usluge#astropsiholosko-savetovanje",
+        url: "https://www.nimfaizpodsvesti.com/usluge#astropsiholosko-savetovanje",
         description: "Kombinuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca.",
         provider: { "@type": "Person", name: "Jelena Stevanović" },
         areaServed: "RS",
@@ -294,7 +294,7 @@ const serviceJsonLd = {
       item: {
         "@type": "Service",
         name: "Psihološko savetovanje i NLP coaching",
-        url: "https://nimfaizpodsvesti.com/usluge#nlp-coaching",
+        url: "https://www.nimfaizpodsvesti.com/usluge#nlp-coaching",
         description: "Rad na ciljevima, uverenjima i promeni obrazaca kroz NLP tehnike u paketu od 3-4 sesije.",
         provider: { "@type": "Person", name: "Jelena Stevanović" },
         areaServed: "RS",
@@ -307,7 +307,7 @@ const serviceJsonLd = {
       item: {
         "@type": "Service",
         name: "Hipnotičke tehnike",
-        url: "https://nimfaizpodsvesti.com/usluge#hipnoticke-tehnike",
+        url: "https://www.nimfaizpodsvesti.com/usluge#hipnoticke-tehnike",
         description: "Rad sa nesvesnim kroz hipnotički fokusirani pristup za otklanjanje blokada i pristup dubljim slojevima ličnosti.",
         provider: { "@type": "Person", name: "Jelena Stevanović" },
         areaServed: "RS",
@@ -320,7 +320,7 @@ const serviceJsonLd = {
       item: {
         "@type": "Service",
         name: "Regresivni rad",
-        url: "https://nimfaizpodsvesti.com/usluge#regresivni-rad",
+        url: "https://www.nimfaizpodsvesti.com/usluge#regresivni-rad",
         description: "Istraživanje dubokih unutrašnjih iskustava i obrazaca koji utiču na sadašnji život kroz regresivne procese.",
         provider: { "@type": "Person", name: "Jelena Stevanović" },
         areaServed: "RS",
@@ -333,7 +333,7 @@ const serviceJsonLd = {
       item: {
         "@type": "Service",
         name: "Complete Restoration Therapy™ (CRT)",
-        url: "https://nimfaizpodsvesti.com/usluge#crt-proces",
+        url: "https://www.nimfaizpodsvesti.com/usluge#crt-proces",
         description: "Intenzivan strukturisan proces kroz tri uzastopne seanse za razrešenje unutrašnjih konflikata.",
         provider: { "@type": "Person", name: "Jelena Stevanović" },
         areaServed: "RS",
@@ -347,8 +347,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Početna", item: "https://nimfaizpodsvesti.com" },
-    { "@type": "ListItem", position: 2, name: "Usluge", item: "https://nimfaizpodsvesti.com/usluge" },
+    { "@type": "ListItem", position: 1, name: "Početna", item: "https://www.nimfaizpodsvesti.com" },
+    { "@type": "ListItem", position: 2, name: "Usluge", item: "https://www.nimfaizpodsvesti.com/usluge" },
   ],
 };
 

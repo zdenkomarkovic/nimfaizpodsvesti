@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://nimfaizpodsvesti.com/sitemap.xml",
+    sitemap: "https://www.nimfaizpodsvesti.com/sitemap.xml",
   };
 }

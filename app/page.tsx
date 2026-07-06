@@ -14,7 +14,7 @@ const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Nimfa Iz Podsvesti",
-  url: "https://nimfaizpodsvesti.com",
+  url: "https://www.nimfaizpodsvesti.com",
   description:
     "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese.",
   publisher: {
@@ -28,8 +28,8 @@ const jsonLd = {
   "@type": "Person",
   name: "Jelena Stevanović",
   alternateName: "Nimfa iz Podsvesti",
-  url: "https://nimfaizpodsvesti.com",
-  image: "https://nimfaizpodsvesti.com/images/About%20me.webp",
+  url: "https://www.nimfaizpodsvesti.com",
+  image: "https://www.nimfaizpodsvesti.com/images/About%20me.webp",
   jobTitle: "Astropsihološki savetnik i coach",
   description:
     "Diplomirani psiholog i astropsihološki savetnik. Integrativni pristup koji obuhvata astrologiju, NLP, hipnotičke tehnike, CRT i regresivni rad.",
@@ -45,7 +45,7 @@ const jsonLd = {
   worksFor: {
     "@type": "LocalBusiness",
     name: "Nimfa Iz Podsvesti",
-    url: "https://nimfaizpodsvesti.com",
+    url: "https://www.nimfaizpodsvesti.com",
     telephone: "+381628068616",
     email: "nimfaizpodsvesti@gmail.com",
     address: {

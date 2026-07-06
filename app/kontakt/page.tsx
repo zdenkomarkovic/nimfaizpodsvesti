@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   description:
     "Zakaži online konsultaciju — astropsihološko savetovanje, coaching i lični razvoj sa Jelenom Stevanović, Nimfa iz Podsvesti.",
   alternates: {
-    canonical: "https://nimfaizpodsvesti.com/kontakt",
+    canonical: "https://www.nimfaizpodsvesti.com/kontakt",
   },
   openGraph: {
     title: "Kontakt – Zakaži konsultaciju | Nimfa Iz Podsvesti",
     description:
       "Zakaži online konsultaciju — astropsihološko savetovanje, coaching i lični razvoj sa Jelenom Stevanović.",
-    url: "https://nimfaizpodsvesti.com/kontakt",
+    url: "https://www.nimfaizpodsvesti.com/kontakt",
     images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
   },
 };
@@ -27,8 +27,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Početna", item: "https://nimfaizpodsvesti.com" },
-    { "@type": "ListItem", position: 2, name: "Kontakt", item: "https://nimfaizpodsvesti.com/kontakt" },
+    { "@type": "ListItem", position: 1, name: "Početna", item: "https://www.nimfaizpodsvesti.com" },
+    { "@type": "ListItem", position: 2, name: "Kontakt", item: "https://www.nimfaizpodsvesti.com/kontakt" },
   ],
 };
 

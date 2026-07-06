@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja ne završavaju na površinskom nivou. Astropsihološko savetovanje, coaching i lični razvoj za one koji žele razumevanje i unutrašnju promenu.",
   alternates: {
-    canonical: "https://nimfaizpodsvesti.com/za-koga",
+    canonical: "https://www.nimfaizpodsvesti.com/za-koga",
   },
   openGraph: {
     title: "Za Koga Je Ovaj Pristup | Nimfa Iz Podsvesti",
     description:
       "Astropsihološko savetovanje, coaching i lični razvoj za one koji žele razumevanje ponavljajućih obrazaca i unutrašnju promenu.",
-    url: "https://nimfaizpodsvesti.com/za-koga",
+    url: "https://www.nimfaizpodsvesti.com/za-koga",
     images: [{ url: "/images/za koga je ovaj rad.webp", width: 1200, height: 630 }],
   },
 };
@@ -44,8 +44,8 @@ const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Početna", item: "https://nimfaizpodsvesti.com" },
-    { "@type": "ListItem", position: 2, name: "Za Koga", item: "https://nimfaizpodsvesti.com/za-koga" },
+    { "@type": "ListItem", position: 1, name: "Početna", item: "https://www.nimfaizpodsvesti.com" },
+    { "@type": "ListItem", position: 2, name: "Za Koga", item: "https://www.nimfaizpodsvesti.com/za-koga" },
   ],
 };
 

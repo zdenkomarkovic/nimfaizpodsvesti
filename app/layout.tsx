@@ -11,7 +11,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nimfaizpodsvesti.com"),
+  metadataBase: new URL("https://www.nimfaizpodsvesti.com"),
   title: {
     default: "Nimfa Iz Podsvesti | Astropsihološko savetovanje i lični razvoj",
     template: "%s | Nimfa Iz Podsvesti",
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     "regresija",
   ],
   alternates: {
-    canonical: "https://nimfaizpodsvesti.com",
+    canonical: "https://www.nimfaizpodsvesti.com",
   },
   openGraph: {
     siteName: "Nimfa Iz Podsvesti",
     locale: "sr_RS",
     type: "website",
-    url: "https://nimfaizpodsvesti.com",
+    url: "https://www.nimfaizpodsvesti.com",
     title: "Nimfa Iz Podsvesti | Astropsihološko savetovanje i lični razvoj",
     description:
       "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese.",
