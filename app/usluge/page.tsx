@@ -5,17 +5,16 @@ import { FadeUp } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title:
-    "Astrologija, astropsihološko savetovanje i psihološki rad online: NLP coaching, hipnotički fokusirani rad i regresija",
+    "Astropsihologija, NLP coaching, hipnoza i regresija | Nimfa Iz Podsvesti",
   description:
-    "Online astrologija i astropsihološko savetovanje, uz psihološki, coaching i mentorski rad kroz NLP tehnike, hipnotički fokusirane metode i regresivne procese, prilagođene individualnim potrebama i ciljevima.",
+    "Astropsihologija povezuje astrologiju i psihologiju uz NLP coaching, hipnotičke tehnike i regresivni rad. Usluge prilagođene individualnim potrebama i ciljevima.",
   alternates: {
     canonical: "https://www.nimfaizpodsvesti.com/usluge",
   },
   openGraph: {
-    title:
-      "Usluge | Astrologija, astropsihološko savetovanje, NLP coaching, hipnoza i regresija",
+    title: "Usluge | Astropsihologija, NLP coaching, hipnoza i regresija",
     description:
-      "Online astrologija i astropsihološko savetovanje, uz psihološki, coaching i mentorski rad kroz NLP tehnike, hipnotički fokusirane metode i regresivne procese.",
+      "Astropsihologija povezuje astrologiju i psihologiju uz NLP coaching, hipnotičke tehnike i regresivni rad. Usluge prilagođene individualnim potrebama i ciljevima.",
     url: "https://www.nimfaizpodsvesti.com/usluge",
     images: [{ url: "/images/astro.webp", width: 1200, height: 630 }],
   },
@@ -282,7 +281,7 @@ const serviceJsonLd = {
         "@type": "Service",
         name: "Astropsihološko savetovanje (Astrohiling)",
         url: "https://www.nimfaizpodsvesti.com/usluge#astropsiholosko-savetovanje",
-        description: "Kombinuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca.",
+        description: "Astropsihologija kombinuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca.",
         provider: { "@type": "Person", name: "Jelena Stevanović" },
         areaServed: "RS",
         serviceType: "Psihološko savetovanje",
@@ -372,14 +371,14 @@ export default function UslugePage() {
             Ponuda
           </p>
           <h1 className="heading-xl mb-4">
-            Astrologija, astropsihološko savetovanje i psihološki rad online:
-            NLP coaching, hipnotički fokusirani rad i regresija
+            Astropsihologija i usluge savetovanja: NLP coaching, hipnotičke
+            tehnike i regresija
           </h1>
           <div className="gold-divider mx-0 mb-4" />
           <p className="text-body max-w-2xl">
-            Online astrologija i astropsihološko savetovanje, uz psihološki,
-            coaching i mentorski rad kroz NLP tehnike, hipnotički fokusirane
-            metode i regresivne procese, prilagođene individualnim potrebama i
+            Astropsihologija povezuje astrologiju i psihologiju u online
+            pristup savetovanju, uz NLP tehnike, hipnotički fokusirane metode
+            i regresivne procese, prilagođene individualnim potrebama i
             ciljevima.
           </p>
         </FadeUp>

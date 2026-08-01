@@ -4,10 +4,26 @@ import Link from "next/link";
 import { FadeUp, SlideRight, SlideLeft } from "@/components/Motion";
 
 export const metadata: Metadata = {
-  title:
-    "Astropsihološko savetovanje, coaching mentorstvo i lični razvoj online | Nimfa Iz Podsvesti",
+  title: "Astropsihologija i lični razvoj online | Nimfa Iz Podsvesti",
   description:
-    "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese sa temama prošlih života, usmereno na lični razvoj i svesnu promenu.",
+    "Astropsihologija povezuje astrologiju i psihologiju u jedinstven pristup savetovanju uz NLP, hipnotičke tehnike i regresivni rad. Online, sa Jelenom Stevanović.",
+  alternates: {
+    canonical: "https://www.nimfaizpodsvesti.com",
+  },
+  openGraph: {
+    title: "Astropsihologija i lični razvoj online | Nimfa Iz Podsvesti",
+    description:
+      "Astropsihologija povezuje astrologiju i psihologiju u jedinstven pristup savetovanju uz NLP, hipnotičke tehnike i regresivni rad. Online, sa Jelenom Stevanović.",
+    url: "https://www.nimfaizpodsvesti.com",
+    images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Astropsihologija i lični razvoj online | Nimfa Iz Podsvesti",
+    description:
+      "Astropsihologija povezuje astrologiju i psihologiju u jedinstven pristup savetovanju uz NLP, hipnotičke tehnike i regresivni rad. Online, sa Jelenom Stevanović.",
+    images: ["/images/Home.webp"],
+  },
 };
 
 const websiteJsonLd = {
@@ -16,7 +32,7 @@ const websiteJsonLd = {
   name: "Nimfa Iz Podsvesti",
   url: "https://www.nimfaizpodsvesti.com",
   description:
-    "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese.",
+    "Astropsihologija povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese.",
   publisher: {
     "@type": "Person",
     name: "Jelena Stevanović",
@@ -32,9 +48,10 @@ const jsonLd = {
   image: "https://www.nimfaizpodsvesti.com/images/About%20me.webp",
   jobTitle: "Astropsihološki savetnik i coach",
   description:
-    "Diplomirani psiholog i astropsihološki savetnik. Integrativni pristup koji obuhvata astrologiju, NLP, hipnotičke tehnike, CRT i regresivni rad.",
+    "Diplomirani psiholog i astropsihološki savetnik sa fokusom i na astrologiju i na psihologiju. Integrativni pristup koji obuhvata astrologiju, NLP, hipnotičke tehnike, CRT i regresivni rad.",
   sameAs: ["https://www.instagram.com/nimfa_iz_podsvesti/"],
   knowsAbout: [
+    "Astropsihologija",
     "Astropsihološko savetovanje",
     "NLP",
     "Hipnoterapija",
@@ -58,13 +75,88 @@ const jsonLd = {
   },
 };
 
+const homeFaqs = [
+  {
+    q: "Šta je astropsihologija?",
+    a: "Astropsihologija je pristup koji povezuje astrologiju i psihologiju — natalna karta se koristi kao mapa psihološke strukture, dok se savetodavni rad fokusira na razumevanje obrazaca ponašanja i donošenje svesnijih odluka. To je osnova pristupa kojim se bavim kroz astropsihološko savetovanje (Astrohiling).",
+  },
+  {
+    q: "Da li je astrologija obavezna?",
+    a: "Ne. Astrologija može biti početna tačka rada, ali nije obavezna. Ako klijent već ima jasno definisanu temu ili cilj, moguće je odmah započeti NLP coaching, fokusirani rad ili druge metode. Astrologija se koristi kao alat koji ubrzava i produbljuje uvid, ali nije uslov za nastavak rada.",
+  },
+  {
+    q: "Da li mogu da zakažem samo astrološku konsultaciju?",
+    a: "Da. Astrološki uvid može biti potpuno samostalna usluga, bez ikakvog daljeg psihološkog ili coaching rada. Sa jednim delom klijenata radim isključivo astrološke konsultacije.",
+  },
+  {
+    q: "Da li je ovo terapija?",
+    a: "Ne. Ovaj rad nije klinička terapija i ne koristi medicinski ili dijagnostički pristup. Fokus je na razumevanju obrazaca, donošenju odluka, ličnom razvoju i svesnom radu na ciljevima i motivaciji, uz coaching i iskustvene metode.",
+  },
+  {
+    q: "Zašto se NLP coaching i psihološko savetovanje radi u paketu?",
+    a: "NLP tehnike zahtevaju kontinuitet i proces. Zbog toga se psihološko savetovanje  i NLP coaching radi isključivo u minimalnom paketu od 3 ili 4 sesije, a cena je niža nego za isti broj individualnih konsultacija.",
+  },
+  {
+    q: "Da li radite uživo?",
+    a: "Ne, celokupan rad se odvija online – putem video ili telefonskog poziva (ako metod to dopušta). Ovakav format omogućava kontinuitet, fleksibilnost i pristup, bez obzira na lokaciju.",
+  },
+  {
+    q: "Kako da znam koja je usluga za mene?",
+    aText:
+      "Ako nisi siguran odakle da počneš, možeš da zakažeš: 15 minuta uvodnog razgovora (bez nadoknade) ili 30 minuta po ceni individualnog astrološkog uvida, koji možemo uključiti po potrebi. Kroz razgovor dolazimo do jasnoće i pravca daljeg rada.",
+    a: (
+      <>
+        <span className="block mb-2">
+          Ako nisi siguran odakle da počneš, možeš da zakažeš:
+        </span>
+        <ul className="space-y-1 mb-2">
+          <li className="flex items-start gap-2">
+            <span className="text-teget shrink-0">✦</span>
+            <span>15 minuta uvodnog razgovora (bez nadoknade)</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-teget shrink-0">✦</span>
+            <span>
+              ili 30 minuta po ceni individualnog astrološkog uvida,
+              koji možemo uključiti po potrebi
+            </span>
+          </li>
+        </ul>
+        <span className="block">
+          Kroz razgovor dolazimo do jasnoće i pravca daljeg rada.
+        </span>
+      </>
+    ),
+  },
+];
+
+const homeFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: homeFaqs.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "aText" in item ? item.aText : (item.a as string),
+    },
+  })),
+};
+
 export default function HomePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqJsonLd) }}
       />
       {/* ── HERO ─────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center pt-20">
@@ -81,19 +173,18 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-center">
             {/* Tekst */}
             <SlideRight className="">
-              {/* <p className="text-teget text-xs md:text-sm uppercase tracking-[0.25em] mb-4">
-                Astropsihološko savetovanje &middot; Coaching &middot; Lični
-                razvoj
-              </p> */}
               <h1 className="text-[1rem] lg:text-[1.1rem] mb-4 ">
                 <span className="uppercase">
-                  Online Astropsihološko savetovanje &middot; Coaching &middot;
-                  Lični razvoj &middot; mentorstvo
+                  Astropsihologija &middot; Coaching &middot; Lični razvoj
+                  &middot; mentorstvo
                 </span>
                 <span className="font-bold block text-3xl lg:text-4xl">
                   Nimfa Iz Podsvesti
                 </span>
               </h1>
+              <p className="text-teget text-xs md:text-sm uppercase tracking-[0.25em] mb-4">
+                Astrologija, psihologija i astropsihološko savetovanje
+              </p>
               <div className="gold-divider mx-0" />
               <p className="text-body text-cream-muted mb-4">
                 Postoje trenuci kada osećamo da se nešto ponavlja, ali ne znamo
@@ -147,9 +238,10 @@ export default function HomePage() {
                 koristeći{" "}
                 <strong>
                   {" "}
-                  integrativni pristup koji obuhvata astropsihološko
-                  savetovanje, NLP coaching, rad sa podsvešću, hipnotičke
-                  tehnike i regresivne procese sa temama iz prošlih života
+                  integrativni pristup zasnovan na astropsihologiji —
+                  kombinaciji astrologije, NLP coachinga, rada sa podsvešću,
+                  hipnotičkih tehnika i regresivnih procesa sa temama iz
+                  prošlih života
                 </strong>
                 . Moj rad nastao je iz potrebe da se razume ono što nije odmah
                 vidljivo — unutrašnji procesi koji oblikuju naše misli, emocije
@@ -212,7 +304,7 @@ export default function HomePage() {
               {
                 title: "Astropsihološko savetovanje",
                 subtitle: "Astrohiling",
-                text: "Povezivanje astrologije i psihologije u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca. Rad usmeren ka svesnijim izborima i ličnom razvoju.",
+                text: "Astropsihologija povezuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca. Rad usmeren ka svesnijim izborima i ličnom razvoju.",
                 image: "/images/astropsiholosko savetovanje.webp",
                 href: "/usluge#astropsiholosko-savetovanje",
               },
@@ -435,54 +527,7 @@ export default function HomePage() {
           </FadeUp>
 
           <div className="max-w-3xl mx-auto space-y-3">
-            {[
-              {
-                q: "Da li je astrologija obavezna?",
-                a: "Ne. Astrologija može biti početna tačka rada, ali nije obavezna. Ako klijent već ima jasno definisanu temu ili cilj, moguće je odmah započeti NLP coaching, fokusirani rad ili druge metode. Astrologija se koristi kao alat koji ubrzava i produbljuje uvid, ali nije uslov za nastavak rada.",
-              },
-              {
-                q: "Da li mogu da zakažem samo astrološku konsultaciju?",
-                a: "Da. Astrološki uvid može biti potpuno samostalna usluga, bez ikakvog daljeg psihološkog ili coaching rada. Sa jednim delom klijenata radim isključivo astrološke konsultacije.",
-              },
-              {
-                q: "Da li je ovo terapija?",
-                a: "Ne. Ovaj rad nije klinička terapija i ne koristi medicinski ili dijagnostički pristup. Fokus je na razumevanju obrazaca, donošenju odluka, ličnom razvoju i svesnom radu na ciljevima i motivaciji, uz coaching i iskustvene metode.",
-              },
-              {
-                q: "Zašto se NLP coaching i psihološko savetovanje radi u paketu?",
-                a: "NLP tehnike zahtevaju kontinuitet i proces. Zbog toga se psihološko savetovanje  i NLP coaching radi isključivo u minimalnom paketu od 3 ili 4 sesije, a cena je niža nego za isti broj individualnih konsultacija.",
-              },
-              {
-                q: "Da li radite uživo?",
-                a: "Ne, celokupan rad se odvija online – putem video ili telefonskog poziva (ako metod to dopušta). Ovakav format omogućava kontinuitet, fleksibilnost i pristup, bez obzira na lokaciju.",
-              },
-              {
-                q: "Kako da znam koja je usluga za mene?",
-                a: (
-                  <>
-                    <span className="block mb-2">
-                      Ako nisi siguran odakle da počneš, možeš da zakažeš:
-                    </span>
-                    <ul className="space-y-1 mb-2">
-                      <li className="flex items-start gap-2">
-                        <span className="text-teget shrink-0">✦</span>
-                        <span>15 minuta uvodnog razgovora (bez nadoknade)</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-teget shrink-0">✦</span>
-                        <span>
-                          ili 30 minuta po ceni individualnog astrološkog uvida,
-                          koji možemo uključiti po potrebi
-                        </span>
-                      </li>
-                    </ul>
-                    <span className="block">
-                      Kroz razgovor dolazimo do jasnoće i pravca daljeg rada.
-                    </span>
-                  </>
-                ),
-              },
-            ].map((item, i) => (
+            {homeFaqs.map((item, i) => (
               <FadeUp key={i} delay={i * 0.08} className="block">
                 <details
                   className="group border border-white/40 rounded-lg"

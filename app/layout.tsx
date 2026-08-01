@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description:
     "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese sa temama prošlih života, usmereno na lični razvoj i svesnu promenu.",
   keywords: [
+    "astropsihologija",
     "astropsihološko savetovanje",
     "psiholog",
     "astrologija",
