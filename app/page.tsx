@@ -4,24 +4,24 @@ import Link from "next/link";
 import { FadeUp, SlideRight, SlideLeft } from "@/components/Motion";
 
 export const metadata: Metadata = {
-  title: "Astropsihologija i lični razvoj online | Nimfa Iz Podsvesti",
+  title: "Astro-psihologija i lični razvoj online | Nimfa Iz Podsvesti",
   description:
-    "Astropsihologija povezuje astrologiju i psihologiju u jedinstven pristup savetovanju uz NLP, hipnotičke tehnike i regresivni rad. Online, sa Jelenom Stevanović.",
+    "Astro-psihologija povezuje astrologiju i psihologiju u jedinstven pristup savetovanju uz NLP, hipnotičke tehnike i regresivni rad. Online, sa Jelenom Stevanović.",
   alternates: {
     canonical: "https://www.nimfaizpodsvesti.com",
   },
   openGraph: {
-    title: "Astropsihologija i lični razvoj online | Nimfa Iz Podsvesti",
+    title: "Astro-psihologija i lični razvoj online | Nimfa Iz Podsvesti",
     description:
-      "Astropsihologija povezuje astrologiju i psihologiju u jedinstven pristup savetovanju uz NLP, hipnotičke tehnike i regresivni rad. Online, sa Jelenom Stevanović.",
+      "Astro-psihologija povezuje astrologiju i psihologiju u jedinstven pristup savetovanju uz NLP, hipnotičke tehnike i regresivni rad. Online, sa Jelenom Stevanović.",
     url: "https://www.nimfaizpodsvesti.com",
     images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Astropsihologija i lični razvoj online | Nimfa Iz Podsvesti",
+    title: "Astro-psihologija i lični razvoj online | Nimfa Iz Podsvesti",
     description:
-      "Astropsihologija povezuje astrologiju i psihologiju u jedinstven pristup savetovanju uz NLP, hipnotičke tehnike i regresivni rad. Online, sa Jelenom Stevanović.",
+      "Astro-psihologija povezuje astrologiju i psihologiju u jedinstven pristup savetovanju uz NLP, hipnotičke tehnike i regresivni rad. Online, sa Jelenom Stevanović.",
     images: ["/images/Home.webp"],
   },
 };
@@ -32,7 +32,7 @@ const websiteJsonLd = {
   name: "Nimfa Iz Podsvesti",
   url: "https://www.nimfaizpodsvesti.com",
   description:
-    "Astropsihologija povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese.",
+    "Astro-psihologija povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese.",
   publisher: {
     "@type": "Person",
     name: "Jelena Stevanović",
@@ -46,13 +46,13 @@ const jsonLd = {
   alternateName: "Nimfa iz Podsvesti",
   url: "https://www.nimfaizpodsvesti.com",
   image: "https://www.nimfaizpodsvesti.com/images/About%20me.webp",
-  jobTitle: "Astropsihološki savetnik i coach",
+  jobTitle: "Astro-psihološki savetnik i coach",
   description:
-    "Diplomirani psiholog i astropsihološki savetnik sa fokusom i na astrologiju i na psihologiju. Integrativni pristup koji obuhvata astrologiju, NLP, hipnotičke tehnike, CRT i regresivni rad.",
+    "Diplomirani psiholog i astro-psihološki savetnik sa fokusom i na astrologiju i na psihologiju. Integrativni pristup koji obuhvata astrologiju, NLP, hipnotičke tehnike, CRT i regresivni rad.",
   sameAs: ["https://www.instagram.com/nimfa_iz_podsvesti/"],
   knowsAbout: [
-    "Astropsihologija",
-    "Astropsihološko savetovanje",
+    "Astro-psihologija",
+    "Astro-psihološko savetovanje",
     "NLP",
     "Hipnoterapija",
     "Regresivni rad",
@@ -71,14 +71,14 @@ const jsonLd = {
       addressLocality: "Novi Pazar",
     },
     priceRange: "$$",
-    serviceType: "Astropsihološko savetovanje i coaching",
+    serviceType: "Astro-psihološko savetovanje i coaching",
   },
 };
 
 const homeFaqs = [
   {
-    q: "Šta je astropsihologija?",
-    a: "Astropsihologija je pristup koji povezuje astrologiju i psihologiju — natalna karta se koristi kao mapa psihološke strukture, dok se savetodavni rad fokusira na razumevanje obrazaca ponašanja i donošenje svesnijih odluka. To je osnova pristupa kojim se bavim kroz astropsihološko savetovanje (Astrohiling).",
+    q: "Šta je astro-psihologija?",
+    a: "Astro-psihologija je pristup koji povezuje astrologiju i psihologiju — natalna karta se koristi kao mapa psihološke strukture, dok se savetodavni rad fokusira na razumevanje obrazaca ponašanja i donošenje svesnijih odluka. To je osnova pristupa kojim se bavim kroz astro-psihološko savetovanje (Astrohiling).",
   },
   {
     q: "Da li je astrologija obavezna?",
@@ -175,7 +175,7 @@ export default function HomePage() {
             <SlideRight className="">
               <h1 className="text-[1rem] lg:text-[1.1rem] mb-4 ">
                 <span className="uppercase">
-                  Astropsihologija &middot; Coaching &middot; Lični razvoj
+                  Astro-psihologija &middot; Coaching &middot; Lični razvoj
                   &middot; mentorstvo
                 </span>
                 <span className="font-bold block text-3xl lg:text-4xl">
@@ -183,7 +183,7 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-teget text-xs md:text-sm uppercase tracking-[0.25em] mb-4">
-                Astrologija, psihologija i astropsihološko savetovanje
+                Astrologija, psihologija i astro-psihološko savetovanje
               </p>
               <div className="gold-divider mx-0" />
               <p className="text-body text-cream-muted mb-4">
@@ -195,7 +195,7 @@ export default function HomePage() {
                 Kroz{" "}
                 <span className="">
                   {" "}
-                  astropsihološko savetovanje, NLP coaching, hipnotičke tehnike
+                  astro-psihološko savetovanje, NLP coaching, hipnotičke tehnike
                   i{" "}
                 </span>
                 <span className="font-bold">
@@ -238,7 +238,7 @@ export default function HomePage() {
                 koristeći{" "}
                 <strong>
                   {" "}
-                  integrativni pristup zasnovan na astropsihologiji —
+                  integrativni pristup zasnovan na astro-psihologiji —
                   kombinaciji astrologije, NLP coachinga, rada sa podsvešću,
                   hipnotičkih tehnika i regresivnih procesa sa temama iz
                   prošlih života
@@ -248,7 +248,7 @@ export default function HomePage() {
                 i odnose.
               </p>
               <p>
-                <strong> Astropsihološko savetovanje</strong> ne posmatram kao
+                <strong> Astro-psihološko savetovanje</strong> ne posmatram kao
                 predviđanje, već kao način razumevanja obrazaca koje ponavljamo,
                 reakcija koje ne biramo svesno i dinamike odnosa u kojima se
                 prepoznajemo — ili gubimo.
@@ -302,9 +302,9 @@ export default function HomePage() {
                 href: "/usluge#astrologija",
               },
               {
-                title: "Astropsihološko savetovanje",
+                title: "Astro-psihološko savetovanje",
                 subtitle: "Astrohiling",
-                text: "Astropsihologija povezuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca. Rad usmeren ka svesnijim izborima i ličnom razvoju.",
+                text: "Astro-psihologija povezuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca. Rad usmeren ka svesnijim izborima i ličnom razvoju.",
                 image: "/images/astropsiholosko savetovanje.webp",
                 href: "/usluge#astropsiholosko-savetovanje",
               },

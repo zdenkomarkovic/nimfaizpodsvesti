@@ -26,7 +26,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-cream-faint text-sm leading-relaxed">
-              Online Astropsihološko savetovanje &middot; Coaching &middot;
+              Online Astro-psihološko savetovanje &middot; Coaching &middot;
               Lični razvoj &middot; Mentorstvo
             </p>
           </div>

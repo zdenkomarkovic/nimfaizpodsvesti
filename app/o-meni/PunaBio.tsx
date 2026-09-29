@@ -162,7 +162,7 @@ export default function PunaBio() {
                   Finalno, danas radim
                   <strong>
                     {" "}
-                    individualno astropsihološko savetovanje, online putem
+                    individualno astro-psihološko savetovanje, online putem
                     direktnih konsultacija
                   </strong>
                   , namenjeno onima koji osećaju da se njihova pitanja ne

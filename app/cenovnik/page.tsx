@@ -5,14 +5,14 @@ import { FadeUp } from "@/components/Motion";
 export const metadata: Metadata = {
   title: "Cenovnik",
   description:
-    "Cene i način rada – online individualne konsultacije. Astropsihološko savetovanje, NLP coaching, hipnotički rad, regresija i CRT.",
+    "Cene i način rada – online individualne konsultacije. Astro-psihološko savetovanje, NLP coaching, hipnotički rad, regresija i CRT.",
   alternates: {
     canonical: "https://www.nimfaizpodsvesti.com/cenovnik",
   },
   openGraph: {
     title: "Cenovnik | Nimfa Iz Podsvesti",
     description:
-      "Cene online konsultacija — astropsihološko savetovanje, NLP coaching, hipnotički rad, regresija i CRT. Od 1.500 RSD / 15€.",
+      "Cene online konsultacija — astro-psihološko savetovanje, NLP coaching, hipnotički rad, regresija i CRT. Od 1.500 RSD / 15€.",
     url: "https://www.nimfaizpodsvesti.com/cenovnik",
     images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
   },
@@ -24,14 +24,14 @@ const astrologijaUvid = {
   prva: [
     { label: "Natal + detalj jedno polje", duration: "30 min", rsd: "3.000 RSD", eur: "30€" },
     { label: "Natal + detalj 2 polja", duration: "45 min", rsd: "4.500 RSD", eur: "45€" },
-    { label: "Natal + detalj 3 polja", duration: "60 min", rsd: "5.000 RSD", eur: "50€" },
-    { label: "Natal x 2", duration: "", rsd: "6.000 RSD", eur: "60€" },
+    { label: "Natal + detalj 3 polja ili solar / uporedni", duration: "60 min", rsd: "5.000 RSD", eur: "50€" },
+    { label: "Natal x 2", duration: "70 min", rsd: "6.000 RSD", eur: "60€" },
   ],
   sledece: [
-    { label: "Konkretno pitanje / horar", duration: "15 min", rsd: "1.500 RSD", eur: "15€" },
+    { label: "Konkretno pitanje (horar)", duration: "15 min", rsd: "1.500 RSD", eur: "15€" },
     { label: "Analiza dva polja", duration: "30 min", rsd: "2.500 RSD", eur: "25€" },
     { label: "Analiza tri polja", duration: "45 min", rsd: "3.500 RSD", eur: "35€" },
-    { label: "Natal + uporedni / solar…", duration: "60 min", rsd: "4.000 RSD", eur: "40€" },
+    { label: "Natal + uporedni / solar", duration: "60 min", rsd: "4.000 RSD", eur: "40€" },
   ],
 };
 
@@ -138,7 +138,7 @@ export default function CenovnikPage() {
         <div className="container-main section-padding">
           <div className="space-y-10 max-w-3xl">
 
-            {/* ── I. Astropsihološko savetovanje ── */}
+            {/* ── I. Astro-psihološko savetovanje ── */}
             <FadeUp className="card">
               <div className="flex items-start gap-3 mb-6">
                 <span
@@ -149,9 +149,9 @@ export default function CenovnikPage() {
                   ✺
                 </span>
                 <div>
-                  <h2 className="heading-md mb-1">Astropsihološko savetovanje</h2>
+                  <h2 className="heading-md mb-1">Astrološke konsultacije – astro-psihološke analize</h2>
                   <p className="text-cream-faint text-xs italic">
-                    individualni uvid (fokus na astrološki uvid i analizu)
+                    1-1 interakcija (fokus na astrološki uvid i analizu)
                   </p>
                 </div>
               </div>
@@ -159,7 +159,7 @@ export default function CenovnikPage() {
               {/* Prva konsultacija */}
               <div className="mb-6">
                 <p className="text-teget text-xs uppercase tracking-widest mb-3">
-                  Prva konsultacija u toku godine
+                  Astrološke konsultacije
                 </p>
                 <div>
                   {astrologijaUvid.prva.map((item, i) => (
@@ -171,7 +171,7 @@ export default function CenovnikPage() {
               {/* Sledeće */}
               <div>
                 <p className="text-teget text-xs uppercase tracking-widest mb-3">
-                  Sledeće konsultacije u godini
+                  Cena konsultacija za klijente koji koriste ostale usluge
                 </p>
                 <div>
                   {astrologijaUvid.sledece.map((item, i) => (
@@ -201,7 +201,7 @@ export default function CenovnikPage() {
                   ✺
                 </span>
                 <div>
-                  <h2 className="heading-md mb-1">Astropsihološko savetovanje (Astrohiling)</h2>
+                  <h2 className="heading-md mb-1">Astro-psihološko savetovanje (Astrohiling)</h2>
                   <p className="text-cream-faint text-xs italic">
                     početni uvid + dalje usmeravanje; astrologija kao temelj, dalje operativni rad
                     po dogovoru

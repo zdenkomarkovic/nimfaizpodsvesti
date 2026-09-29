@@ -13,14 +13,14 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.nimfaizpodsvesti.com"),
   title: {
-    default: "Nimfa Iz Podsvesti | Astropsihološko savetovanje i lični razvoj",
+    default: "Nimfa Iz Podsvesti | Astro-psihološko savetovanje i lični razvoj",
     template: "%s | Nimfa Iz Podsvesti",
   },
   description:
-    "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese sa temama prošlih života, usmereno na lični razvoj i svesnu promenu.",
+    "Astro-psihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese sa temama prošlih života, usmereno na lični razvoj i svesnu promenu.",
   keywords: [
-    "astropsihologija",
-    "astropsihološko savetovanje",
+    "astro-psihologija",
+    "astro-psihološko savetovanje",
     "psiholog",
     "astrologija",
     "NLP",
@@ -41,16 +41,16 @@ export const metadata: Metadata = {
     locale: "sr_RS",
     type: "website",
     url: "https://www.nimfaizpodsvesti.com",
-    title: "Nimfa Iz Podsvesti | Astropsihološko savetovanje i lični razvoj",
+    title: "Nimfa Iz Podsvesti | Astro-psihološko savetovanje i lični razvoj",
     description:
-      "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese.",
+      "Astro-psihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike, hipnotički fokusirani rad i regresivne procese.",
     images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nimfa Iz Podsvesti | Astropsihološko savetovanje i lični razvoj",
+    title: "Nimfa Iz Podsvesti | Astro-psihološko savetovanje i lični razvoj",
     description:
-      "Astropsihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike.",
+      "Astro-psihološko savetovanje koje povezuje psihologiju i astrologiju, uz NLP i CRT tehnike.",
     images: ["/images/Home.webp"],
   },
   robots: {

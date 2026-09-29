@@ -7,14 +7,14 @@ import { FadeUp, SlideRight, SlideLeft } from "@/components/Motion";
 export const metadata: Metadata = {
   title: "O Meni",
   description:
-    "Jelena Stevanović, diplomirani psiholog i astropsihološki savetnik poznata kao Nimfa iz Podsvesti. Više od dve decenije istražuje unutrašnje psihološke obrasce kroz simboliku astrologije i procese ličnog razvoja.",
+    "Jelena Stevanović, diplomirani psiholog i astro-psihološki savetnik poznata kao Nimfa iz Podsvesti. Više od dve decenije istražuje unutrašnje psihološke obrasce kroz simboliku astrologije i procese ličnog razvoja.",
   alternates: {
     canonical: "https://www.nimfaizpodsvesti.com/o-meni",
   },
   openGraph: {
     title: "O Meni – Jelena Stevanović | Nimfa Iz Podsvesti",
     description:
-      "Jelena Stevanović, diplomirani psiholog i astropsihološki savetnik. Integrativni pristup koji obuhvata astrologiju, NLP, hipnotičke tehnike i regresivni rad.",
+      "Jelena Stevanović, diplomirani psiholog i astro-psihološki savetnik. Integrativni pristup koji obuhvata astrologiju, NLP, hipnotičke tehnike i regresivni rad.",
     url: "https://www.nimfaizpodsvesti.com/o-meni",
     images: [{ url: "/images/About me.webp", width: 1200, height: 630 }],
   },
@@ -27,12 +27,12 @@ const personJsonLd = {
   alternateName: "Nimfa iz Podsvesti",
   url: "https://www.nimfaizpodsvesti.com",
   image: "https://www.nimfaizpodsvesti.com/images/About%20me.webp",
-  jobTitle: "Astropsihološki savetnik i coach",
+  jobTitle: "Astro-psihološki savetnik i coach",
   description:
-    "Diplomirani psiholog i astropsihološki savetnik. Integrativni pristup koji obuhvata astrologiju, NLP, hipnotičke tehnike, CRT i regresivni rad.",
+    "Diplomirani psiholog i astro-psihološki savetnik. Integrativni pristup koji obuhvata astrologiju, NLP, hipnotičke tehnike, CRT i regresivni rad.",
   sameAs: ["https://www.instagram.com/nimfa_iz_podsvesti/"],
   knowsAbout: [
-    "Astropsihološko savetovanje",
+    "Astro-psihološko savetovanje",
     "NLP coaching",
     "Hipnoterapija",
     "Regresivni rad",
@@ -95,7 +95,7 @@ export default function OMeniPage() {
             <SlideLeft delay={0.15} className="md:col-span-3">
               <p className="text-body mb-6">
                 Ja sam Jelena Stevanović,<strong> diplomirani psiholog</strong>{" "}
-                i<strong> astropsihološki savetnik</strong>, poznata kao{" "}
+                i<strong> astro-psihološki savetnik</strong>, poznata kao{" "}
                 <strong> Nimfa Iz Podsvesti</strong> i{" "}
                 <strong> Nimfa Bez Manije</strong>. Više od dve decenije
                 istražujem načine na koje se unutrašnji psihološki obrasci
@@ -128,7 +128,7 @@ export default function OMeniPage() {
                 <strong> prošli životi</strong>.
               </p>
               <p className="text-body mb-6">
-                <strong> Astropsihološko savetovanje</strong> predstavlja
+                <strong> Astro-psihološko savetovanje</strong> predstavlja
                 početni okvir rada, kroz koji se stiče uvid u psihološku
                 strukturu i razvojne teme, a na osnovu kojeg se dalje tokom
                 procesa bira odgovarajući fokusirani metod rada ili predlaže

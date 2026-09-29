@@ -5,16 +5,16 @@ import { FadeUp } from "@/components/Motion";
 
 export const metadata: Metadata = {
   title:
-    "Astropsihologija, NLP coaching, hipnoza i regresija | Nimfa Iz Podsvesti",
+    "Astro-psihologija, NLP coaching, hipnoza i regresija | Nimfa Iz Podsvesti",
   description:
-    "Astropsihologija povezuje astrologiju i psihologiju uz NLP coaching, hipnotičke tehnike i regresivni rad. Usluge prilagođene individualnim potrebama i ciljevima.",
+    "Astro-psihologija povezuje astrologiju i psihologiju uz NLP coaching, hipnotičke tehnike i regresivni rad. Usluge prilagođene individualnim potrebama i ciljevima.",
   alternates: {
     canonical: "https://www.nimfaizpodsvesti.com/usluge",
   },
   openGraph: {
-    title: "Usluge | Astropsihologija, NLP coaching, hipnoza i regresija",
+    title: "Usluge | Astro-psihologija, NLP coaching, hipnoza i regresija",
     description:
-      "Astropsihologija povezuje astrologiju i psihologiju uz NLP coaching, hipnotičke tehnike i regresivni rad. Usluge prilagođene individualnim potrebama i ciljevima.",
+      "Astro-psihologija povezuje astrologiju i psihologiju uz NLP coaching, hipnotičke tehnike i regresivni rad. Usluge prilagođene individualnim potrebama i ciljevima.",
     url: "https://www.nimfaizpodsvesti.com/usluge",
     images: [{ url: "/images/astro.webp", width: 1200, height: 630 }],
   },
@@ -42,7 +42,7 @@ const services = [
         <p className="text-cream-muted leading-relaxed text-sm md:text-base">
           Ova usluga može biti potpuno samostalna, namenjena onima koji žele
           isključivo astrološki uvid bez daljeg psihološkog rada, ali i kao
-          polazna tačka za dublje astropsihološko savetovanje. Konsultacije se
+          polazna tačka za dublje astro-psihološko savetovanje. Konsultacije se
           rade online, <strong>kroz interaktivni razgovor</strong> na osnovu
           podataka o rođenju.
         </p>
@@ -54,12 +54,12 @@ const services = [
     id: "astropsiholosko-savetovanje",
     emoji: "✺",
     image: "/images/Astrologija (2).webp",
-    title: "Astropsihološko savetovanje (Astrohiling)",
+    title: "Astro-psihološko savetovanje (Astrohiling)",
     text: "",
     textJsx: (
       <>
         <p className="text-cream-muted leading-relaxed text-sm md:text-base">
-          Astropsihološko savetovanje{" "}
+          Astro-psihološko savetovanje{" "}
           <strong>
             kombinuje astrologiju i psihologiju u cilju razumevanja unutrašnjih
             konflikata, razvojnih izazova i životnih tema koje se ponavljaju
@@ -279,9 +279,9 @@ const serviceJsonLd = {
       position: 2,
       item: {
         "@type": "Service",
-        name: "Astropsihološko savetovanje (Astrohiling)",
+        name: "Astro-psihološko savetovanje (Astrohiling)",
         url: "https://www.nimfaizpodsvesti.com/usluge#astropsiholosko-savetovanje",
-        description: "Astropsihologija kombinuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca.",
+        description: "Astro-psihologija kombinuje astrologiju i psihologiju u cilju razumevanja unutrašnjih konflikata i ponavljajućih obrazaca.",
         provider: { "@type": "Person", name: "Jelena Stevanović" },
         areaServed: "RS",
         serviceType: "Psihološko savetovanje",
@@ -371,12 +371,12 @@ export default function UslugePage() {
             Ponuda
           </p>
           <h1 className="heading-xl mb-4">
-            Astropsihologija i usluge savetovanja: NLP coaching, hipnotičke
+            Astro-psihologija i usluge savetovanja: NLP coaching, hipnotičke
             tehnike i regresija
           </h1>
           <div className="gold-divider mx-0 mb-4" />
           <p className="text-body max-w-2xl">
-            Astropsihologija povezuje astrologiju i psihologiju u online
+            Astro-psihologija povezuje astrologiju i psihologiju u online
             pristup savetovanju, uz NLP tehnike, hipnotički fokusirane metode
             i regresivne procese, prilagođene individualnim potrebama i
             ciljevima.

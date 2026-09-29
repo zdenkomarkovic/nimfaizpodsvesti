@@ -7,14 +7,14 @@ import { FadeUp, SlideRight, SlideLeft } from "@/components/Motion";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Zakaži online konsultaciju — astropsihološko savetovanje, coaching i lični razvoj sa Jelenom Stevanović, Nimfa iz Podsvesti.",
+    "Zakaži online konsultaciju — astro-psihološko savetovanje, coaching i lični razvoj sa Jelenom Stevanović, Nimfa iz Podsvesti.",
   alternates: {
     canonical: "https://www.nimfaizpodsvesti.com/kontakt",
   },
   openGraph: {
     title: "Kontakt – Zakaži konsultaciju | Nimfa Iz Podsvesti",
     description:
-      "Zakaži online konsultaciju — astropsihološko savetovanje, coaching i lični razvoj sa Jelenom Stevanović.",
+      "Zakaži online konsultaciju — astro-psihološko savetovanje, coaching i lični razvoj sa Jelenom Stevanović.",
     url: "https://www.nimfaizpodsvesti.com/kontakt",
     images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
   },

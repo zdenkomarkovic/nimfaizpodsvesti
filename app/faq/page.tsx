@@ -5,14 +5,14 @@ import { FadeUp } from "@/components/Motion";
 export const metadata: Metadata = {
   title: "Često Postavljana Pitanja",
   description:
-    "Odgovori na najčešća pitanja o astropsihološkom savetovanju, NLP coachingu, hipnotičkom radu, regresiji i CRT metodama – Nimfa Iz Podsvesti.",
+    "Odgovori na najčešća pitanja o astro-psihološkom savetovanju, NLP coachingu, hipnotičkom radu, regresiji i CRT metodama – Nimfa Iz Podsvesti.",
   alternates: {
     canonical: "https://www.nimfaizpodsvesti.com/faq",
   },
   openGraph: {
     title: "Često Postavljana Pitanja | Nimfa Iz Podsvesti",
     description:
-      "Odgovori na najčešća pitanja o astropsihološkom savetovanju, NLP coachingu, hipnotičkom radu, regresiji i CRT metodama.",
+      "Odgovori na najčešća pitanja o astro-psihološkom savetovanju, NLP coachingu, hipnotičkom radu, regresiji i CRT metodama.",
     url: "https://www.nimfaizpodsvesti.com/faq",
     images: [{ url: "/images/Home.webp", width: 1200, height: 630 }],
   },
@@ -28,8 +28,8 @@ const faqs = [
     a: "Da. Astrološki uvid može biti potpuno samostalna usluga, bez ikakvog daljeg psihološkog ili coaching rada. Sa jednim delom klijenata radim isključivo astrološke konsultacije.",
   },
   {
-    q: "Kako izgleda astropsihološko savetovanje, odnosno Astrohiling?",
-    a: "Astropsihološko savetovanje ili astrohiling kombinuje astrološki uvid i psihološki razgovor. Astrologija daje mapu i kontekst, dok se savetodavni rad fokusira na razumevanje obrazaca, donošenje odluka i definisanje daljeg pravca rada. Nakon ovog uvida, u dogovoru sa klijentom bira se da li i kako se nastavlja rad kroz fokusirane metode.",
+    q: "Kako izgleda astro-psihološko savetovanje, odnosno Astrohiling?",
+    a: "Astro-psihološko savetovanje ili astrohiling kombinuje astrološki uvid i psihološki razgovor. Astrologija daje mapu i kontekst, dok se savetodavni rad fokusira na razumevanje obrazaca, donošenje odluka i definisanje daljeg pravca rada. Nakon ovog uvida, u dogovoru sa klijentom bira se da li i kako se nastavlja rad kroz fokusirane metode.",
   },
   {
     q: "Da li je ovo terapija?",

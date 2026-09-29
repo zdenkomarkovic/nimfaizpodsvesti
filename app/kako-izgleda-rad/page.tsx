@@ -103,7 +103,7 @@ export default function KakoIzgledaRadPage() {
                   </p>
                   <div className="space-y-3 text-cream-muted leading-relaxed">
                     <p>
-                      Proces <strong>najčešće započinje astropsihološkim savetovanjem</strong>,
+                      Proces <strong>najčešće započinje astro-psihološkim savetovanjem</strong>,
                       kroz koje se, uz astrološki okvir, sagledavaju osnovni
                       psihološki obrasci, razvojne teme i unutrašnji konflikti.
                       Ova faza <strong>pruža mapu i kontekst</strong> — razumevanje šta se dešava
@@ -466,7 +466,7 @@ export default function KakoIzgledaRadPage() {
             {[
               {
                 icon: "✺",
-                name: "Astropsihologija",
+                name: "Astro-psihologija",
                 desc: "Analitički uvid u psihološku strukturu i razvojne teme kroz natalnu kartu",
                 image: "/images/Astrologija (2).webp",
               },

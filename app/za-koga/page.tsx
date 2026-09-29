@@ -6,14 +6,14 @@ import { FadeUp } from "@/components/Motion";
 export const metadata: Metadata = {
   title: "Za Koga Je Ovaj Pristup",
   description:
-    "Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja ne završavaju na površinskom nivou. Astropsihološko savetovanje, coaching i lični razvoj za one koji žele razumevanje i unutrašnju promenu.",
+    "Ovaj rad je namenjen ljudima koji osećaju da se njihova pitanja ne završavaju na površinskom nivou. Astro-psihološko savetovanje, coaching i lični razvoj za one koji žele razumevanje i unutrašnju promenu.",
   alternates: {
     canonical: "https://www.nimfaizpodsvesti.com/za-koga",
   },
   openGraph: {
     title: "Za Koga Je Ovaj Pristup | Nimfa Iz Podsvesti",
     description:
-      "Astropsihološko savetovanje, coaching i lični razvoj za one koji žele razumevanje ponavljajućih obrazaca i unutrašnju promenu.",
+      "Astro-psihološko savetovanje, coaching i lični razvoj za one koji žele razumevanje ponavljajućih obrazaca i unutrašnju promenu.",
     url: "https://www.nimfaizpodsvesti.com/za-koga",
     images: [{ url: "/images/za koga je ovaj rad.webp", width: 1200, height: 630 }],
   },
